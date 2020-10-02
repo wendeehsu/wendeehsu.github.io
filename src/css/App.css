@@ -23,6 +23,19 @@
   margin-left: 0.5rem;
 }
 
+.nav-item {
+  float: right !important;
+}
+
 .nav-item :hover{
+  color: #FFE2E2 !important;
+}
+
+.nav-item :focus{
   color: #FFB6B9 !important;
+}
+
+.nav-link {
+  float: right !important;
+  margin-right: 1rem !important;
 }
