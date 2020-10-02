@@ -8,7 +8,7 @@ function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" component={Work} />
+                {/* <Route path="/" component={Work}/> */}
                 <Route path="/Work" component={Work} />
                 <Route path="/Medium" component={Medium} />
                 <Route path="/Me" component={Me} />
