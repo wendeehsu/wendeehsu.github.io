@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
                 Wendee Hsu
                 <img className="navbar-icon" src="/icon.png" />
             </a>
@@ -14,13 +14,13 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="menu">
                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Work</a>
+                        <a className="nav-link" href="/Work">Work</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Medium</a>
+                        <a className="nav-link" href="/Medium">Medium</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Me</a>
+                        <a className="nav-link" href="/Me">Me</a>
                     </li>
                 </ul>
             </div>
