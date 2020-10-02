@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+// import '../css/Work.css';
 
 class Work extends Component {
     render() {
         return (
             <div>
-                <h1>
+                <h3 className="title">
                     My Work
-                </h1>
+                </h3>
             </div>
         )
     }

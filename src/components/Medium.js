@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Medium extends Component {
     render() {
         return (
             <div>
-                <h1>
+                <h3 className="title">
                     My Medium
-                </h1>
+                </h3>
             </div>
         )
     }

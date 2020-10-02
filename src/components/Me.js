@@ -4,9 +4,9 @@ export default class Me extends Component {
     render() {
         return (
             <div>
-                <h1>
+                <h3 className="title">
                     About Me
-                </h1>
+                </h3>
             </div>
         )
     }

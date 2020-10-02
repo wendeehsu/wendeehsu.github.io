@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Redirect, Route, BrowserRouter} from "react-router-dom";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
 import Work from "./components/Work";
 import Medium from "./components/Medium";
 import Me from "./components/Me";
