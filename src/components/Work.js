@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// import '../css/Work.css';
+import ProjectCard from "./ProjectCard";
+import '../css/Work.css';
 
 class Work extends Component {
     render() {
@@ -8,6 +9,8 @@ class Work extends Component {
                 <h3 className="title">
                     My Work
                 </h3>
+                <ProjectCard />
+                <ProjectCard />
             </div>
         )
     }
