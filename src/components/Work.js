@@ -6,7 +6,7 @@ class Work extends Component {
     render() {
         const project1 = new Project(
             "Redesign Website of Bureau of Labor Insurance",
-            "UX Researcher",
+            "UX Researcher, UI Designer",
             "PDIS",
             "/images/project1-cover.png",
             ""
