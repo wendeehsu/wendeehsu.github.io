@@ -54,6 +54,14 @@
   color: #A0A0A0;
 }
 
+.white-text {
+  color: white;
+}
+
 .center-text {
   text-align: center;
+}
+
+.projectCard {
+  margin-bottom: 2rem !important;
 }
