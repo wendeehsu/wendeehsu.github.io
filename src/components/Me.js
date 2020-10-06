@@ -15,8 +15,7 @@ export default class Me extends Component {
                 <div className="row justify-content-center">
                     <h6 className="gray-text col-6 center-text">
                         Frontend Developer, Mechine Learning Engineer<br/>
-                        I study information management in National Taiwan University.
-                        Now exploring the field of user-centered design and seeking for new challenges.
+                        I study information management in National Taiwan University, now exploring the field of user-centered design and seeking for new challenges.
                     </h6>
                 </div>
                 <br/>

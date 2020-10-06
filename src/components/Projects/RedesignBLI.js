@@ -10,13 +10,16 @@ class RedesignBLI extends Component {
                     <div className="col-4 vertical-center">
                         <h6 className="pink-text">PDIS</h6>
                         <h4>Redesign Website of Bureau of Labor Insurance</h4>
-                        <h6 className="gray-text">July 2020 - August 2020</h6>
+                        <h6 className="gray-text">
+                            July 2020 - August 2020
+                            (8 weeks)
+                        </h6>
                     </div>
                 </div>
                 <div className="section">
                     <h6>PROJECT GOAL</h6>
                     <p>
-                        Redesign the website of Bureau of Labor Insurance based on users’ needs
+                        Redesign the e-service platform of Bureau of Labor Insurance based on users’ needs
                     </p>
                 </div>
                 <div className="section">
