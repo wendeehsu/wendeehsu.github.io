@@ -9,7 +9,7 @@ class Work extends Component {
             "UX Researcher, UI Designer",
             "PDIS",
             "/images/project1-cover.png",
-            ""
+            "/Work/RedesignBLI"
         );
 
         const project2 = new Project(
