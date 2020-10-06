@@ -65,3 +65,8 @@
 .projectCard {
   margin-bottom: 2rem !important;
 }
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
