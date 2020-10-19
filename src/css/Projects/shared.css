@@ -23,6 +23,14 @@ p {
     font-family: Open Sans;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
+.blue-text {
+    color: #316BCF;
+}
+
 .section > h6 {
     font-weight: bold;
 }
