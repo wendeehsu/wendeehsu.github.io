@@ -11,6 +11,10 @@
     min-width: 15rem;
 }
 
+.col-6 {
+    min-width: 15rem;
+}
+
 .section {
     max-width: 70%;
     margin-left: auto;
@@ -27,8 +31,11 @@ p {
     font-weight: bold;
 }
 
-.blue-text {
+.section-subtitle {
     color: #316BCF;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .section > h6 {
@@ -38,7 +45,6 @@ p {
 .section p {
     line-height: 1.7em;
     margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 .full-width-img {

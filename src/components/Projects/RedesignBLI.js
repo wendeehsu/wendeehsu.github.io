@@ -39,17 +39,25 @@ class RedesignBLI extends Component {
                 <div className="section">
                     <h6>DESIGN PROCESS</h6>
                     <p className="bold-text">1. User Reasearch</p>
-                    <p className="bold-text blue-text">Interview</p>
+                    <p className="section-subtitle">Interview</p>
                     <div className="row">
-                        <div className="col-6">
-                            <p>
-                                To find current users of the e-service platform of the Bureau of Labor Insurance, we released questionnaires asking about people’s experience of using the website. We later selected 5 users and conducted semi-structured interviews with them. To include thoughts from our stakeholders into the new design, we also arranged meetings with 4 staff working in the Information Technology Division of the Bureau of Labor Insurance to know their expectations of this redesign project.
-                            </p>
-                        </div>
-                        <div className="col-6">
-                            <img className="full-width-img" src="/images/Test.png" />
-                        </div>
+                        <p className="col-6">
+                            To find current users of the e-service platform of the Bureau of Labor Insurance, we released questionnaires asking about people’s experience of using the website. We later selected 5 users and conducted semi-structured interviews with them. To include thoughts from our stakeholders into the new design, we also arranged meetings with 4 staff working in the Information Technology Division of the Bureau of Labor Insurance.
+                        </p>
+                        <img className="full-width-img col-6" src="/images/Test.png" />
                     </div>
+                    <p className="section-subtitle">Affinity Diagram</p>
+                    <div className="row">
+                        <p className="col-6">
+                            After interviewing each user and stakeholders, we sorted more than 100 user quotes, derived 25 insights, and generated 3 personas.
+                        </p>
+                        <img className="full-width-img col-6" src="/images/AffinityDiagram.png" />
+                    </div>
+                    <p className="section-subtitle">User Types</p>
+                    <p>
+                        Based on whether these users are familiar with their goal on the website and their degree of attention they pay to their right of labor insurance, we made 3 personas corresponding to each group we want to target.
+                    </p>
+                    <img className="full-width-img" src="/images/UserVector.png" />
                 </div>
             </div>
         )
