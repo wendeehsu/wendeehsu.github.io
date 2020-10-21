@@ -21,14 +21,13 @@ p {
 
 .bold-text {
     font-weight: bold;
-    margin-top: 1rem
 }
 
 .section-subtitle {
     color: #316BCF;
     font-weight: bold;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .section > h6 {

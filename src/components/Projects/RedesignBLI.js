@@ -69,11 +69,11 @@ class RedesignBLI extends Component {
                             How Might We provide adequate assistance when users encounter difficulties in different stages?
                         </p>
                     </div>
-                    <p className="bold-text">User Need</p>
+                    <p className="section-subtitle">User Need</p>
                     <p>
                         Users expect the website to provide a clear guide and immediate feedback when searching or applying for a service.
                     </p>
-                    <p className="bold-text">Limitation</p>
+                    <p className="section-subtitle">Limitation</p>
                     <p>
                         Bureau of Labor Insurance supports a wide variety of services for people facing different incidences, but the website has a barely low rate of usage. A person may visit the website no more than twice a year. As a result, we should regard each person as first-time users when designing guidance.                    </p>
                 </div>
