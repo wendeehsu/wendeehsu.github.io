@@ -38,7 +38,7 @@ class RedesignBLI extends Component {
                 </div>
                 <div className="section">
                     <h6>DESIGN PROCESS</h6>
-                    <p className="bold-text">1. User Reasearch</p>
+                    <p className="secondary-title">1. User Reasearch</p>
                     <p className="section-subtitle">Interview</p>
                     <div className="row">
                         <p className="col-6">
@@ -58,6 +58,24 @@ class RedesignBLI extends Component {
                         Based on whether these users are familiar with their goal on the website and their degree of attention they pay to their right of labor insurance, we made 3 personas corresponding to each group we want to target.
                     </p>
                     <img className="full-width-img" src="/images/UserVector.png" />
+                    <p>
+                        For each group, we identified their needs and pain points:
+                    </p>
+                    <img className="full-width-img" src="/images/UserTable.png" />
+
+                    <p className="secondary-title">2. Define Problem</p>
+                    <div className="div-box">
+                        <p className="vertical-center">
+                            How Might We provide adequate assistance when users encounter difficulties in different stages?
+                        </p>
+                    </div>
+                    <p className="bold-text">User Need</p>
+                    <p>
+                        Users expect the website to provide a clear guide and immediate feedback when searching or applying for a service.
+                    </p>
+                    <p className="bold-text">Limitation</p>
+                    <p>
+                        Bureau of Labor Insurance supports a wide variety of services for people facing different incidences, but the website has a barely low rate of usage. A person may visit the website no more than twice a year. As a result, we should regard each person as first-time users when designing guidance.                    </p>
                 </div>
             </div>
         )

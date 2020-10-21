@@ -4,6 +4,27 @@
   }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .col-4 {
+      min-width: 15rem;
+  }
+
+  .col-6 {
+      min-width: 15rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
