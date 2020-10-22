@@ -51,8 +51,38 @@ p {
     line-height: 2.5em !important;
 }
 
-.div-box{
+.div-box {
     background-color: #EBF6F2;
     border-radius: 10px;
     padding: 0.7em 1em;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .flow-img {
+        height: 20vh;
+    }
+    .center-img-space{
+        width: 70vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .flow-img {
+        height: 25vh;
+    }
+    .center-img-space{
+        width: 70vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .flow-img {
+        height: 50vh;
+    }
+    .center-img-space{
+        width: 55vw;
+    }
 }
