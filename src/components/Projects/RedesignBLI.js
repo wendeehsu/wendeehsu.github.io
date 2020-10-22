@@ -15,15 +15,18 @@ class RedesignBLI extends Component {
                         </h6>
                     </div>
                 </div>
+                
                 <div className="section">
                     In 10 weeks, we assisted the Bureau of Labor Insurance to redesign its website (e-service platform) based on users’ needs. As our design aims to provide adequate assistance when users encounter difficulties in different stages, our new design scored 85.94 in the final SUS usability testing, which was way higher than the original website’s score of 61.25.
                 </div>
+
                 <div className="section">
                     <h6>MY ROLE</h6>
                     <p>
                         Participant in both UX research and UI design                    
                     </p>
                 </div>
+
                 <div className="section">
                     <h6>METHOD & TOOL</h6>
                     <p>
@@ -32,10 +35,12 @@ class RedesignBLI extends Component {
                         Tools: Miro, Figma 
                     </p>
                 </div>
+
                 <div className="section">
                     <h6>PROCESS OVERVIEW</h6>
                     <img className="full-width-img" src="/images/BLI/Process.png" />
                 </div>
+
                 <div className="section">
                     <h6>DESIGN PROCESS</h6>
 
@@ -114,6 +119,16 @@ class RedesignBLI extends Component {
                         <img className="center-img-space" src="/images/BLI/TestingFlow.png"/>
                     </div>
 
+                </div>
+            
+                <div className="section">
+                    <h6>FINAL DESIGN</h6>
+
+                    {/* ---- 1. Login ---- */}
+                    <p className="secondary-title">1. Login</p>
+                    <p>
+                        Since the Bureau of Labor Insurance is going to support different ways to log in, we enable users to choose a suitable option based on the login equipment they have. Besides, the filling fields are disabled before the website successfully detected all the required login equipment. This will reduce users’ time wasted on filling in the fields again and again.
+                    </p>
                 </div>
             </div>
         )
