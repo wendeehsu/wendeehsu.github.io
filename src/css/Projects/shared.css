@@ -1,6 +1,9 @@
 .cover {
-    background-color: #F6F6F6;
     background-size: 100%;
+}
+
+.gray-bg {
+    background-color: #F6F6F6;
 }
 
 .coverImage {
@@ -15,12 +18,17 @@
     margin-bottom: 3rem;
 }
 
+.full-width-section {
+    width: 101%;
+    padding: 1rem 2rem;
+}
+
 p {
     font-family: Open Sans;
 }
 
-.bold-text {
-    font-weight: bold;
+.label-img {
+    width: 60px;
 }
 
 .section-subtitle {
@@ -43,7 +51,12 @@ p {
     height: auto;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-bottom: auto;
+}
+
+.center-context {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .secondary-title {

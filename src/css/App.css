@@ -79,6 +79,10 @@
   color: white;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .center-text {
   text-align: center;
 }
