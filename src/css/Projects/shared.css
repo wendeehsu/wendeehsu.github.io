@@ -38,8 +38,9 @@ p {
     margin-bottom: 0.5rem;
 }
 
-.section > h6 {
+.section > h5 {
     font-weight: bold;
+    line-height: 2.5em;
 }
 
 .section p {
@@ -51,6 +52,7 @@ p {
     height: auto;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-bottom: auto;
 }
 
 .center-context {
@@ -70,6 +72,12 @@ p {
     padding: 0.7em 1em;
 }
 
+.reflection-icon {
+    height: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     .flow-img {
@@ -77,6 +85,9 @@ p {
     }
     .center-img-space{
         width: 70vw;
+    }
+    .reflection-icon {
+        display: none;
     }
 }
 
@@ -88,6 +99,9 @@ p {
     .center-img-space{
         width: 70vw;
     }
+    .reflection-icon {
+        max-width: 20%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -98,5 +112,8 @@ p {
     .center-img-space{
         width: 55vw;
         margin: 2rem;
+    }
+    .reflection-icon {
+        max-width: 15%;
     }
 }

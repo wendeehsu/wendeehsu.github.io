@@ -8,11 +8,11 @@ class RedesignBLI extends Component {
                 <div className="cover gray-bg row justify-content-center">
                     <img className="coverImage" src="/images/project1-cover.png" />
                     <div className="col-4 vertical-center">
-                        <h6 className="pink-text">PDIS</h6>
+                        <h5 className="pink-text">PDIS</h5>
                         <h4>Redesign Website of Bureau of Labor Insurance</h4>
-                        <h6 className="gray-text">
+                        <h5 className="gray-text">
                             July 2020 - September 2020
-                        </h6>
+                        </h5>
                     </div>
                 </div>
                 
@@ -21,14 +21,14 @@ class RedesignBLI extends Component {
                 </div>
 
                 <div className="section">
-                    <h6>MY ROLE</h6>
+                    <h5>MY ROLE</h5>
                     <p>
                         Participant in both UX research and UI design                    
                     </p>
                 </div>
 
                 <div className="section">
-                    <h6>METHOD & TOOL</h6>
+                    <h5>METHOD & TOOL</h5>
                     <p>
                         Methods: User Research, Wireframe, Mockup, Prototype, Usability Testing
                         <br/>
@@ -37,12 +37,12 @@ class RedesignBLI extends Component {
                 </div>
 
                 <div className="section">
-                    <h6>PROCESS OVERVIEW</h6>
+                    <h5>PROCESS OVERVIEW</h5>
                     <img className="full-width-img" src="/images/BLI/Process.png" />
                 </div>
 
                 <div className="section">
-                    <h6>DESIGN PROCESS</h6>
+                    <h5>DESIGN PROCESS</h5>
 
                     {/* ---- 1. User Reasearch ---- */}
                     <p className="secondary-title">1. User Reasearch</p>
@@ -122,7 +122,7 @@ class RedesignBLI extends Component {
                 </div>
             
                 <div className="section">
-                    <h6>FINAL DESIGN</h6>
+                    <h5>FINAL DESIGN</h5>
 
                     <p className="secondary-title">1. Login</p>
                     <p>
@@ -159,7 +159,6 @@ class RedesignBLI extends Component {
                 </div>
                 <div className="full-width-section">
                     <img className="label-img" src="/images/BLI/NewLabel.png" />
-                    <br/>
                     <div className="center-context">
                         <img className="full-width-img" src="/images/BLI/NewInquiry.png" />
                     </div>
@@ -174,7 +173,6 @@ class RedesignBLI extends Component {
                 </div>
                 <div className="full-width-section gray-bg">
                     <img className="label-img" src="/images/BLI/OldLabel.png" />
-                    <br/>
                     <div className="center-context">
                         <img className="full-width-img" src="/images/BLI/OldQualification.png" />
                         <p>
@@ -196,9 +194,52 @@ class RedesignBLI extends Component {
                 </div>
                 <div className="full-width-section">
                     <img className="label-img" src="/images/BLI/NewLabel.png" />
-                    <br/>
                     <div className="center-context">
                         <img className="full-width-img" src="/images/BLI/NewApplicationProcess.png" />
+                    </div>
+                </div>
+
+                <div className="section">
+                    <h5>RESULT</h5>
+                    <p>
+                        SUS usability score of our redesign: <b>85.94</b> (score of the current website: 61.25)
+                        <br/><br/>
+                        In the end, our new website was showered with compliments on its clear interface and simplified operation. We also wrote a detailed report to give the Bureau of Labor Insurance suggestions on how their e-service platform can become more user-friendly.                    
+                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>REFLECTION</h5>
+                    <div className="row">
+                        <img className="reflection-icon col" src="/images/BLI/Reflection1.png" />
+                        <div className="col">
+                            <p className="bold-text">
+                                1. It is important to let testers into the scenario
+                            </p>
+                            <p>
+                                When conducting wireframe testing, we found out that some users were heavily aware that they were doing a test. They told us “I finished this question.” instead of “I finished the application service.” Not being able to put themselves in the scenario can result in behaving differently in comparison with real-life scenarios. As a result, in our later testings, we tried to select users that had done the same service in our test case before. We also added some lines of descriptions to help testers get into the scenario.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <img className="reflection-icon col" src="/images/BLI/Reflection2.png" />
+                        <div className="col">
+                            <p className="bold-text">
+                                2. It’s not easy to integrate users’ voice in  governmental websites                            </p>
+                            <p>
+                                To be frank, no matter how unfriendly the user experience is, people have no other choice but to keep using it when it comes to the governmental website. Hence, integrating users’ thoughts or demands in the website’s designing phase will not be considered as crucial. When we handed-in the redesign proposal to the Bureau of Labor Insurance, we tried to elaborate on why we made these changes and how these modifications can reduce the stress of the staff at the counter. Otherwise, the suggestions may not be seriously taken into discussion.                            
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <img className="reflection-icon col" src="/images/BLI/Reflection3.png" />
+                        <div className="col">
+                            <p className="bold-text">
+                                3. Trusting each member’s profession is very beneficial                            </p>
+                            <p>
+                                On our team, we have people from research, design, and engineering backgrounds. As a result, there was always a person using his/her profession to lead the whole team in different stages. I realized that only when the rest of the people trust each leader’s expertise can the team achieve a better result. Every member can also contribute the most and even learn from each other under this kind of cooperation.                            
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
