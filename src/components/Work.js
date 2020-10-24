@@ -15,9 +15,9 @@ class Work extends Component {
         const project2 = new Project(
             "AR Contact Lens Wearing App",
             "Frontend Engineer",
-            "Self-Project",
+            "Side-Project",
             "/images/project2-cover.png",
-            ""
+            "/Work/ARLens"
         );
 
         return (
