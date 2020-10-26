@@ -46,21 +46,21 @@ class RedesignBLI extends Component {
 
                     {/* ---- 1. User Reasearch ---- */}
                     <p className="secondary-title">1. User Reasearch</p>
-                    <p className="section-subtitle">Interview</p>
+                    <p className="section-subtitle blue-text">Interview</p>
                     <div className="row">
                         <p className="col-6">
                             To find current users of the e-service platform of the Bureau of Labor Insurance, we released questionnaires asking about people’s experience of using the website. We later selected 5 users and conducted semi-structured interviews with them. To include thoughts from our stakeholders into the new design, we also arranged meetings with 4 staff working in the Information Technology Division of the Bureau of Labor Insurance.
                         </p>
                         <img className="full-width-img col-6" src="/images/BLI/Test.png" />
                     </div>
-                    <p className="section-subtitle">Affinity Diagram</p>
+                    <p className="section-subtitle blue-text">Affinity Diagram</p>
                     <div className="row">
                         <p className="col-6">
                             After interviewing each user and stakeholders, we sorted more than 100 user quotes, derived 25 insights, and generated 3 personas.
                         </p>
                         <img className="full-width-img col-6" src="/images/BLI/AffinityDiagram.png" />
                     </div>
-                    <p className="section-subtitle">User Types</p>
+                    <p className="section-subtitle blue-text">User Types</p>
                     <p>
                         Based on whether these users are familiar with their goal on the website and their degree of attention they pay to their right of labor insurance, we made 3 personas corresponding to each group we want to target.
                     </p>
@@ -77,23 +77,23 @@ class RedesignBLI extends Component {
                             How Might We provide adequate assistance when users encounter difficulties in different stages?
                         </p>
                     </div>
-                    <p className="section-subtitle">User Need</p>
+                    <p className="section-subtitle blue-text">User Need</p>
                     <p>
                         Users expect the website to provide a clear guide and immediate feedback when searching or applying for a service.
                     </p>
-                    <p className="section-subtitle">Limitation</p>
+                    <p className="section-subtitle blue-text">Limitation</p>
                     <p>
                         Bureau of Labor Insurance supports a wide variety of services for people facing different incidences, but the website has a barely low rate of usage. A person may visit the website no more than twice a year. As a result, we should regard each person as first-time users when designing guidance.                    
                     </p>
 
                     {/* ---- 3. Design Wireframe ---- */}
                     <p className="secondary-title">3. Design Wireframe</p>
-                    <p className="section-subtitle">Using different information architecture to design two versions of wireframe</p>
+                    <p className="section-subtitle blue-text">Using different information architecture to design two versions of wireframe</p>
                     <p>
                         Since the Bureau of Labor Insurance provides a wide variety of services, we made two versions of wireframe using different information architecture to categorize each service. The “Stage of Life” version divides services into “working, retired, disabled, unemployed, giving birth, dead”. As for the “Function” version, we simply labeled each service into “making inquiries, applying, paying, changing data, printing”.
                     </p>
                     <img className="full-width-img" src="/images/BLI/IaCompare.png" />
-                    <p className="section-subtitle">Usability Testing on Information Architecture</p>
+                    <p className="section-subtitle blue-text">Usability Testing on Information Architecture</p>
                     <p>
                         We conducted 5 usability testing, carefully selected users with diverse backgrounds. Besides testing our current user flow, we were more interested in which information architecture do they prefer.
                     </p>
@@ -105,9 +105,9 @@ class RedesignBLI extends Component {
 
                     {/* ---- 4. Creating Propotype ---- */}
                     <p className="secondary-title">4. Creating Propotype</p>
-                    <p className="section-subtitle">Login</p>
+                    <p className="section-subtitle blue-text">Login</p>
                     <img className="flow-img" src="/images/BLI/Prototype_Login.png"/>
-                    <p className="section-subtitle">Applying for a service</p>
+                    <p className="section-subtitle blue-text">Applying for a service</p>
                     <img className="full-width-img" src="/images/BLI/Prototype_Apply.png"/>
 
                     {/* ---- 5. Usability Testing ---- */}

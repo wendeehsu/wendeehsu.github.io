@@ -49,7 +49,7 @@
 }
 
 .nav-item :hover{
-  color: #FFE2E2 !important;
+  color: #F49DA0 !important;
 }
 
 .nav-item :focus{
@@ -65,6 +65,10 @@
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.blue-text {
+  color: #316BCF;
 }
 
 .pink-text {
