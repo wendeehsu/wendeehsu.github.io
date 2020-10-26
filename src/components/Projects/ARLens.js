@@ -70,7 +70,12 @@ class ARLens extends Component {
                     <p>
                         We bought an offline executable software development kit that captures face data perfectly, combining it to implement the customized Len-wearing algorithm with OpenCV, an open-source computer vision library.                    
                     </p>
-
+                    <div className="row justify-content-center">
+                        <video src="/images/AR/mock.mp4" autoPlay="true" loop="true"/>
+                    </div>
+                    <p className="gray-text">
+                        The len-wearing algorithm was developed on a Windows 10 laptop by my teammate Jenny Ho using C++, while I was in charge of reproducing it on iPad 6.
+                    </p>
                 </div>
 
             </div>
