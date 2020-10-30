@@ -7,6 +7,7 @@ class MediumCard extends Component {
                 <div className="row justify-content-center projectCard">
                     <div className="col-3 postName">
                         <h5>{this.props.post.name}</h5>
+                        <p className="gray-text">{this.props.post.description}</p>
                     </div>
                     <div 
                         className="postImage" 
