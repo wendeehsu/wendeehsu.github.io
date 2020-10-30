@@ -20,6 +20,14 @@ class Work extends Component {
             "/Work/ARLens"
         );
 
+        const project3 = new Project(
+            "AI Image Classification",
+            "Machine Learning / Backend Engineer",
+            "Dentall",
+            "/images/project3-cover.png",
+            "/Work/AIXray"
+        );
+
         return (
             <div>
                 <h3 className="title">
@@ -27,6 +35,7 @@ class Work extends Component {
                 </h3>
                 <ProjectCard project={project1}/>
                 <ProjectCard project={project2}/>
+                <ProjectCard project={project3}/>
             </div>
         )
     }
