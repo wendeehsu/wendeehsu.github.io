@@ -15,6 +15,11 @@ class AIXray extends Component {
                         </h5>
                     </div>
                 </div>
+
+                <div className="section">
+                    Nowadays, dentists need to manually sort through many unordered images, limiting the time and quality spent on explaining the tooth condition to the patient. As a result, we decide to automize this tedious work with machine learning. In the end, our service successfully reduces dentists' time on classifying one image from 1 second to 0.2 seconds, helping dentists to focus more on their patients.
+                </div>
+                
             </div>
         )
     }
