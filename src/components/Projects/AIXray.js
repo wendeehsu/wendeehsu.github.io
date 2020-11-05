@@ -19,7 +19,31 @@ class AIXray extends Component {
                 <div className="section">
                     Nowadays, dentists need to manually sort through many unordered images, limiting the time and quality spent on explaining the tooth condition to the patient. As a result, we decide to automize this tedious work with machine learning. In the end, our service successfully reduces dentists' time on classifying one image from 1 second to 0.2 seconds, helping dentists to focus more on their patients.
                 </div>
-                
+
+                <div className="section">
+                    <h5>MY ROLE</h5>
+                    <p>
+                        Machine Learning Engineer
+                        <br/>
+                        Backend Engineer
+                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>TECHNIQUE</h5>
+                    <p>
+                        Programming language: Python
+                        <br/>
+                        Convolutional Neural Network
+                        <br/>
+                        Flask backend api
+                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>PROCESS OVERVIEW</h5>
+                    <img className="full-width-img" src="/images/Xray/Process.png" />
+                </div>
             </div>
         )
     }
