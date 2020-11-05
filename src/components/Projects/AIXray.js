@@ -44,6 +44,24 @@ class AIXray extends Component {
                     <h5>PROCESS OVERVIEW</h5>
                     <img className="full-width-img" src="/images/Xray/Process.png" />
                 </div>
+
+                <div className="section">
+                    <h5>DEVELOP PROCESS</h5>
+
+                    {/* ---- 1. Define Problem ---- */}
+                    <p className="secondary-title">1. Define Problem</p>
+                    <p className="section-subtitle blue-text">Observation</p>
+                    <p>
+                        We went to clinics to observe how dentists interact with patients. Later, we found out that whenever a dentist is explaining the patient’s teeth condition, he needs to first open the folder containing many unordered tooth images, manually sort through these images, and later select those that can help the patient understand the teeth’s condition better.
+                    </p>
+                    <div className="row justify-content-center">
+                        <img className="center-img-space" src="/images/Xray/ProblemProcess.png"/>
+                    </div>
+                    <p>
+                        However, dentists have limited time on treating each patient. Therefore, many dentists will explain the teeth’s condition while sorting and selecting images. The time spent on organizing images will reduce the quality for patients to understand what dentists tell them. These patients may be confused, ending up asking the same questions repeatedly.
+                    </p>
+                </div>
+                    
             </div>
         )
     }
