@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
+import NavLink from '../Navs/NavLink';
 
 class RedesignBLI extends Component {
     render() {
@@ -242,6 +243,7 @@ class RedesignBLI extends Component {
                         </div>
                     </div>
                 </div>
+                <NavLink pageUrl="/Work/ARLens" project="AR Contact Lens Wearing App" />
             </div>
         )
     }

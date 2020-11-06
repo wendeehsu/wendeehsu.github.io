@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
+import NavLink from '../Navs/NavLink';
 
 class AIXray extends Component {
     render() {
@@ -172,6 +173,7 @@ class AIXray extends Component {
                         </div>
                     </div>
                 </div>
+                <NavLink pageUrl="/Work/RedesignBLI" project="Redesign Website of Bureau of Labor Insurance" />
             </div>
         )
     }

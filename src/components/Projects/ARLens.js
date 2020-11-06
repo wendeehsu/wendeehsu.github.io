@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
 import "../../css/Projects/ARLens.css";
+import NavLink from '../Navs/NavLink';
 
 class ARLens extends Component {
     render() {
@@ -137,11 +138,12 @@ class ARLens extends Component {
                                 3. We should only start a project when the contract is completed
                             </p>
                             <p>
-                            Having no experience in working for people outside the school, our team jumped into development before any contract was done. We later realized the owner kept demanding new functions and requirements during our cooperation. The suffering of project creeping was real, using up extra time and effort but not receiving any additional payments. From this experience, we found out how important a contract was as it will serve as protection under this situation.
+                                Having no experience in working for people outside the school, our team jumped into development before any contract was done. We later realized the owner kept demanding new functions and requirements during our cooperation. The suffering of project creeping was real, using up extra time and effort but not receiving any additional payments. From this experience, we found out how important a contract was as it will serve as protection under this situation.
                             </p>
                         </div>
                     </div>
                 </div>
+                <NavLink pageUrl="/Work/AIXray" project="AI Image Classification" />
             </div>
         )
     }
