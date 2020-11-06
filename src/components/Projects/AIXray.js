@@ -83,8 +83,8 @@ class AIXray extends Component {
                     </p>
                     <div className="row justify-content-center">
                         <img className="col-5" style={{margin: "1.5rem 0rem"}} src="/images/Xray/XrayTemplate.png"/>
-                        <p className="gray-text text-center">The x-ray template with each position’s corresponding class name</p>
                     </div>
+                    <p className="gray-text text-center">The x-ray template with each position’s corresponding class name</p>
                 </div>
                 
                 <div className="section">
@@ -102,6 +102,75 @@ class AIXray extends Component {
                     <p>
                         As images are transformed into numerical matrices based on their pixel-wise RGB values, the machine will take the matrices as input. We later use convolutional neural networks to extract features in these transformed matrices by performing specific mathematical operations such as convolution and pooling. In the training process, the network will update the prediction result of an image after comparing it with the image’s ground truth. After updating several times, the output of the network will be a class along with the possibility that the given image belongs to that class. 
                     </p>
+                </div>
+
+                {/* ---- 3. Develope the Backend Application Programming Interface (API) ---- */}
+                <div className="section">
+                    <p className="secondary-title">3. Developing the Backend Application Programming Interface (API)</p>
+                    <p>
+                        After we finished training our machine learning algorithm, we could include the algorithm into our web application using Flask, a micro web framework written in Python. When the web front-end calls the API, our platform will then take that image as the input of our trained network and show the resulting prediction to the user.
+                    </p>
+                    <div className="row justify-content-center">
+                        <video src="/images/Xray/Mock.mp4" autoPlay="true" loop="true"/>
+                    </div>
+                </div>
+                
+                {/* ---- Problems encountered during Development  ---- */}
+                <div className="section">
+                    <p className="secondary-title">Problems encountered during Development</p>
+                    <img className="full-width-img" src="/images/Xray/DevelopTable.png" />
+                </div>
+
+                <div className="section">
+                    <h5>FINAL PRODUCT</h5>
+                    <p className="section-subtitle blue-text">Scenario</p>
+                    <p>
+                        Dentists can open a folder and upload the patient’s x-ray images and have the images sorted.
+                    </p>
+                </div>
+                <div className="full-width-section gray-bg">
+                    <img className="full-width-img" src="/images/Xray/Product.png" />
+                </div>
+
+                <div className="section">
+                    <h5>RESULT</h5>
+                    <p>
+                        It only takes <b>0.2 seconds</b> with <b>94% accuracy</b> for our service to classify an image, while dentists need to spend 1 second per image before.                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>REFLECTION</h5>
+                    <div className="row">
+                        <img className="reflection-icon col" src="/images/Xray/Reflection1.png" />
+                        <div className="col">
+                            <p className="bold-text">
+                                1. Behind each excellent result, there is always a lot of tiring tasks to do                            </p>
+                            <p>
+                                Same as many outsiders, in the past, I was fascinated by the incredible achievements done by artificial intelligence. However, after being a machine learning engineer, I realized that 80 percent of my time was spent on collecting and labeling data. This step is tedious and exhausted, but it is the first and most important step in machine learning. Otherwise, we will face a rubbish-in-rubbish-out situation when there is not enough training data. I believe this spirit applies to every field. It is those who can bear the hard-works that paves their way to excellency.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <img className="reflection-icon col" src="/images/Xray/Reflection2.png" />
+                        <div className="col">
+                            <p className="bold-text">
+                                2. Technology is powerful only when it is applied in the right place
+                            </p>
+                            <p>
+                              We tend to have the illusion that technology can achieve everything. Nevertheless, technology is only powerful when it is placed on the right topic, or it will be merely complicated math and algorithm. In this project, seeking a cutting point where AI can be helpful in the dental industry took us a lot of time. As dentists are well-trained, they can outperform AI with better accuracy in their profession. Fortunately, after several interviews with dentists, we finally found that AI may replace dentists' tedious work on sorting through images.                            
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <img className="reflection-icon col" src="/images/Xray/Reflection3.png" />
+                        <div className="col">
+                            <p className="bold-text">
+                                3. AI is a black box, making it hard to figure out how to improve its performance                            </p>
+                            <p>
+                                After training our artificial neural network, we will look at the result, discussing how its performance can be improved. In a traditional human-constructed algorithm, this part is simple because we only need to trace the code line by line. When it comes to AI, we do not know how it derives the result since we can only control the input. The rest remains a black box. As a result, performance improvement turns out to be more like a wild guess. For example, we may randomly change some parameters or studying other research to get more ideas. The fact that results obtained by AI are not explainable is the hardest part of machine learning.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

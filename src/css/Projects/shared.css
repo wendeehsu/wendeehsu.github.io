@@ -77,8 +77,17 @@ p {
     margin-top: auto;
 }
 
+video {
+    margin: 1.5rem auto;
+    width: 80%;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+    .coverImage {
+        height: auto;
+        width: 100vw;
+    }
     .flow-img {
         height: 20vh;
     }
@@ -91,6 +100,10 @@ p {
     }
     .reflection-icon {
         display: none;
+    }
+    video {
+        margin: 1.5rem auto;
+        width: 130%;
     }
 }
 
