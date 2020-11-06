@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg sticky-top navbar-light">
             <a className="navbar-brand" href="/">
                 Wendee Hsu
                 <img className="navbar-icon" src="/icon.png" />
