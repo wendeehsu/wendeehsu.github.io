@@ -85,6 +85,10 @@ p {
     .center-img-space{
         width: 70vw;
     }
+    .center-img-space-3{
+        width: 70vw;
+        margin: 2rem;
+    }
     .reflection-icon {
         display: none;
     }
@@ -94,6 +98,10 @@ p {
 @media only screen and (min-width: 768px) {
     .flow-img {
         height: 25vh;
+    }
+    .center-img-space-3{
+        width: 60vw;
+        margin: 2rem;
     }
     .center-img-space{
         width: 70vw;
@@ -110,6 +118,10 @@ p {
     }
     .center-img-space{
         width: 55vw;
+        margin: 2rem;
+    }
+    .center-img-space-3{
+        width: 40vw;
         margin: 2rem;
     }
     .reflection-icon {

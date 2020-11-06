@@ -55,13 +55,54 @@ class AIXray extends Component {
                         We went to clinics to observe how dentists interact with patients. Later, we found out that whenever a dentist is explaining the patient’s teeth condition, he needs to first open the folder containing many unordered tooth images, manually sort through these images, and later select those that can help the patient understand the teeth’s condition better.
                     </p>
                     <div className="row justify-content-center">
-                        <img className="center-img-space" src="/images/Xray/ProblemProcess.png"/>
+                        <img className="center-img-space-3" src="/images/Xray/ProblemProcess.png"/>
                     </div>
                     <p>
                         However, dentists have limited time on treating each patient. Therefore, many dentists will explain the teeth’s condition while sorting and selecting images. The time spent on organizing images will reduce the quality for patients to understand what dentists tell them. These patients may be confused, ending up asking the same questions repeatedly.
                     </p>
                 </div>
-                    
+
+                <div className="section">
+                    <p className="section-subtitle blue-text">Our Focus</p>
+                    <div className="div-box" style={{margin: "1.5rem 0rem"}}>
+                        <p className="vertical-center">
+                            We want to optimize the image sorting step to enhance the quality for dentists to explain patients’ teeth condition, helping them focus more on the interaction with patients.                        
+                        </p>
+                    </div>
+                    <p>
+                        As the technique of using artificial intelligence to classify images is fully developed, it shows a guaranteeing accuracy in other medical applications such as the classification of Alzheimer’s disease with brain tissue images. Hence, we decided to develop our own AI service aiming to sort through images automatically.
+                    </p>
+                </div>
+
+                {/* ---- 2. Develop the Image Classification Algorithm ---- */}
+                <div className="section">
+                    <p className="secondary-title">2. Develop the Image Classification Algorithm</p>
+                    <p className="section-subtitle blue-text">Define the classes</p>
+                    <p>
+                        Since we want the machine to learn how to classify images on its own, we have to teach it first. We start with defining mutually exclusive classes, in which we want an image to be categorized.
+                    </p>
+                    <div className="row justify-content-center">
+                        <img className="col-5" style={{margin: "1.5rem 0rem"}} src="/images/Xray/XrayTemplate.png"/>
+                        <p className="gray-text text-center">The x-ray template with each position’s corresponding class name</p>
+                    </div>
+                </div>
+                
+                <div className="section">
+                    <p className="section-subtitle blue-text">Gather Data</p>
+                    <p>
+                        The rule of thumb in machine learning is that the more data we have, the higher possibility the algorithm can find the feature particular to each class. The variety of images in each class will also contribute to the robustness of the final prediction. As a result, we cooperated with several dentists and Taipei Medical University to derive x-ray images, recently having <b>383 ~ 1525 images</b> in each class.
+                    </p>
+                </div>
+
+                <div className="section">
+                    <p className="section-subtitle blue-text">Machine Learning</p>
+                    <div className="row justify-content-center">
+                        <img className="center-img-space-3" src="/images/Xray/MLProcess.png"/>
+                    </div>
+                    <p>
+                        As images are transformed into numerical matrices based on their pixel-wise RGB values, the machine will take the matrices as input. We later use convolutional neural networks to extract features in these transformed matrices by performing specific mathematical operations such as convolution and pooling. In the training process, the network will update the prediction result of an image after comparing it with the image’s ground truth. After updating several times, the output of the network will be a class along with the possibility that the given image belongs to that class. 
+                    </p>
+                </div>
             </div>
         )
     }
