@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import "../../css/Projects/shared.css";
 
 class NavLink extends Component {
@@ -14,7 +15,7 @@ class NavLink extends Component {
         return (
             <div className="row justify-content-end" style={sectionStyle}>
                 <h6>
-                    Visit <a className="pink-text" style={linkStyle} href={this.props.pageUrl}>{this.props.project}</a>
+                    Visit <Link className="pink-text" style={linkStyle} to={this.props.pageUrl}>{this.props.project}</Link>
                 </h6>
             </div>
         )

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class ProjectCard extends Component {
     render(){
         return (
-            <a href={this.props.project.pageUrl}>
+            <Link to={this.props.project.pageUrl}>
                 <div className="row justify-content-center projectCard">
                     <div className="col-3 projectDescription">
                         <h5>{this.props.project.name}</h5>
@@ -17,7 +18,7 @@ class ProjectCard extends Component {
                         />
                     </div>
                 </div>
-            </a>
+            </Link>
         )
     }
 }

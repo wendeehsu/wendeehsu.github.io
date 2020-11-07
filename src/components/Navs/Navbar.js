@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg sticky-top navbar-light">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
                 Wendee Hsu
                 <img className="navbar-icon" src="/icon.png" />
-            </a>
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -14,13 +15,13 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="menu">
                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li className="nav-item">
-                        <a className="nav-link" href="/Work">Work</a>
+                        <Link className="nav-link" to="/Work">Work</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/Medium">Medium</a>
+                        <Link className="nav-link" to="/Medium">Medium</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/Me">Me</a>
+                        <Link className="nav-link" to="/Me">Me</Link>
                     </li>
                 </ul>
             </div>
