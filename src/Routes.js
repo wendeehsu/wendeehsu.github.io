@@ -9,7 +9,7 @@ import AIXray from "./components/Projects/AIXray";
 
 function Routes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={Work}/>
                 <Route exact path="/Work" component={Work} />
