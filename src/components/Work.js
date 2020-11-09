@@ -22,7 +22,7 @@ class Work extends Component {
 
         const project3 = new Project(
             "AI Image Classification",
-            "Machine Learning / Backend Engineer",
+            "Machine Learning, Backend Engineer",
             "Dentall",
             "/images/project3-cover.png",
             "/Work/AIXray"

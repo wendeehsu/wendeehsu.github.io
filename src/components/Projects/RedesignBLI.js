@@ -18,13 +18,13 @@ class RedesignBLI extends Component {
                 </div>
                 
                 <div className="section">
-                    In 10 weeks, we assisted the Bureau of Labor Insurance to redesign its website (e-service platform) based on users’ needs. As our design aims to provide adequate assistance when users encounter difficulties in different stages, our new design scored 85.94 in the final SUS usability testing, which was way higher than the original website’s score of 61.25.
+                    In 10 weeks, we assisted the Bureau of Labor Insurance to redesign its website (e-service platform), aiming to provide adequate assistance when users encounter difficulties in different stages. Our new design scored 85.94 in the final SUS usability testing, a 40% improvement on the original website’s score of 61.25.                
                 </div>
 
                 <div className="section">
                     <h5>MY ROLE</h5>
                     <p>
-                        Participant in both UX research and UI design                    
+                        UX Researcher, UI Designer                    
                     </p>
                 </div>
 
@@ -35,6 +35,55 @@ class RedesignBLI extends Component {
                         <br/>
                         Tools: Miro, Figma 
                     </p>
+                </div>
+
+                <div className="section">
+                    <h5>TIMEFRAME</h5>
+                    <p>
+                        10 weeks
+                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>BACKGROUND</h5>
+                    <p>
+                        The website of the Bureau of Labor Insurance provides a variety of services to more than millions of workers, including farmers, fishermen, and so on. Users are required to prepare a card reader and insert their Citizen Digital Certificate to log in to the website, which made it more challenging for first-time users. Besides, these people do not visit the website more than twice a year because their need for insurance-related issues does not happen frequently.
+                    </p>
+                    <div className="row justify-content-center">
+                        <div className="col">
+                            <img className="restriction-icon" src="/images/BLI/Background1.png" />
+                            <div>
+                                <p className="gray-text">
+                                    The website provides a variety of services.
+                                </p>
+                                <p>
+                                    &#8594; Each user’s goal differs from others. We need to focus on our selected target audience to narrow down the project scope.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <img className="restriction-icon" src="/images/BLI/Background2.png" />
+                            <div>
+                                <p className="gray-text">
+                                    Users need to prepare a card reader and Citizen Digital Certificate to log in.
+                                </p>
+                                <p>
+                                    &#8594; We have to consider more kinds of failure cases to enhance its user experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <img className="restriction-icon" src="/images/BLI/Background3.png" />
+                            <div>
+                                <p className="gray-text">
+                                    Users do not visit the website frequently.
+                                </p>
+                                <p>
+                                    &#8594; We need to treat people as first-time users and design clear guidance for the website.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="section">
@@ -70,7 +119,9 @@ class RedesignBLI extends Component {
                         For each group, we identified their needs and pain points:
                     </p>
                     <img className="full-width-img" src="/images/BLI/UserTable.png" />
+                </div>
 
+                <div className="section">
                     {/* ---- 2. Define Problem ---- */}
                     <p className="secondary-title">2. Define Problem</p>
                     <div className="div-box">
@@ -86,7 +137,9 @@ class RedesignBLI extends Component {
                     <p>
                         Bureau of Labor Insurance supports a wide variety of services for people facing different incidences, but the website has a barely low rate of usage. A person may visit the website no more than twice a year. As a result, we should regard each person as first-time users when designing guidance.                    
                     </p>
+                </div>
 
+                <div className="section">
                     {/* ---- 3. Design Wireframe ---- */}
                     <p className="secondary-title">3. Design Wireframe</p>
                     <p className="section-subtitle blue-text">Using different information architecture to design two versions of wireframe</p>
@@ -103,14 +156,18 @@ class RedesignBLI extends Component {
                             Surprisingly, users found it difficult to search for the service they want in the “Stage of Life” version. For example, there is a subsidy that can only be applied when one was unemployed but later got a new job in 3 months. In this case, some may categorize it as “unemployed”, while others think it should belong to “working”. Due to the lower degree of confusion raised in classifying each service, we decided to use the “Function” version in our future iteration.                        </p>
                         <img className="full-width-img col-6" src="/images/BLI/Wireframe.png" />
                     </div>
+                </div>
 
+                <div className="section">
                     {/* ---- 4. Creating Propotype ---- */}
                     <p className="secondary-title">4. Creating Propotype</p>
                     <p className="section-subtitle blue-text">Login</p>
                     <img className="flow-img" src="/images/BLI/Prototype_Login.png"/>
                     <p className="section-subtitle blue-text">Applying for a service</p>
                     <img className="full-width-img" src="/images/BLI/Prototype_Apply.png"/>
+                </div>
 
+                <div className="section">
                     {/* ---- 5. Usability Testing ---- */}
                     <p className="secondary-title">5. Usability Testing</p>
                     <p>
