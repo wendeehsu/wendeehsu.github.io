@@ -32,8 +32,56 @@ class ARLens extends Component {
                 <div className="section">
                     <h5>TECHNIQUE</h5>
                     <p>
+                        iOS app <br/>
                         Programming language: Swift and Objective C++
                     </p>
+                </div>
+
+                <div className="section">
+                    <h5>TIMEFRAME</h5>
+                    <p>
+                        10 months
+                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>BACKGROUND</h5>
+                    <p>
+                        Formosa Optical, the owner of this project, planned to create an AR color contact lens wearing app to assist customers to choose a lens. The app is designed for iPad6 because each of their stores has at least one iPad6. They finished designing the entire app, including the user interface of each page and the user flow. With a limited budget, they contacted us, a group of three students, to develop this app.
+                    </p>
+                    <div className="row justify-content-center">
+                        <div className="col">
+                            <img className="restriction-icon" src="/images/AR/Background1.png" />
+                            <div>
+                                <p className="gray-text">
+                                    The owner has finished designing all the interfaces and user flows.
+                                </p>
+                                <p>
+                                    &#8594; They do not want us to modify their designs.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <img className="restriction-icon" src="/images/AR/Background2.png" />
+                            <div>
+                                <p className="gray-text">
+                                    The app is designed for iPad6 only because there is at least one iPad6 in each store.
+                                </p>
+                                <p>
+                                    &#8594; The app does not need to fit different resolutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <img className="restriction-icon" src="/images/AR/Background3.png" />
+                            <div>
+                                <p className="gray-text">The owner has a limited budget.</p>
+                                <p>
+                                    &#8594; We cannot buy well-known software development kits, so we need to implement most of the algorithm on our own.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="section">
@@ -54,8 +102,7 @@ class ARLens extends Component {
                         <div className="col">
                             <img className="restriction-icon" src="/images/AR/Restriction1.png" />
                             <p className="col text-center gray-text">
-                                The app will be installed on iPad 6, which does not have a true depth camera that natively captures face data.
-                            </p>
+                                iPad6 does not have a true depth camera that natively captures face data.                            </p>
                         </div>
                         <div className="col">
                             <img className="restriction-icon" src="/images/AR/Restriction2.png" />
@@ -82,7 +129,10 @@ class ARLens extends Component {
                         The len-wearing algorithm was developed on a Windows 10 laptop by my teammate Jenny Ho using C++, while I was in charge of reproducing it on iPad 6.
                     </p>
 
-                    {/* ---- 2. Develop iOS App ---- */}
+                    </div>
+
+                {/* ---- 2. Develop iOS App ---- */}
+                <div className="section">
                     <p className="secondary-title">2. Develop iOS App</p>
                     <p>
                         After we finished the main algorithm, Formosa Optical, the owner of this project, sent us the user interface design for each page. When developing the iOS app, we encountered several technical problems as listed below.

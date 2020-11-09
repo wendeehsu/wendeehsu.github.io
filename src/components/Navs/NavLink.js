@@ -15,7 +15,7 @@ class NavLink extends Component {
         return (
             <div className="row justify-content-end" style={sectionStyle}>
                 <h6>
-                    Visit <Link className="pink-text" style={linkStyle} to={this.props.pageUrl}>{this.props.project}</Link>
+                    Visit <Link className="pink-text" style={linkStyle} to={this.props.pageUrl}>{this.props.project} &#8594;</Link>
                 </h6>
             </div>
         )
