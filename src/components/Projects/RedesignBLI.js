@@ -47,17 +47,17 @@ class RedesignBLI extends Component {
                 <div className="section">
                     <h5>BACKGROUND</h5>
                     <p>
-                        The website of the Bureau of Labor Insurance provides a variety of services to more than millions of workers, including farmers, fishermen, and so on. Users are required to prepare a card reader and insert their Citizen Digital Certificate to log in to the website, which made it more challenging for first-time users. Besides, these people do not visit the website more than twice a year because their need for insurance-related issues does not happen frequently.
+                        We have a limited time to redesign the website of the Bureau of Labor Insurance, which provides a variety of services to more than millions of workers, including farmers, fishermen, and so on. Users are required to prepare a card reader and insert their Citizen Digital Certificate to log in to the website, which made it more challenging for first-time users. Besides, these people do not visit the website more than twice a year because their need for insurance-related issues does not happen frequently.
                     </p>
                     <div className="row justify-content-center">
                         <div className="col">
                             <img className="restriction-icon" src="/images/BLI/Background1.png" />
                             <div>
                                 <p className="gray-text">
-                                    The website provides a variety of services.
+                                    The redesign project has to be completed in 10 weeks.
                                 </p>
                                 <p>
-                                    &#8594; Each user’s goal differs from others. We need to focus on our selected target audience to narrow down the project scope.
+                                    &#8594; Although the website serves people from all walks, we need to select our target audience to narrow down the project scope.
                                 </p>
                             </div>
                         </div>
