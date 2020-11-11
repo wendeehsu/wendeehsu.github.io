@@ -144,7 +144,7 @@ class RedesignBLI extends Component {
                     <p className="secondary-title">3. Design Wireframe</p>
                     <p className="section-subtitle blue-text">Using different information architecture to design two versions of wireframe</p>
                     <p>
-                        Since the Bureau of Labor Insurance provides a wide variety of services, we made two versions of wireframe using different information architecture to categorize each service. The “Stage of Life” version divides services into “working, retired, disabled, unemployed, giving birth, dead”. As for the “Function” version, we simply labeled each service into “making inquiries, applying, paying, changing data, printing”.
+                        Since the Bureau of Labor Insurance provides a wide variety of services, we made two versions of wireframe using different information architecture to categorize each service. The <b>“Stage of Life”</b> version divides services into “working, retired, disabled, unemployed, giving birth, dead”. As for the <b>“Function”</b> version, we simply labeled each service into “making inquiries, applying, paying, changing data, printing”.
                     </p>
                     <img className="full-width-img" src="/images/BLI/IaCompare.png" />
                     <p className="section-subtitle blue-text">Usability Testing on Information Architecture</p>
@@ -153,7 +153,10 @@ class RedesignBLI extends Component {
                     </p>
                     <div className="row">
                         <p className="col-6">
-                            Surprisingly, users found it difficult to search for the service they want in the “Stage of Life” version. For example, there is a subsidy that can only be applied when one was unemployed but later got a new job in 3 months. In this case, some may categorize it as “unemployed”, while others think it should belong to “working”. Due to the lower degree of confusion raised in classifying each service, we decided to use the “Function” version in our future iteration.                        </p>
+                            Surprisingly, users found it difficult to search for the service they want in the “Stage of Life” version. For example, there is a subsidy that can only be applied when one was unemployed but later got a new job in 3 months. In this case, some may categorize it as “unemployed”, while others think it should belong to “working”. 
+                            <br/>
+                            &#8594; Due to the <b>lower degree of confusion</b> raised in classifying each service, we decided to use the <b>“Function”</b> version in our future iteration.                        
+                        </p>
                         <img className="full-width-img col-6" src="/images/BLI/Wireframe.png" />
                     </div>
                 </div>
