@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import MediumCard from "./MediumCard";
 import "../css/Medium.css";
+import { GApageView } from "../ga.js";
 
 class Medium extends Component {
+    componentDidMount() {
+        GApageView("Medium");
+    }
+
     render() {
         const post1 = new Post(
             "Build a Pix2Pix GAN With Python",

@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
 import NavLink from '../Navs/NavLink';
+import { GApageView } from "../../ga.js";
 
 class AIXray extends Component {
+    componentDidMount() {
+        GApageView("AI Xray");
+    }
+
     render() {
         return (
             <div>
