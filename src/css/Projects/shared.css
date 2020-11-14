@@ -13,6 +13,17 @@
 .full-width-section {
     width: 101%;
     padding: 1rem 2rem;
+    margin: 1rem 0rem;
+}
+
+.full-width-section > p {
+    margin-top: 1rem;
+}
+
+.full-width-title {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
 
 p {
