@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import ProjectCard from "./ProjectCard";
 import '../css/Work.css';
+import { GApageView } from "../ga.js";
 
 class Work extends Component {
+    componentDidMount() {
+        GApageView("Work");
+    }
+    
     render() {
         const project1 = new Project(
             "Redesign Website of Bureau of Labor Insurance",
