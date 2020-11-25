@@ -290,7 +290,8 @@ class RedesignBLI extends Component {
                         <img className="reflection-icon col" src="/images/BLI/Reflection2.png" />
                         <div className="col">
                             <p className="bold-text">
-                                2. It’s not easy to integrate users’ voice in  governmental websites                            </p>
+                                2. It’s not easy to integrate users’ voice in  governmental websites                            
+                            </p>
                             <p>
                                 To be frank, no matter how unfriendly the user experience is, people have no other choice but to keep using it when it comes to the governmental website. Hence, integrating users’ thoughts or demands in the website’s designing phase will not be considered as crucial. When we handed-in the redesign proposal to the Bureau of Labor Insurance, we tried to elaborate on why we made these changes and how these modifications can reduce the stress of the staff at the counter. Otherwise, the suggestions may not be seriously taken into discussion.                            
                             </p>
@@ -300,9 +301,10 @@ class RedesignBLI extends Component {
                         <img className="reflection-icon col" src="/images/BLI/Reflection3.png" />
                         <div className="col">
                             <p className="bold-text">
-                                3. Trusting each member’s profession is very beneficial                            </p>
+                                3. We should consider regulations and limitations to enhance the viability                            
+                            </p>
                             <p>
-                                On our team, we have people from research, design, and engineering backgrounds. As a result, there was always a person using his/her profession to lead the whole team in different stages. I realized that only when the rest of the people trust each leader’s expertise can the team achieve a better result. Every member can also contribute the most and even learn from each other under this kind of cooperation.                            
+                                In this project, we redesigned the information architecture, categorizing services based on their function after wireframe testing. However, we later realized that although this structure is preferred by most users, the guideline for public sector's websites writes that it is required to categorize services based on people's stage of life (Giving birth, working, retired, etc.) If we have more time, we will try to cooperate with the Bureau’s staff closer in the early stage to know about regulations and limitations, enhancing the viability of our final design.                            
                             </p>
                         </div>
                     </div>
