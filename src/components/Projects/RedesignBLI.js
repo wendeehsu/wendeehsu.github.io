@@ -34,6 +34,15 @@ class RedesignBLI extends Component {
                 </div>
 
                 <div className="section">
+                    <h5>MY TEAMMATES</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/ping-ju-huang-aa0b10174/" target="_blank">Ping-Ju Huang</a> - UX Researcher <br/>
+                        <a href="https://www.linkedin.com/in/jennifer-chueh-chen-l-218533195/" target="_blank">Chueh-Chen Lai</a> - UX Researcher, UI Designer <br/>
+                        <a href="https://medium.com/@as964119/about" target="_blank">Nuan-Ting Lin</a> - UX Researcher, UI Designer <br/>
+                    </p>
+                </div>
+
+                <div className="section">
                     <h5>METHOD & TOOL</h5>
                     <p>
                         Methods: User Research, Wireframe, Mockup, Prototype, Usability Testing

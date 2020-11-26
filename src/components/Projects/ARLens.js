@@ -35,6 +35,14 @@ class ARLens extends Component {
                 </div>
 
                 <div className="section">
+                    <h5>MY TEAMMATES</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/timmatt-lee/" target="_blank">Timmatt Lee</a> - Project Manager<br/>
+                        <a href="https://www.linkedin.com/in/%E5%AE%9C%E8%87%BB-%E4%BD%95-90a726199/" target="_blank">I-Chen Ho</a> - Computer Vision Algorithm Developer, Backend Engineer<br/>
+                    </p>
+                </div>
+
+                <div className="section">
                     <h5>TECHNIQUE</h5>
                     <p>
                         iOS app <br/>

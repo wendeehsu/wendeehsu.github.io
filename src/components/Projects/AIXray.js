@@ -29,9 +29,15 @@ class AIXray extends Component {
                 <div className="section">
                     <h5>MY ROLE</h5>
                     <p>
-                        Machine Learning Engineer
-                        <br/>
-                        Backend Engineer
+                        Machine Learning Engineer, Backend Engineer
+                    </p>
+                </div>
+
+                <div className="section">
+                    <h5>MY TEAMMATES</h5>
+                    <p>
+                        <a href="https://www.facebook.com/zern.r" target="_blank">Zern Rau</a> - Frontend Engineer, Image Labeler<br/>
+                        <a href="https://www.facebook.com/profile.php?id=100001377161319" target="_blank">Egg Lee</a> - Image Labeler<br/>
                     </p>
                 </div>
 
