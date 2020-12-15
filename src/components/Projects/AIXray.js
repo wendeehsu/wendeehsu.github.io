@@ -17,7 +17,7 @@ class AIXray extends Component {
                         <h5 className="pink-text">Dentall</h5>
                         <h4>AI Image Classification</h4>
                         <h5 className="gray-text">
-                            March 2020 - Octobor 2020
+                            March 2020 - October 2020
                         </h5>
                     </div>
                 </div>
