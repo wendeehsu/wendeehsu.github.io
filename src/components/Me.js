@@ -34,7 +34,7 @@ export default class Me extends Component {
                     <a data-tip="Email" href="mailto:wendeehsu@gmail.com" target="_blank">
                         <FontAwesomeIcon className="icon" icon={faEnvelope} />
                     </a>
-                    <a data-tip="Resume" href="https://drive.google.com/file/d/1gQOKPH_BXmRS7vrNm9i0yreycvjTocgV/view?usp=sharing" target="_blank">
+                    <a data-tip="Resume" href="https://drive.google.com/file/d/1Cc89jOZPWNRboSSlHzfcOKCxlZYjmrxz/view?usp=sharing" target="_blank">
                         <FontAwesomeIcon className="icon" icon={faFileInvoice} />
                     </a>
                 </div>
