@@ -169,7 +169,7 @@ class AIXray extends Component {
                                 2. Technology is powerful only when it is applied in the right place
                             </p>
                             <p>
-                              We tend to have the illusion that technology can achieve everything. Nevertheless, technology is only powerful when it is placed on the right topic, or it will be merely complicated math and algorithm. In this project, seeking a cutting point where AI can be helpful in the dental industry took us a lot of time. As dentists are well-trained, they can outperform AI with better accuracy in their profession. Fortunately, after several interviews with dentists, we finally found that AI may replace dentists' tedious work on sorting through images.                            
+                                At the beginning of this project, we spent many weeks exploring how AI can be applied in the dental industry. However, after conducting several interviews with dentists, we figured out none of the applications meet their needs. Fortunately, the idea of using AI to sort through images is also found during the conversation with dentists. As a result, I think we may start with <b>“What is the problem?” instead of “What solutions can we provide?”</b> in future works. It will not only save us time but also maximize the impact technology can bring.
                             </p>
                         </div>
                     </div>
