@@ -174,13 +174,13 @@ class ARLens extends Component {
                 <div className="section">
                     <h5>REFLECTION</h5>
                     <div className="row">
-                        <img className="reflection-icon col" src="/images/AR/Reflection1.png" />
+                        <img className="reflection-icon col" src="/images/AR/Reflection3.png" />
                         <div className="col">
                             <p className="bold-text">
-                                1. Doing a side project is the fastest way to pick up a new skill                            
+                                1. We should only start a project when the contract is completed
                             </p>
                             <p>
-                                This is my first time to develop a pure iOS app. In the past, I used to learn step by step from following tutorials on Codecademy to finishing little applications later. However, since the project has a strict deadline this time, I had no choice but to jump into development right away. Checking what feature needs to be done next, I searched for resources online that taught me how to implement it. I certainly encountered a lot of problems since I didn’t even know the basics in Swift and Objective C. Nevertheless, I quickly build up the knowledge in the process of troubleshooting.                            
+                                Having no experience in working for people outside the school, our team jumped into development before any contract was done. We later realized the owner kept demanding new functions and requirements during our cooperation. The suffering of project creeping was real, using up extra time and effort but not receiving any additional payments. From this experience, we found out how important a contract was as it will serve as protection under this situation.
                             </p>
                         </div>
                     </div>
@@ -188,20 +188,21 @@ class ARLens extends Component {
                         <img className="reflection-icon col" src="/images/AR/Reflection2.png" />
                         <div className="col">
                             <p className="bold-text">
-                                2. Don’t be afraid to show “I need help”                            </p>
-                            <p>
-                                After my team member finished the computer vision algorithm using C++, I was in charge of executing it on iOS along with all the rest of the frontend development. During that time, I had little knowledge of both computer vision and iOS development. As a result, I was aimless when the app was not working. It took me months struggling on my own but in vain. I later decided to ask my team members for help (and also posted questions on the developer’s forum.) Things became much easier when others provided their previous experience. With their assistance, I not only learned how computer vision worked but was also able to solve similar questions posted by other developers on the forum.
+                                2. Don’t be afraid to show “I need help”
                             </p>
-                            </div>
+                            <p>
+                                After my team member finished the computer vision algorithm using C++, I was in charge of reproducing it on iOS. Having little knowledge of computer vision and iOS development, I struggled for months but still in vain. After I finally decided to ask my team members for help and posted questions on the developer’s forum, issues were easily solved. I not only learned how computer vision worked but was also able to solve similar questions posted on the forum. I thus realize most people are willing to help, so I shouldn’t keep problems on my shoulders for such a long time. If I reached out for help earlier, our team could have saved months of development time.
+                            </p>
+                        </div>
                     </div>
                     <div className="row">
-                        <img className="reflection-icon col" src="/images/AR/Reflection3.png" />
+                    <img className="reflection-icon col" src="/images/AR/Reflection1.png" />
                         <div className="col">
                             <p className="bold-text">
-                                3. We should only start a project when the contract is completed
+                                3. It is important to ask for resources
                             </p>
                             <p>
-                                Having no experience in working for people outside the school, our team jumped into development before any contract was done. We later realized the owner kept demanding new functions and requirements during our cooperation. The suffering of project creeping was real, using up extra time and effort but not receiving any additional payments. From this experience, we found out how important a contract was as it will serve as protection under this situation.
+                                Since I do not have an iPad6, the device that will run our final product, I borrowed an iPad mini and tested my code on it. However, I later realized the capacity and screen resolution are different between these two devices. Some technical problems only showed up in iPad6, leaving me clueless to reproduce them on iPad mini. After our team finally asked Formosa Optical to lend us an iPad6, I spent extra weeks later on troubleshooting. In this experience, I learned that after a project starts, the first step should be listing and asking for the resources we need.
                             </p>
                         </div>
                     </div>
