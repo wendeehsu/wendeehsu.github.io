@@ -288,10 +288,10 @@ class RedesignBLI extends Component {
                         <img className="reflection-icon col" src="/images/BLI/Reflection1.png" />
                         <div className="col">
                             <p className="bold-text">
-                                1. It is important to let testers into the scenario
+                                1. Testing scenario may affect our result
                             </p>
                             <p>
-                                When conducting wireframe testing, we found out that some users were heavily aware that they were doing a test. They told us “I finished this question.” instead of “I finished the application service.” Not being able to put themselves in the scenario can result in behaving differently in comparison with real-life scenarios. As a result, in our later testings, we tried to select users that had done the same service in our test case before. We also added some lines of descriptions to help testers get into the scenario.
+                                As mentioned above, we figured out users prefer the functional version of categorizing service during wireframe’s usability testing. However, reflecting on this decision, our team think the testing scenario may affect users’ preference. Some users were heavily aware that they were doing a test, as they told us “I finished this question.” instead of “I finished the application service.” Not being able to put themselves in the scenario can result in behaving differently in comparison with real-life scenarios. In the future, besides acknowledging each tool has its limitation, we may also add more descriptions to help testers get into the scenario.                            
                             </p>
                         </div>
                     </div>
@@ -299,10 +299,10 @@ class RedesignBLI extends Component {
                         <img className="reflection-icon col" src="/images/BLI/Reflection2.png" />
                         <div className="col">
                             <p className="bold-text">
-                                2. It’s not easy to integrate users’ voice in  governmental websites                            
+                                2. It is important to point out the value of UX                     
                             </p>
                             <p>
-                                To be frank, no matter how unfriendly the user experience is, people have no other choice but to keep using it when it comes to the governmental website. Hence, integrating users’ thoughts or demands in the website’s designing phase will not be considered as crucial. When we handed-in the redesign proposal to the Bureau of Labor Insurance, we tried to elaborate on why we made these changes and how these modifications can reduce the stress of the staff at the counter. Otherwise, the suggestions may not be seriously taken into discussion.                            
+                                To be frank, no matter how unfriendly the user experience is, people have no other choice but to keep using governmental websites. Hence, integrating users’ thoughts or demands in the website’s designing phase will not be considered crucial. Therefore, it will be better to elaborate on why we made these design changes and how these modifications can reduce the stress of the staff at the counter when cooperating with public sectors next time. Otherwise, the suggestions may not be seriously taken into discussion.
                             </p>
                         </div>
                     </div>
