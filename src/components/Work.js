@@ -9,26 +9,34 @@ class Work extends Component {
     }
     
     render() {
-        const project1 = new Project(
+        const pdogsProject = new Project(
+            "Redesign of Programming Design Online Grading System",
+            "UX Researcher, Frontend Engineer",
+            "2021 NTUIM",
+            "/images/project4-cover.png",
+            "/Work/PDOGS"
+        );
+        
+        const bliProject = new Project(
             "Redesign Website of Bureau of Labor Insurance",
             "UX Researcher, UI Designer",
-            "PDIS",
+            "2020 PDIS",
             "/images/project1-cover.png",
             "/Work/RedesignBLI"
         );
 
-        const project2 = new Project(
+        const arProject = new Project(
             "AR Contact Lens Wearing App",
             "Frontend Engineer",
-            "Side-Project",
+            "2019 Side-Project",
             "/images/project2-cover.png",
             "/Work/ARLens"
         );
 
-        const project3 = new Project(
+        const dentallProject = new Project(
             "AI Image Classification",
             "Machine Learning, Backend Engineer",
-            "Dentall",
+            "2019 Dentall",
             "/images/project3-cover.png",
             "/Work/AIXray"
         );
@@ -38,9 +46,10 @@ class Work extends Component {
                 <h3 className="title">
                     My Work
                 </h3>
-                <ProjectCard project={project1}/>
-                <ProjectCard project={project2}/>
-                <ProjectCard project={project3}/>
+                <ProjectCard project={pdogsProject}/>
+                <ProjectCard project={bliProject}/>
+                <ProjectCard project={arProject}/>
+                <ProjectCard project={dentallProject}/>
             </div>
         )
     }
