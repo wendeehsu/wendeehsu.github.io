@@ -175,11 +175,19 @@ class PDOGS extends Component {
                 <img className="full-width-img" src="/images/Pdogs/wireframe_v3.png" />
                 <p>
                     Later in 5 usability testings, I figured out that some people found the switch handy, while others did not know how to use it or even neglected it. From their feedback, I realized that TA (Class Manager) and students (Class Normal, Class Guest) are under the same scope (Class), so the changes in the user interface are straightforward for testers. However, the system manager is defined under the scope “System”. Actions a system manager can do are completely different from those roles in class scope, so it is not suitable to bundle this role with two others.
-                    <br/>
+                    <br/><br/>
                     After brainstorming with the team, we decided to create a special account for the system manager. At the moment a user logs in, the authentication server will determine whether this user is a system manager, system normal, or system guest. The website will then guide users to pages corresponding to their roles under system scope.
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/Identity_ui.png" />
                 <p className='gray-text center-text'>Flow chart to explain how to guide roles under system scope</p>
+            </div>
+
+            <div className='section'>
+                <p className="secondary-title">3. Creating Propotype</p>
+                <p className="section-subtitle">System Manager - Add a new class</p>
+                <img className="full-width-img" src="/images/Pdogs/SM_Prototype.png" />
+                <p className="section-subtitle">Class Normal - Submiting a coding problem</p>
+                <img className="full-width-img" src="/images/Pdogs/CN_Prototype.png" />
             </div>
         </div>
         )
