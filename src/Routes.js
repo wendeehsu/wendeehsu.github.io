@@ -6,6 +6,7 @@ import Me from "./components/Me";
 import RedesignBLI from "./components/Projects/RedesignBLI";
 import ARLens from "./components/Projects/ARLens";
 import AIXray from "./components/Projects/AIXray";
+import PDOGS from "./components/Projects/PDOGS";
 
 function Routes() {
     const location = useLocation();
@@ -18,6 +19,7 @@ function Routes() {
         <Switch>
             <Route exact path="/" component={Work}/>
             <Route exact path="/Work" component={Work} />
+            <Route path="/Work/PDOGS" component={PDOGS} />
             <Route path="/Work/RedesignBLI" component={RedesignBLI} />
             <Route path="/Work/ARLens" component={ARLens} />
             <Route path="/Work/AIXray" component={AIXray} />

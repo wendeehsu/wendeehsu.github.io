@@ -8,7 +8,7 @@ class Footer extends Component {
         };
         return (
             <div className="center-text gray-text" style={footerStyle}>
-                © Wendee Hsu, All rights reserved.
+                © 2022 Wendee Hsu | All rights reserved.
                 <img className="navbar-icon" src="/icon.png" />
             </div>
         )

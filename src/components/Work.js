@@ -10,7 +10,7 @@ class Work extends Component {
     
     render() {
         const pdogsProject = new Project(
-            "Redesign of Programming Design Online Grading System",
+            "Programming Design Online Grading System",
             "UX Researcher, Frontend Engineer",
             "2021 NTUIM",
             "/images/project4-cover.png",
