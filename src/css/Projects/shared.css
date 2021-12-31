@@ -74,6 +74,14 @@ p {
     padding: 0.7em 1em;
 }
 
+.background-green {
+    background-color: #EBF6F2;
+}
+
+.background-pink {
+    background-color: #FFF0F0;
+}
+
 .reflection-icon {
     height: auto;
     margin-bottom: auto;

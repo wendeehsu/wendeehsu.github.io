@@ -138,7 +138,7 @@ class RedesignBLI extends Component {
                 <div className="section">
                     {/* ---- 2. Define Problem ---- */}
                     <p className="secondary-title">2. Define Problem</p>
-                    <div className="div-box">
+                    <div className="div-box background-green">
                         <p className="vertical-center">
                             How Might We provide adequate assistance when users encounter difficulties in different stages?
                         </p>
