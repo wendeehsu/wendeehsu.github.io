@@ -209,7 +209,7 @@ class PDOGS extends Component {
                     </p>
                 </div>
                 <div className="full-width-inner-section">
-                    <img className="label-img" src="/images/Pdogs/PinkNewLabel.png" />
+                    <img className="label-img" src="/images/Pdogs/pinkNewLabel.png" />
                     <img className="full-width-img" src="/images/Pdogs/NewFeature1.png" />
                     <p>
                         By adding a sidebar, we can better categorize items and create a clearer information architecture.
@@ -226,7 +226,7 @@ class PDOGS extends Component {
                     </p>
                 </div>
                 <div className="full-width-inner-section">
-                    <img className="label-img" src="/images/Pdogs/PinkNewLabel.png" />
+                    <img className="label-img" src="/images/Pdogs/pinkNewLabel.png" />
                     <img className="full-width-img" src="/images/Pdogs/NewFeature1.png" />
                     <p>
                         Enabling different roles in each class, the redesigned version gives users a more flexible role setting and better protects data security.
@@ -239,7 +239,7 @@ class PDOGS extends Component {
                     <p>
                         There is no user interface for the system manager in the legacy system. As a result, system managers always need to use ssh to connect with the server to change settings. This method will make the server vulnerable.
                     </p>
-                    <img className="label-img" src="/images/Pdogs/PinkNewLabel.png" />
+                    <img className="label-img" src="/images/Pdogs/pinkNewLabel.png" />
                     <img className="full-width-img" src="/images/Pdogs/NewFeature3.png" />
                     <p>
                         We designed pages for the system manager to manage courses, accounts, and system-wise configurations, providing a safer and easier way to change settings.
