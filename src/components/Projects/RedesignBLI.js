@@ -255,7 +255,7 @@ class RedesignBLI extends Component {
 
                     {/* ---- 4. Application Process ---- */}
                     <p className="secondary-title">4. Application Process</p>
-                    <div className="full-width-section">
+                    <div className="full-width-inner-section">
                         <img className="label-img" src="/images/BLI/NewLabel.png" />
                         <img className="full-width-img" src="/images/BLI/NewApplicationProcess.png" />
                         <p>

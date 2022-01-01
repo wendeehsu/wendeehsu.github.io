@@ -127,7 +127,7 @@ class PDOGS extends Component {
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/Online_Interview.png" />
                 <p>
-                    Users’ may have different roles in different classes. However, through observation, we realized that the old system fails to separate action restricted to certain classes and roles. This will hamper the site’s security and stability, putting the database and server in danger.
+                    Users' may have different roles in different classes. However, through observation, we realized that the old system fails to separate action restricted to certain classes and roles. This will hamper the site's security and stability, putting the database and server in danger.
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/oldRoles.png" />
                 <p className="gray-text center-text">
@@ -143,7 +143,7 @@ class PDOGS extends Component {
                 </div>
                 <p className="section-subtitle">User Need</p>
                 <p>
-                    Users consider the system to be an online classroom. The functions they have in each class should be clear in the way same as the real world, that they don’t even need to specify their role when walking into a classroom.
+                    Users consider the system to be an online classroom. The functions they have in each class should be clear in the way same as the real world, that they don't even need to specify their role when walking into a classroom.
                 </p>
                 <p className="section-subtitle">Limitation</p>
                 <p>
@@ -156,7 +156,7 @@ class PDOGS extends Component {
                 <p className="secondary-title">2. Design Wireframe</p>
                 <p className="section-subtitle pink-text">Define roles under scopes</p>
                 <p>
-                    After categorizing each user’s demand, We sorted out actions into 3 clearly defined scopes: System, Class, and Team. Under each scope, the user can be a manager, a normal user, or a guest. Applying this rule, users can enjoy a more flexible role setting. (e.g. Alice can be a class manager in Programming Design, a class normal in Data Structure, and a team manager in Data Structure’s final project.)
+                    After categorizing each user's demand, We sorted out actions into 3 clearly defined scopes: System, Class, and Team. Under each scope, the user can be a manager, a normal user, or a guest. Applying this rule, users can enjoy a more flexible role setting. (e.g. Alice can be a class manager in Programming Design, a class normal in Data Structure, and a team manager in Data Structure's final project.)
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/Role.png" />
                 <p className="section-subtitle pink-text">Create 2 wireframes to verify whether scope-role separation is needed</p>
@@ -166,7 +166,7 @@ class PDOGS extends Component {
                 <img className="full-width-img" src="/images/Pdogs/wireframe_v1v2.png" />
                 <p className="section-subtitle pink-text">Usability Testing on scope-role separation</p>
                 <p>
-                    I invited 1 system manager, 2 teaching assistants, and 3 students for wireframe v1 and v2’s usability testing. After completing assigned tasks like adding a new class in a course and adding a new homework in a class, 5 of them all preferred the scope-role separation version. “I have no clue about where the Add button in the menu bar will bring me. I don’t even know what will happen to the current page I am viewing after I click ‘Add’” a teaching assistant shared.
+                    I invited 1 system manager, 2 teaching assistants, and 3 students for wireframe v1 and v2's usability testing. After completing assigned tasks like adding a new class in a course and adding a new homework in a class, 5 of them all preferred the scope-role separation version. “I have no clue about where the Add button in the menu bar will bring me. I don't even know what will happen to the current page I am viewing after I click ‘Add'” a teaching assistant shared.
                 </p>
                 <p className="section-subtitle pink-text">Iterating wireframes to optimize scope-role separation experience</p>
                 <p>
@@ -184,23 +184,23 @@ class PDOGS extends Component {
 
             <div className='section'>
                 <p className="secondary-title">3. Creating Propotype</p>
-                <p className="section-subtitle">System Manager - Add a new class</p>
+                <p className="section-subtitle pink-text">System Manager - Add a new class</p>
                 <img className="full-width-img" src="/images/Pdogs/SM_Prototype.png" />
-                <p className="section-subtitle">Class Normal - Submiting a coding problem</p>
+                <p className="section-subtitle pink-text">Class Normal - Submiting a coding problem</p>
                 <img className="full-width-img" src="/images/Pdogs/CN_Prototype.png" />
             </div>
 
             <div className='section'>
                 <p className="secondary-title">4. Usability Testing</p>
                 <p>
-                    After finishing wireframe/prototype v4, I invited our UI designers to conduct 12 one-to-one online usability testings. In each testing, I assigned tasks based on testers’ experience to gain constructive feedback. The final wireframe was also discussed with the engineering team to ensure feasibility.    
+                    After finishing wireframe/prototype v4, I invited our UI designers to conduct 12 one-to-one online usability testings. In each testing, I assigned tasks based on testers' experience to gain constructive feedback. The final wireframe was also discussed with the engineering team to ensure feasibility.    
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/Usability_testing.png" />
             </div>
 
             <div className='section'>
                 <p className="secondary-title">5. Mockup</p>
-                <p className="secondary-title">Restructure System Normal Layout</p>
+                <p className="secondary-title pink-text">Restructure System Normal Layout</p>
                 <div className="full-width-inner-section gray-bg">
                     <img className="label-img" src="/images/BLI/OldLabel.png" />
                     <img className="full-width-img" src="/images/Pdogs/OldFeature1.png" />
@@ -217,7 +217,7 @@ class PDOGS extends Component {
                 </div>
                 <br />
                 
-                <p className="secondary-title">Restrict functions for different roles</p>
+                <p className="secondary-title pink-text">Restrict functions for different roles</p>
                 <div className="full-width-inner-section gray-bg">
                     <img className="label-img" src="/images/BLI/OldLabel.png" />
                     <img className="full-width-img" src="/images/Pdogs/OldFeature2.png" />
@@ -234,11 +234,11 @@ class PDOGS extends Component {
                 </div>
                 <br />
 
-                <p className="secondary-title">Create Interface for System Manager</p>
+                <p className="secondary-title pink-text">Create Interface for System Manager</p>
+                <p>
+                    There is no user interface for the system manager in the legacy system. As a result, system managers always need to use ssh to connect with the server to change settings. This method will make the server vulnerable.
+                </p>
                 <div className="full-width-inner-section">
-                    <p>
-                        There is no user interface for the system manager in the legacy system. As a result, system managers always need to use ssh to connect with the server to change settings. This method will make the server vulnerable.
-                    </p>
                     <img className="label-img" src="/images/Pdogs/pinkNewLabel.png" />
                     <img className="full-width-img" src="/images/Pdogs/NewFeature3.png" />
                     <p>
@@ -271,7 +271,7 @@ class PDOGS extends Component {
             <div className='section'>
                 <h5>RESULT</h5>
                 <p>
-                    After launch, many users feedbacked that the new system is easier to use. A new user told us that, “It’s really straightforward.” “This semester, there are far fewer emails asking me where is xxx in the system, what does xxx mean, etc.” said a teaching assistant. “It’s so convenient that I no longer need to ssh to our server!”
+                    After launch, many users feedbacked that the new system is easier to use. A new user told us that, “It's really straightforward.” “This semester, there are far fewer emails asking me where is xxx in the system, what does xxx mean, etc.” said a teaching assistant. “It's so convenient that I no longer need to ssh to our server!”
                 </p>
             </div>
         
@@ -295,7 +295,7 @@ class PDOGS extends Component {
                             2. Co-creating can bring better solutions
                         </p>
                         <p>
-                            As PDOGS is a system initially built to serve students in the department of information management, the whole development team was its user before. Hence, when my design team provided a new design, many people will give feedback. In each design team’s internal meeting, we will then discuss how to modify the mockup. Nevertheless, as the discussion is not open, those whose ideas are not accepted did not feel well. I learned that maybe a co-creating workshop can be a better approach. If everyone can share ideas and prioritize things together, there will be fewer misunderstandings and people will feel respected.
+                            As PDOGS is a system initially built to serve students in the department of information management, the whole development team was its user before. Hence, when my design team provided a new design, many people will give feedback. In each design team's internal meeting, we will then discuss how to modify the mockup. Nevertheless, as the discussion is not open, those whose ideas are not accepted did not feel well. I learned that maybe a co-creating workshop can be a better approach. If everyone can share ideas and prioritize things together, there will be fewer misunderstandings and people will feel respected.
                         </p>
                     </div>
                 </div>
