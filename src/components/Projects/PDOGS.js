@@ -311,6 +311,7 @@ class PDOGS extends Component {
                     </div>
                 </div>
             </div>
+            <NavLink pageUrl="/Work/RedesignBLI" project="Redesign Website of Bureau of Labor Insurance" />
         </div>
         )
     }

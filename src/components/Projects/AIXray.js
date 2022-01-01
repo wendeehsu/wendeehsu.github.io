@@ -184,7 +184,7 @@ class AIXray extends Component {
                         </div>
                     </div>
                 </div>
-                <NavLink pageUrl="/Work/RedesignBLI" project="Redesign Website of Bureau of Labor Insurance" />
+                <NavLink pageUrl="/Work/PDOGS" project="Programming Design Online Grading System" />
             </div>
         )
     }

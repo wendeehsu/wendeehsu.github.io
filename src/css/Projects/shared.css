@@ -17,7 +17,7 @@
 }
 
 .full-width-inner-section {
-    width: 100vw;
+    width: 101vw;
     position: relative;
     left: calc(-50vw + 50%);
     padding-left: 22%;
