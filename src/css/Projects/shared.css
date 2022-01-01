@@ -16,6 +16,16 @@
     margin: 1rem 0rem;
 }
 
+.full-width-inner-section {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .full-width-section > p {
     margin-top: 1rem;
 }

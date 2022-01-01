@@ -5,7 +5,7 @@ import { GApageView } from "../../ga.js";
 
 class PDOGS extends Component {
     componentDidMount() {
-        GApageView("BLI");
+        GApageView("PDOGS");
     }
 
     render() {
@@ -168,7 +168,7 @@ class PDOGS extends Component {
                 <p>
                     I invited 1 system manager, 2 teaching assistants, and 3 students for wireframe v1 and v2’s usability testing. After completing assigned tasks like adding a new class in a course and adding a new homework in a class, 5 of them all preferred the scope-role separation version. “I have no clue about where the Add button in the menu bar will bring me. I don’t even know what will happen to the current page I am viewing after I click ‘Add’” a teaching assistant shared.
                 </p>
-                <p className="section-subtitle pink-text">Iterating wireframes to optimize score-role separation experience</p>
+                <p className="section-subtitle pink-text">Iterating wireframes to optimize scope-role separation experience</p>
                 <p>
                     In wireframe v3, I was experimenting on enhancing the user experience when switching among different roles. A teaching assistant from Programming Design Class once mentioned, “After I created a new assignment, I would like to know how it looks like for students.” I thus added a view mode switch to make identity change more convenient.
                 </p>
@@ -188,6 +188,128 @@ class PDOGS extends Component {
                 <img className="full-width-img" src="/images/Pdogs/SM_Prototype.png" />
                 <p className="section-subtitle">Class Normal - Submiting a coding problem</p>
                 <img className="full-width-img" src="/images/Pdogs/CN_Prototype.png" />
+            </div>
+
+            <div className='section'>
+                <p className="secondary-title">4. Usability Testing</p>
+                <p>
+                    After finishing wireframe/prototype v4, I invited our UI designers to conduct 12 one-to-one online usability testings. In each testing, I assigned tasks based on testers’ experience to gain constructive feedback. The final wireframe was also discussed with the engineering team to ensure feasibility.    
+                </p>
+                <img className="full-width-img" src="/images/Pdogs/Usability_testing.png" />
+            </div>
+
+            <div className='section'>
+                <p className="secondary-title">5. Mockup</p>
+                <p className="secondary-title">Restructure System Normal Layout</p>
+                <div className="full-width-inner-section gray-bg">
+                    <img className="label-img" src="/images/BLI/OldLabel.png" />
+                    <img className="full-width-img" src="/images/Pdogs/OldFeature1.png" />
+                    <p>
+                        Menubar lacks categorization. Items that belong to a class, a contest, or personal records are scattered in different places.
+                    </p>
+                </div>
+                <div className="full-width-inner-section">
+                    <img className="label-img" src="/images/Pdogs/PinkNewLabel.png" />
+                    <img className="full-width-img" src="/images/Pdogs/NewFeature1.png" />
+                    <p>
+                        By adding a sidebar, we can better categorize items and create a clearer information architecture.
+                    </p>
+                </div>
+                <br />
+                
+                <p className="secondary-title">Restrict functions for different roles</p>
+                <div className="full-width-inner-section gray-bg">
+                    <img className="label-img" src="/images/BLI/OldLabel.png" />
+                    <img className="full-width-img" src="/images/Pdogs/OldFeature2.png" />
+                    <p>
+                        In the old system, there are only 2 roles: admin and normal users. As a result, a teaching assistant (which is role “Admin” defined in the old system) in Class A can modify assignments for Class B.
+                    </p>
+                </div>
+                <div className="full-width-inner-section">
+                    <img className="label-img" src="/images/Pdogs/PinkNewLabel.png" />
+                    <img className="full-width-img" src="/images/Pdogs/NewFeature1.png" />
+                    <p>
+                        Enabling different roles in each class, the redesigned version gives users a more flexible role setting and better protects data security.
+                    </p>
+                </div>
+                <br />
+
+                <p className="secondary-title">Create Interface for System Manager</p>
+                <div className="full-width-inner-section">
+                    <p>
+                        There is no user interface for the system manager in the legacy system. As a result, system managers always need to use ssh to connect with the server to change settings. This method will make the server vulnerable.
+                    </p>
+                    <img className="label-img" src="/images/Pdogs/PinkNewLabel.png" />
+                    <img className="full-width-img" src="/images/Pdogs/NewFeature3.png" />
+                    <p>
+                        We designed pages for the system manager to manage courses, accounts, and system-wise configurations, providing a safer and easier way to change settings.
+                    </p>
+                </div>
+            </div>
+
+            <div className='section'>
+                <h5>IMPLEMENTATION PROCESS</h5>
+                <p>
+                    As we need to finish the new system in 7 sprints (14 weeks), leaders of each subteam created a project timeline and control progresses through weekly meetings. As a design lead, my team is required to be one sprint ahead of all others, while other leaders can use an extra sprint to train their members with coding skills.
+                </p>
+                <img className="full-width-img" src="/images/Pdogs/Timeline.png" />
+                <br/>
+                <br/>
+                <p className="secondary-title">6. Coding</p>
+                <p>
+                    Working in an 18-people-team,  I joined the team to turn mockups into a real website using React.js. Each function, mockup, bug are recorded in gitlab as an issue. Team leaders will later add labels, set milestones, then assign them to members. Every merge request will undergo the code review process.
+                </p>
+                <img className="full-width-img" src="/images/Pdogs/gitlab.png" />
+
+                <p className="secondary-title">7. Quality Assurance</p>
+                <p>
+                    For quality assurance, I wrote 127 test cases with detailed steps to follow. We arranged 3 exhaustive QA tests before the system was officially launched.
+                </p>
+                <img className="full-width-img" src="/images/Pdogs/qa.png" />
+            </div>
+
+            <div className='section'>
+                <h5>RESULT</h5>
+                <p>
+                    After launch, many users feedbacked that the new system is easier to use. A new user told us that, “It’s really straightforward.” “This semester, there are far fewer emails asking me where is xxx in the system, what does xxx mean, etc.” said a teaching assistant. “It’s so convenient that I no longer need to ssh to our server!”
+                </p>
+            </div>
+        
+            <div className='section'>
+                <h5>REFLECTION</h5>
+                <div className="row">
+                    <img className="reflection-icon col" src="/images/Pdogs/Reflection1.png" />
+                    <div className="col">
+                        <p className="bold-text">
+                            1. Usability testing should also be done on mockups
+                        </p>
+                        <p>
+                            With limited time, whenever UI designers finished the mockup, we only discussed feasibility with the engineering team without any usability testing. I thought those testings on four versions of wireframes should cover most feedbacks. However, in this project, I was surprised to find out people do not like the color (Mockup version 1 uses black, gray, and blue). “When struggling on coding assignments, the cold color will make me feel even more frustrated.” We ended up spending an extra three weeks to change the CI along with the frontend team, which could be saved if we also conduct testings on mockups.
+                        </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <img className="reflection-icon col" src="/images/Pdogs/Reflection2.png" />
+                    <div className="col">
+                        <p className="bold-text">
+                            2. Co-creating can bring better solutions
+                        </p>
+                        <p>
+                            As PDOGS is a system initially built to serve students in the department of information management, the whole development team was its user before. Hence, when my design team provided a new design, many people will give feedback. In each design team’s internal meeting, we will then discuss how to modify the mockup. Nevertheless, as the discussion is not open, those whose ideas are not accepted did not feel well. I learned that maybe a co-creating workshop can be a better approach. If everyone can share ideas and prioritize things together, there will be fewer misunderstandings and people will feel respected.
+                        </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <img className="reflection-icon col" src="/images/Pdogs/Reflection3.png" />
+                    <div className="col">
+                        <p className="bold-text">
+                            3. Every stakeholder's needs should be considered
+                        </p>
+                        <p>
+                            In our user study, I only interviewed system managers, teaching assistants, and students since they are the main users. One week before the launch, our project manager emergently arranged a meeting on creating a mobile version for our professor. As the professor is the one and only supporter of this project, although he seldom uses the system, we should still put his demand with great priority. This experience showed me that a complete stakeholder map is essential to all projects.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         )
