@@ -198,80 +198,72 @@ class RedesignBLI extends Component {
             
                 <div className="section">
                     <h5>FINAL DESIGN</h5>
-                </div>
 
-                {/* ---- 1. Login ---- */}
-                <p className="full-width-title">1. Login</p>
-                <div className="full-width-section gray-bg">
-                    <img className="label-img" src="/images/BLI/OldLabel.png" />
-                    <div className="center-context">
+                    {/* ---- 1. Login ---- */}
+                    <p className="secondary-title">1. Login</p>
+                    <div className="full-width-inner-section gray-bg">
+                        <img className="label-img" src="/images/BLI/OldLabel.png" />
                         <img className="full-width-img" src="/images/BLI/OldLogin.png" />
+                        <p>
+                            Users will not know whether their login equipment is successfully detected before pressing the login button.
+                        </p>
                     </div>
-                </div>
-                <div className="full-width-section">
-                    <img className="label-img" src="/images/BLI/NewLabel.png" />
-                    <img className="full-width-img" src="/images/BLI/NewLogin.png" />
-                    <p>
-                        Since the Bureau of Labor Insurance is going to support different ways to log in, we enable users to choose a suitable option based on the login equipment they have. Besides, the filling fields are disabled before the website successfully detected all the required login equipment. This will reduce users’ time wasted on filling in the fields again and again.
-                    </p>
-                </div>
-                <br />
+                    <div className="full-width-inner-section">
+                        <img className="label-img" src="/images/BLI/NewLabel.png" />
+                        <img className="full-width-img" src="/images/BLI/NewLogin.png" />
+                        <p>
+                            Since the Bureau of Labor Insurance is going to support different ways to log in, we enable users to choose a suitable option based on the login equipment they have. Besides, the filling fields are disabled before the website successfully detected all the required login equipment. This will reduce users’ time wasted on filling in the fields again and again.
+                        </p>
+                    </div>
+                    <br />
 
-                {/* ---- 2. Inquiry Main Page ---- */}
-                <p className="full-width-title">2. Inquiry Main Page</p>
-                <div className="full-width-section gray-bg">
-                    <img className="label-img" src="/images/BLI/OldLabel.png" />
-                    <br/>
-                    <div className="center-context">
+                    {/* ---- 2. Inquiry Main Page ---- */}
+                    <p className="secondary-title">2. Inquiry Main Page</p>
+                    <div className="full-width-inner-section gray-bg">
+                        <img className="label-img" src="/images/BLI/OldLabel.png" />
                         <img className="full-width-img" src="/images/BLI/OldInquiry.png" />
                         <p>
                             The dropdown list is shown when hovering, which is not friendly for the website’s elder users since they are used to clicking buttons. Besides, the nested display and small service titles add to the difficulty when searching for a service. 
                         </p>
                     </div>
-                </div>
-                <div className="full-width-section">
-                    <img className="label-img" src="/images/BLI/NewLabel.png" />
-                    <div className="center-context">
+                    <div className="full-width-inner-section">
+                        <img className="label-img" src="/images/BLI/NewLabel.png" />
                         <img className="full-width-img" src="/images/BLI/NewInquiry.png" />
                         <p>
                             To shorten user’s time spend searching for a service, we use a side menu with cards showing each service in the main space.                    
                         </p>
                     </div>
-                </div>
-                <br />
+                    <br />
 
-                {/* ---- 3. Qualification Check ---- */}
-                <p className="full-width-title">3. Qualification Check</p>
-                <div className="full-width-section gray-bg">
-                    <img className="label-img" src="/images/BLI/OldLabel.png" />
-                    <div className="center-context">
+                    {/* ---- 3. Qualification Check ---- */}
+                    <p className="secondary-title">3. Qualification Check</p>
+                    <div className="full-width-inner-section gray-bg">
+                        <img className="label-img" src="/images/BLI/OldLabel.png" />
                         <img className="full-width-img" src="/images/BLI/OldQualification.png" />
                         <p>
                             On the current website, the agreement contains many important details like rules about qualification. However, most users will not read the content. They may end up finishing the whole application process but later found out they were not qualified.                        
                         </p>
                     </div>
-                </div>
-                <div className="full-width-section">
-                    <img className="label-img" src="/images/BLI/NewLabel.png" />
-                    <img className="full-width-img" src="/images/BLI/NewQualification.png" />
-                    <p>
-                        As users may not be sure of whether they are qualified to apply for a service, we added a qualification check helper before each application.                    
-                    </p>
-                </div>
-                <br />
+                    <div className="full-width-inner-section">
+                        <img className="label-img" src="/images/BLI/NewLabel.png" />
+                        <img className="full-width-img" src="/images/BLI/NewQualification.png" />
+                        <p>
+                            As users may not be sure of whether they are qualified to apply for a service, we added a qualification check helper before each application.                    
+                        </p>
+                    </div>
+                    <br />
 
-                {/* ---- 4. Application Process ---- */}
-                <p className="full-width-title">4. Application Process</p>
-                <div className="full-width-section">
-                    <img className="label-img" src="/images/BLI/NewLabel.png" />
-                    <div className="center-context">
+                    {/* ---- 4. Application Process ---- */}
+                    <p className="secondary-title">4. Application Process</p>
+                    <div className="full-width-section">
+                        <img className="label-img" src="/images/BLI/NewLabel.png" />
                         <img className="full-width-img" src="/images/BLI/NewApplicationProcess.png" />
                         <p>
                             On the current website, users have no clues about the progress after applying for a service. They will only receive an official letter if their application was declined. As users want to know at which step their application is, we designed a new page to disclose the dates about when the status of the application has been changed.                    
                         </p>
                     </div>
+                    <br />
                 </div>
-                <br />
 
                 <div className="section">
                     <h5>RESULT</h5>
