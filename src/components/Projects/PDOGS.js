@@ -173,6 +173,10 @@ class PDOGS extends Component {
                     In wireframe v3, I was experimenting on enhancing the user experience when switching among different roles. A teaching assistant from Programming Design Class once mentioned, “After I created a new assignment, I would like to know how it looks like for students.” I thus added a view mode switch to make identity change more convenient.
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/wireframe_v3.png" />
+                <p className='gray-text center-text'>
+                    v3 (add identity switch on the top right corner)
+                </p>
+
                 <p>
                     Later in 5 usability testings, I figured out that some people found the switch handy, while others did not know how to use it or even neglected it. From their feedback, I realized that TA (Class Manager) and students (Class Normal, Class Guest) are under the same scope (Class), so the changes in the user interface are straightforward for testers. However, the system manager is defined under the scope “System”. Actions a system manager can do are completely different from those roles in class scope, so it is not suitable to bundle this role with two others.
                     <br/><br/>
@@ -227,7 +231,7 @@ class PDOGS extends Component {
                 </div>
                 <div className="full-width-inner-section">
                     <img className="label-img" src="/images/Pdogs/pinkNewLabel.png" />
-                    <img className="full-width-img" src="/images/Pdogs/NewFeature1.png" />
+                    <img className="full-width-img" src="/images/Pdogs/NewFeature2.png" />
                     <p>
                         Enabling different roles in each class, the redesigned version gives users a more flexible role setting and better protects data security.
                     </p>
@@ -253,19 +257,28 @@ class PDOGS extends Component {
                     As we need to finish the new system in 7 sprints (14 weeks), leaders of each subteam created a project timeline and control progresses through weekly meetings. As a design lead, my team is required to be one sprint ahead of all others, while other leaders can use an extra sprint to train their members with coding skills.
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/Timeline.png" />
-                <br/>
-                <br/>
+            </div>
+
+            <div className='section'>
                 <p className="secondary-title">6. Coding</p>
                 <p>
                     Working in an 18-people-team,  I joined the team to turn mockups into a real website using React.js. Each function, mockup, bug are recorded in gitlab as an issue. Team leaders will later add labels, set milestones, then assign them to members. Every merge request will undergo the code review process.
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/gitlab.png" />
+                <p className='gray-text center-text'>
+                    We use Gitlab for issue management
+                </p>
+            </div>
 
+            <div className='section'>
                 <p className="secondary-title">7. Quality Assurance</p>
                 <p>
                     For quality assurance, I wrote 127 test cases with detailed steps to follow. We arranged 3 exhaustive QA tests before the system was officially launched.
                 </p>
                 <img className="full-width-img" src="/images/Pdogs/qa.png" />
+                <p className='gray-text center-text'>
+                    All QA testcase are recorded in Qase
+                </p>
             </div>
 
             <div className='section'>
@@ -284,7 +297,7 @@ class PDOGS extends Component {
                             1. Usability testing should also be done on mockups
                         </p>
                         <p>
-                            With limited time, whenever UI designers finished the mockup, we only discussed feasibility with the engineering team without any usability testing. I thought those testings on four versions of wireframes should cover most feedbacks. However, in this project, I was surprised to find out people do not like the color (Mockup version 1 uses black, gray, and blue). “When struggling on coding assignments, the cold color will make me feel even more frustrated.” We ended up spending an extra three weeks to change the CI along with the frontend team, which could be saved if we also conduct testings on mockups.
+                            With limited time, whenever UI designers finished the mockup, we only discussed feasibility with the engineering team without any usability testing. I thought those testings on four versions of wireframes should cover most feedbacks. However, in this project, I was surprised to find out people do not like the color (Mockup version 1 uses black, gray, and blue). “When struggling on coding assignments, the cold color will make me feel even more frustrated.” We ended up spending an extra three weeks to change the CI with the frontend team, which could be saved if we also conduct testings on mockups.
                         </p>
                     </div>
                 </div>
@@ -295,7 +308,7 @@ class PDOGS extends Component {
                             2. Co-creating can bring better solutions
                         </p>
                         <p>
-                            As PDOGS is a system initially built to serve students in the department of information management, the whole development team was its user before. Hence, when my design team provided a new design, many people will give feedback. In each design team's internal meeting, we will then discuss how to modify the mockup. Nevertheless, as the discussion is not open, those whose ideas are not accepted did not feel well. I learned that maybe a co-creating workshop can be a better approach. If everyone can share ideas and prioritize things together, there will be fewer misunderstandings and people will feel respected.
+                            As PDOGS is a system initially built to serve students in the department of information management, the whole development team was its user before. Hence, when my design team provided a new design, many people will give feedback. In each design team's internal meeting, we will then discuss how to modify the mockup. Nevertheless, as the discussion is not open, those whose ideas are not accepted did not feel well. I learned that maybe a co-creating workshop can be a better approach. If everyone can share ideas and prioritize things together, there will be fewer misunderstandings.
                         </p>
                     </div>
                 </div>
