@@ -24,4 +24,12 @@
 .projectDescription {
     padding-top: 1.5rem;
     padding-right: 1rem;
+    width: 25%;
+    min-width: 20rem;
+}
+
+.projectCard {
+    margin-bottom: 2rem !important;
+    display: flex;
+    flex-wrap: wrap;
 }
