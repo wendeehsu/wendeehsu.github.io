@@ -32,4 +32,10 @@
     margin-bottom: 2rem !important;
     display: flex;
     flex-wrap: wrap;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
