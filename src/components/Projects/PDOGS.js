@@ -202,7 +202,7 @@ class PDOGS extends Component {
                 <img className="full-width-img" src="/images/Pdogs/Usability_testing.png" />
             </div>
 
-            <div className='section'>
+            <div className='full-width-section'>
                 <p className="secondary-title">5. Mockup</p>
                 <p className="secondary-title pink-text">Restructure System Normal Layout</p>
                 <div className="full-width-inner-section gray-bg">

@@ -133,15 +133,15 @@ class AIXray extends Component {
                     <img className="full-width-img" src="/images/Xray/DevelopTable.png" />
                 </div>
 
-                <div className="section">
-                    <h5>FINAL PRODUCT</h5>
+                <div className="full-width-section">
+                    <h5><b>FINAL PRODUCT</b></h5>
                     <p className="section-subtitle blue-text">Scenario</p>
                     <p>
                         Dentists can open a folder and upload the patient’s x-ray images and have the images sorted.
                     </p>
-                </div>
-                <div className="full-width-section gray-bg">
-                    <img className="full-width-img" src="/images/Xray/Product.png" />
+                    <div className="full-width-inner-section gray-bg">
+                        <img className="full-width-img" src="/images/Xray/Product.png" />
+                    </div>
                 </div>
 
                 <div className="section">

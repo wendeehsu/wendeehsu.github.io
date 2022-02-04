@@ -196,8 +196,8 @@ class RedesignBLI extends Component {
 
                 </div>
             
-                <div className="section">
-                    <h5>FINAL DESIGN</h5>
+                <div className="full-width-section">
+                    <h5><b>FINAL DESIGN</b></h5>
 
                     {/* ---- 1. Login ---- */}
                     <p className="secondary-title">1. Login</p>
@@ -265,7 +265,7 @@ class RedesignBLI extends Component {
                     <br />
                 </div>
 
-                <div className="section">
+                <div className="section" style={{ marginTop: "-2.5rem" }}>
                     <h5>RESULT</h5>
                     <p>
                         SUS usability score of our redesign: <b>85.94</b> (score of the current website: 61.25)

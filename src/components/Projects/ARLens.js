@@ -153,15 +153,15 @@ class ARLens extends Component {
                     <img className="full-width-img" src="/images/AR/DevelopTable.png" />
                 </div>
 
-                <div className="section">
-                    <h5>FINAL PRODUCT</h5>
+                <div className="full-width-section">
+                    <h5><b>FINAL PRODUCT</b></h5>
                     <p className="section-subtitle pink-text">Scenario</p>
                     <p>
                         At the store, the staff will login with his/her account. They will later let customers try the contact lens wearing service.
                     </p>
-                </div>
-                <div className="full-width-section gray-bg">
-                    <img className="full-width-img" src="/images/AR/FinalProduct.png" />
+                    <div className="full-width-inner-section gray-bg">
+                        <img className="full-width-img" src="/images/AR/FinalProduct.png" />
+                    </div>
                 </div>
 
                 <div className="section">

@@ -11,23 +11,23 @@
 }
 
 .full-width-section {
-    width: 101%;
-    padding: 1rem 2rem;
-    margin: 1rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.full-width-section > p, .full-width-section > h5 {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .full-width-inner-section {
-    width: 101vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    padding-left: 22%;
-    padding-right: 22%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.full-width-section > p {
-    margin-top: 1rem;
 }
 
 .full-width-title {

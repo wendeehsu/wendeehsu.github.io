@@ -1,5 +1,7 @@
 .cover {
-  background-size: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gray-bg {
