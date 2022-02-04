@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
-import "../../css/Projects/ARLens.css";
 import NavLink from '../Navs/NavLink';
 import { GApageView } from "../../ga.js";
 

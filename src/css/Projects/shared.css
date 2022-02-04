@@ -93,9 +93,17 @@ p {
 }
 
 .reflection-icon {
+    width: 8vw;
     height: auto;
     margin-bottom: auto;
     margin-top: auto;
+}
+
+.restriction-icon {
+    width: 8vw;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
 }
 
 video {
@@ -122,6 +130,11 @@ video {
     .reflection-icon {
         display: none;
     }
+
+    .restriction-icon {
+        width: 20vw;
+    }
+
     video {
         margin: 1.5rem auto;
         width: 130%;
