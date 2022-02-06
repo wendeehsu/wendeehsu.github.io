@@ -11,7 +11,7 @@ class RedesignBLI extends Component {
     render() {
         return (
             <div>
-                <div className="cover gray-bg row justify-content-center">
+                <div className="cover gray-bg justify-content-center">
                     <img className="coverImage" src="/images/project1-cover.png" />
                     <div className="col-4 vertical-center">
                         <h5 className="pink-text">PDIS</h5>
