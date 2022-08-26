@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), hosted on [https://wendeehsu.github.io](https://wendeehsu.github.io)
 
+## First time setup
+1. check if we have npm installed via
+```
+node -v
+npm -v
+```
+if not, you can [download Node.js here](https://nodejs.org/en/download/)
+2. run `npm install` (can delete `package-lock.json` first if exists)
+3. run `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
