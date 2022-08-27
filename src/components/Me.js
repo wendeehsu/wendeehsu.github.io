@@ -25,7 +25,7 @@ export default class Me extends Component {
                 </div>
                 <br/>
                 <div className="row justify-content-center">
-                    <a data-tip="LinkedIn" href="https://www.linkedin.com/in/%E9%81%A0%E5%BF%97-%E5%BE%90-092bab177/" target="_blank">
+                    <a data-tip="LinkedIn" href="https://www.linkedin.com/in/yuan-chih-hsu/?locale=en_US" target="_blank">
                         <FontAwesomeIcon className="icon" icon={faLinkedin} />
                     </a>
                     <a data-tip="Github" href="https://github.com/wendeehsu" target="_blank">
@@ -34,7 +34,7 @@ export default class Me extends Component {
                     <a data-tip="Email" href="mailto:wendeehsu@gmail.com" target="_blank">
                         <FontAwesomeIcon className="icon" icon={faEnvelope} />
                     </a>
-                    <a data-tip="Resume" href="https://drive.google.com/file/d/1UDIguKeCc-eSRpWqvHZD8RSSm7R-ss8E/view?usp=sharing" target="_blank">
+                    <a data-tip="Resume" href="https://drive.google.com/file/d/195KO07QdIGgMgvufB_3KxeaRtFlYlxCM/view?usp=sharing" target="_blank">
                         <FontAwesomeIcon className="icon" icon={faFileInvoice} />
                     </a>
                 </div>

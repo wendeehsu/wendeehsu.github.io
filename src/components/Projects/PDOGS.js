@@ -36,21 +36,21 @@ class PDOGS extends Component {
             <div className="section">
                 <h5>MY TEAMMATES</h5>
                 <p>
-                    Project Manager - 
+                    Project Manager: 
                     <a href="https://www.linkedin.com/in/yunchi-cheng/" target="_blank" rel="noopener noreferrer"> Yun-Chi Cheng</a><br/>
-                    UI Designer - 
+                    UI Designer: 
                     <a href="https://www.linkedin.com/in/wpbag" target='_blank' rel="noopener noreferrer"> Chien-Yin Wu</a>,
                     <a href="https://www.linkedin.com/in/derekdylu" target='_blank' rel="noopener noreferrer"> Derek Lu</a><br/>
-                    Frontend Engineer - 
+                    Frontend Engineer: 
                     <a href="https://www.linkedin.com/in/tmcn" target='_blank' rel="noopener noreferrer"> Yi-Tong Chen</a>,
                     <a href="https://www.linkedin.com/in/gary-hu-2000" target='_blank' rel="noopener noreferrer"> Gary Hu</a>,
                     <a href="https://www.linkedin.com/in/li-hsiang-huang-fu-0b1825184" target='_blank' rel="noopener noreferrer"> Li Hsiang Huang Fu</a>
                     , Ray Lee, Po-Chun Wu, Erica Cheng, Daphne Hou, Amber liu, Wilson Hsu, Duge Lu<br/>
-                    Backend Engineer - 
+                    Backend Engineer: 
                     <a href="https://www.linkedin.com/in/yangcheng1229" target='_blank' rel="noopener noreferrer"> Yang Cheng</a>,
                     <a href="https://www.linkedin.com/in/chessyhsu" target='_blank' rel="noopener noreferrer"> Chessy Hsu</a>
                     , Polly Ho, Benson Wang<br/>
-                    DevOps - Fredred Chu, Jtong Chen
+                    DevOps: Fredred Chu, Jtong Chen
                 </p>
             </div>
 
