@@ -57,7 +57,7 @@ class PDOGS extends Component {
             <div className="section">
                 <h5>METHOD & TOOL</h5>
                 <p>
-                    Methods: User Research, Wireframe, Mockup, Prototype, Usability Testing<br/>
+                    Methods: interview, qualitative & quantitative data analytics, wireframe, mockup, prototype, usability testing<br/>
                     Tools: Figma, Qase<br/>
                     Frontend Framework: React.js
                 </p>
@@ -73,17 +73,14 @@ class PDOGS extends Component {
             <div className="section">
                 <h5>BACKGROUND</h5>
                 <p>
-                    PDOGS (Programming Design Online Grading System) is a system once designed to serve people in the department of Information Management, but now gradually open to all students in the University. With the surge increase of users, the old system, written in PHP, cannot handle mass requests as there is no separation in the frontend and backend. When it comes to user experience, previous developers only focus on functionality to build the system in the shortest time. As a result, the existing system misleads users by squeezing operations of different roles in the same interface. To enhance system stability and reduce confusion in actions, we recruited a team of 20 people to reconstruct the system during the summer break.
+                    PDOGS (Programming Design Online Grading System) is used in programming courses. Teaching assistants can publish assignments on this platform, while students submit their code and get graded automatically. In the past, the platform’s developers only focused on adding new features and maintaining its functionality. After several generations, the system became very hard to use because it never considered how users interacted with it. Hence, my friend, the project manager, recruited a team of 20 students to reconstruct the system during the summer break.
                 </p>
                 <div className="row justify-content-center">
                     <div className="col">
-                        <img className="restriction-icon" src="/images/Pdogs/Background2.png" />
+                        <img className="restriction-icon" src="/images/Pdogs/Background1.png" />
                         <div>
                             <p className="gray-text">
-                            Teaching Assistants used to command directly with the database instead of the website.
-                            </p>
-                            <p>
-                                &#8594; When integrating the skipped interactions into the new system, we need to put effort into its convenience to convince teaching assistants.
+                                The new system should be launched before the coming semester. Hence, we needed to finish the research, design, and develop in 2 months.
                             </p>
                         </div>
                     </div>
@@ -91,20 +88,15 @@ class PDOGS extends Component {
                         <img className="restriction-icon" src="/images/Pdogs/Background3.png" />
                         <div>
                             <p className="gray-text">
-                                Users may have more than one role in the system.                            </p>
-                            <p>
-                                &#8594; Distinguishing the operation of a student, a guest student, and a teaching assistant based on the user's role in different classes is required.
+                                Functionality was the only focus in the past. The system became error-prone as pages were overloaded with information and action flows were counter-intuitive.
                             </p>
                         </div>
                     </div>
                     <div className="col">
-                        <img className="restriction-icon" src="/images/Pdogs/Background1.png" />
+                        <img className="restriction-icon" src="/images/Pdogs/Background2.png" />
                         <div>
                             <p className="gray-text">
-                                Since there is no pay, half of the recruited members have zero experience in web development.
-                            </p>
-                            <p>
-                                &#8594; We need to squeeze the training process in a limited timeframe, also maintaining the code quality.
+                                Many course-related operations were not designed in the legacy system as managers would simply make changes on the server. This posed a huge risk to data security and site reliability.
                             </p>
                         </div>
                     </div>
