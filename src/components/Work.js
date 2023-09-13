@@ -9,14 +9,6 @@ class Work extends Component {
     }
     
     render() {
-        const pdogsProject = new Project(
-            "Programming Design Online Grading System",
-            "UX Researcher, Frontend Engineer",
-            "2021 National Taiwan University",
-            "/images/project4-cover.png",
-            "/Work/PDOGS"
-        );
-        
         const bliProject = new Project(
             "Redesign Website of Bureau of Labor Insurance",
             "UX Researcher, UI Designer",
@@ -41,11 +33,28 @@ class Work extends Component {
             "/Work/AIXray"
         );
 
+        const pdogsProject = new Project(
+            "Programming Design Online Grading System",
+            "UX Researcher, Frontend Engineer",
+            "2021 National Taiwan University",
+            "/images/project4-cover.png",
+            "/Work/PDOGS"
+        );
+        
+        const googleProject = new Project(
+            "Color Optimization Tuning Tool",
+            "UX Designer, Fullstack Engineer",
+            "2023 Google",
+            "/images/project5-cover.png",
+            "/Work/ColorTuning"
+        );
+
         return (
             <div>
                 <h3 className="title">
                     My Work
                 </h3>
+                <ProjectCard project={googleProject}/>
                 <ProjectCard project={pdogsProject}/>
                 <ProjectCard project={bliProject}/>
                 <ProjectCard project={arProject}/>
