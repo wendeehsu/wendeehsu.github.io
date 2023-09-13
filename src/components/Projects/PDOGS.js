@@ -14,7 +14,7 @@ class PDOGS extends Component {
             <div className="cover gray-bg justify-content-center">
                 <img className="coverImage" src="/images/project4-cover-center.png" alt="pdogs"/>
                 <div className="col-4 vertical-center">
-                    <h5 className="pink-text">NTUIM</h5>
+                    <h5 className="pink-text">National Taiwan University</h5>
                     <h4>Programming Design Online Grading System</h4>
                     <h5 className="gray-text">
                         June 2021 - September 2021
