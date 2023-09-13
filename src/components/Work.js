@@ -12,7 +12,7 @@ class Work extends Component {
         const pdogsProject = new Project(
             "Programming Design Online Grading System",
             "UX Researcher, Frontend Engineer",
-            "2021 NTUIM",
+            "2021 National Taiwan University",
             "/images/project4-cover.png",
             "/Work/PDOGS"
         );
