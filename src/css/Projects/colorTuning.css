@@ -11,7 +11,7 @@
 .right-img {
     width: 40%;
     min-width: 250px;
-    margin: 15px;
+    padding: 15px;
 }
 
 /* persona */
@@ -31,6 +31,7 @@
     flex: 1;
     text-align: center;
     padding: 5px;
+    min-width: 200px;
 }
 
 .big-number {
@@ -44,3 +45,17 @@
 .big-title {
     font-size: 28px;
 }
+
+.demo-picture {
+    max-width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.zoom-img {
+    width: 50%;
+    min-width: 250px;
+    object-fit: contain;
+    padding: 15px;
+ }
+ 

@@ -131,7 +131,7 @@ class ColorTuning extends Component {
                     </div>
                     <br/>
                     <p>
-                        As the color optimization team will rely on this tool heavily in the future, I invited color tuning engineers with different experience levels to each round of usability testings to understand if their needs are fulfilled by the design.
+                        In this project, I invited color tuning engineers with different experience levels to each round of usability testings to understand if their needs are fulfilled by the design.
                     </p>
                 </div>
 
@@ -159,6 +159,73 @@ class ColorTuning extends Component {
                             <br/>
                             8 weeks on development & testing
                         </p>
+                    </div>
+                </div>
+
+                <div className="section">
+                    <h5>The final color optimization tuning tool</h5>
+                    <p className='gray-text quote-text'>
+                        *As I signed the NDA, all screenshots are only used to demonstrate the functionality. The user interface and data are not the same as the actual web tool.
+                    </p>
+                    <div>
+                        <p className="section-subtitle blue-text">1. Auto data extraction with systematic analysis</p>
+                        <p>
+                            After color tuning engineers upload images into the website, the website automatically extracts each color's information and displays it under different conditions. This drastically cuts down engineers' time to analyze color changing trends from <b>3 days to 1 hour</b>.
+                        </p>
+                        <img
+                            className='demo-picture'
+                            src={`${this.imagBasePath}condition_slider.gif`}
+                            alt="when switching conditions, the color extracted will be shown on the graph."
+                        />
+                    </div>
+                    <br/>
+                    <div>
+                        <p className="section-subtitle blue-text">2. Realtime preview</p>
+                        <p>
+                            An engineer could spend up to a week finding the best value for a new device previously. With previewing the impact of number changes on settings in real time, the website now saves them up to <b>80% of the time</b>.
+                        </p>
+                        <img
+                            className='demo-picture'
+                            src={`${this.imagBasePath}live_render.gif`}
+                            alt="when dragging a point in one graph, the other graph will shown its corresponding effect on the tuning settings."
+                        />
+                    </div>
+                    <br />
+                    <div className='horizontal-display'>
+                        <div className='left-text'>
+                            <p className="section-subtitle blue-text">3. Flexible interaction</p>
+                            <p>
+                                To service users with different information consumption behaviors, I added zoom-in functionality so people can focus on a specific part in each chart.                        </p>
+                        </div>
+                        <img
+                            className='zoom-img'
+                            src={`${this.imagBasePath}zoom.gif`}
+                            alt="Users can zoom in to a region of interest by dragging a bounding box on the graph."
+                        />
+                    </div>
+                </div>
+
+                <div className='section'>
+                    <h5>What have we achieved?</h5>
+                    <div className='horizontal-display'>
+                        <div className='big-number-section'>
+                            <b className='big-title blue-text'><b className='big-number'>99</b>%</b>
+                            <p className='number-description'>
+                                Reduction in value searching time
+                            </p>
+                        </div>
+                        <div className='big-number-section'>
+                            <b className='blue-text big-number'>32</b>
+                            <p className='number-description'>
+                                Hours saved on optimizing settings for a new device
+                            </p>
+                        </div>
+                        <div className='big-number-section'>
+                            <b className='blue-text big-number'>500+</b>
+                            <p className='number-description'>
+                                Potential errors are prevented
+                            </p>
+                        </div>
                     </div>
                 </div>
 
