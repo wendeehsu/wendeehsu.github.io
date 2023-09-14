@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
+import "../../css/Projects/colorTuning.css";
 import NavLink from '../Navs/NavLink';
 import { GApageView } from "../../ga.js";
 
@@ -7,6 +8,8 @@ class ColorTuning extends Component {
     componentDidMount() {
         GApageView("Color Tuning");
     }
+
+    imagBasePath = "/images/ColorTuning/";
 
     render() {
         return (
@@ -47,19 +50,45 @@ class ColorTuning extends Component {
                 <div className="section">
                     <h5>The Challenge</h5>
                     <p>
-                        Color tuning engineers do not have an efficient way to initiate the settings for a new device.
+                        Color tuning engineers do not have an efficient way to initiate the tuning parameters for a new device.
                     </p>
                     <p className='blue-text center-text'>
                         "I want to compare the color changes among different devices. <br/>
                         However, simply looking up the value of each color already costs me <b>1~3 days</b>."
                     </p>
                     <p>
-                        To learn their current process of initiating tuning settings and figure out how it can be improved, I <b className='blue-text'>interviewed</b> 2 senior tuning engineers and found <b className='blue-text'>3 main problems</b>.
+                        To learn their current process of initiating parameter setting files and figure out how it can be improved, I <b className='blue-text'>interviewed</b> 2 senior tuning engineers and found <b className='blue-text'>3 main problems</b>.
                     </p>
                 </div>
 
                 <div className="section">
                     <h5>Why is the current process so inefficient?</h5>
+                    <div className='horizontal-display'>
+                        <div className='left-text'>
+                            <p className="section-subtitle blue-text">1. Manual Color Value Search</p>
+                            <p>
+                                Color information is embedded in each picture, but engineers do not have the tools to extract the values. As a result, they must manually look up the numbers, which is very time-consuming.
+                            </p>
+                        </div>
+                        <img 
+                            className='right-img'
+                            src={`${this.imagBasePath}checker.png`}
+                            alt="color information is embedded in each picture" />
+                    </div>
+                    <div>
+                        <p className="section-subtitle blue-text">2. Lack of systematic analysis</p>
+                        <p>Engineers currently adjust the tuning parameters of existing devices to fit new ones, but this process is often biased and inaccurate, as it relies heavily on trial and error.</p>
+                    </div>
+                    <div>
+                        <p className="section-subtitle blue-text">3. Error-prone data manipulation</p>
+                        <p>
+                            The color optimization team opens large JSON files in a text editor to update parameters one by one. This is a tedious and error-prone process, as they often make mistakes that require extra time to fix.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="section">
+                    <h5>Who are the users?</h5>
                 </div>
             </div>
         );

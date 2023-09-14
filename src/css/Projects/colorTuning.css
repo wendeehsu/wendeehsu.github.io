@@ -1,0 +1,14 @@
+.horizontal-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-text {
+    flex: 2;
+}
+
+.right-img {
+    width: 40%;
+    min-width: 250px;
+    margin: 15px;
+}
