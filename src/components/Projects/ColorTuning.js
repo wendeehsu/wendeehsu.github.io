@@ -89,7 +89,60 @@ class ColorTuning extends Component {
 
                 <div className="section">
                     <h5>Who are the users?</h5>
+                    <div className="horizontal-display">
+                        <img
+                            className='user-image'
+                            src={`${this.imagBasePath}captain.png`}
+                            alt="captain" />
+                        <div className='user-right-text'>
+                            <h6 className='bold-text'>Captain</h6>
+                            <p className="blue-text quote-text">"To reach our destination, I need a map, a compass, a telescope, and food for 10 days."</p>
+                            <ul>
+                                <li><b>Experienced</b> color tuning engineers</li>
+                                <li>Prefer <b>large amounts of data</b> because they clearly know how to combine different numbers to achieve their goals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
+                    <div className="horizontal-display">
+                        
+                        <div className='user-right-text'>
+                            <h6 className='bold-text'>Sailor</h6>
+                            <p className="blue-text quote-text">"Let me try the tools on the ship. This map will be helpful! Oh, they have a compass! Great!"</p>
+                            <ul>
+                                <li><b>Junior</b> color tuning engineers</li>
+                                <li>
+                                    They check what data is provided first and try to combine tools later. They can be <b>overwhelmed if there is too much information</b> shown at the same time.
+                                </li>
+                            </ul>
+                        </div>
+                        <img
+                            className='user-image'
+                            src={`${this.imagBasePath}sailor.png`}
+                            alt="sailor" />
+                    </div>
                 </div>
+
+                <div className='section'>    
+                    <h6>Image Source</h6>
+                    <ul>
+                        <li>
+                            <a
+                                className='gray-text'
+                                href="https://www.flaticon.com/free-icons/captain"
+                                title="captain icons">Captain icons created by Freepik - Flaticon
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className='gray-text'
+                                href="https://www.flaticon.com/free-icons/sailor"
+                                title="sailor icons">Sailor icons created by Freepik - Flaticon
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         );
     }

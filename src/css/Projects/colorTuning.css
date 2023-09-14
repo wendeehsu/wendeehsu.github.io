@@ -3,6 +3,7 @@
     flex-wrap: wrap;
 }
 
+/* problem */
 .left-text {
     flex: 2;
 }
@@ -11,4 +12,17 @@
     width: 40%;
     min-width: 250px;
     margin: 15px;
+}
+
+/* persona */
+.user-image {
+    width: 20%;
+    object-fit: contain;
+    padding: 15px;
+    min-width: 200px;
+}
+
+.user-right-text {
+    padding: 15px;
+    flex: 3;
 }
