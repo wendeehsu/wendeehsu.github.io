@@ -48,7 +48,7 @@ class ColorTuning extends Component {
                 </div>
 
                 <div className="section">
-                    <h5>The Challenge</h5>
+                    <h5>THE CHALLENGE</h5>
                     <p>
                         Color tuning engineers do not have an efficient way to initiate the tuning parameters for a new device.
                     </p>
@@ -125,8 +125,9 @@ class ColorTuning extends Component {
 
                 <div className='section'>
                     <div className='div-box background-green'>
-                        <p className='section-subtitle'>
-                            How might we create a tool to generate new tuning settings for new devices in an <b className='blue-text'>efficient, insightful, and flexible </b> way?
+                        <p className='vertical-center center-text bold-text'>
+                            How might we create a tool to generate new tuning settings for new devices 
+                            <br/> in an <b className='blue-text'>efficient, insightful, and flexible </b> way?
                         </p>
                     </div>
                     <br/>
@@ -206,7 +207,7 @@ class ColorTuning extends Component {
                 </div>
 
                 <div className='section'>
-                    <h5>What have we achieved?</h5>
+                    <h5>RESULT</h5>
                     <div className='horizontal-display'>
                         <div className='big-number-section'>
                             <b className='big-title blue-text'><b className='big-number'>99</b>%</b>
@@ -217,7 +218,7 @@ class ColorTuning extends Component {
                         <div className='big-number-section'>
                             <b className='blue-text big-number'>32</b>
                             <p className='number-description'>
-                                Hours saved on optimizing settings for a new device
+                                Hours saved on optimizing initial parameters for a new device
                             </p>
                         </div>
                         <div className='big-number-section'>
@@ -229,8 +230,42 @@ class ColorTuning extends Component {
                     </div>
                 </div>
 
+                <div className='section'>
+                    <h5>Through this project, I realized...</h5>
+                    <div className='horizontal-display'>
+                        <div className='left-text'>
+                            <p className="section-subtitle blue-text">1. Create prototypes that communicate</p>
+                            <p>
+                                This is the first time I tried <b>Tableau to mimic my web data visualization plans</b> as a prototype. The fast and interactive graphs stimulated users to provide constructive feedback. This made me realize that the core of prototyping is to <b>foster understanding and communication</b>, regardless of the tool or approach used.
+                            </p>
+                        </div>
+                        <img
+                            className='zoom-img'
+                            src={`${this.imagBasePath}tableau.png`}
+                            alt="Use tableau for mimic data visualization outcome"
+                        />
+                    </div>
+                    <br/>
+
+                    <p className="section-subtitle blue-text">2. Having knowledge of both design and development can make the project more efficient</p>
+                    <p>With limited time, I simultaneously performed design and development. When users came up with new ideas, I could switch to my engineer role to check their feasibility. If I encountered issues that I couldn't solve, I later built prototypes to present alternative solutions. This allowed me to efficiently and effectively test and validate the deliverables.</p>
+                    <img
+                        className='demo-picture'
+                        src={`${this.imagBasePath}workflow.png`}
+                        alt="My workflow is switching between design and development."
+                    />
+                    
+                    <br/>
+                    <p className="section-subtitle blue-text">3. It's important to prioritize user needs</p>
+                    <p>
+                        When a user raised a request, I would ask them about their needs behind the request. However, I didn't prioritize these needs in terms of importance in this project. This caused me a lot of stress in the end, as there were many needs to consider. I think it would be better to involve the whole team in <b>prioritizing the needs together</b>, so that we can reach a consensus.
+                    </p>
+                </div>
+
+
+
                 <div className='section'>    
-                    <h6>Image Source</h6>
+                    <h6>IMAGE SOURCE</h6>
                     <ul>
                         <li>
                             <a
@@ -248,7 +283,7 @@ class ColorTuning extends Component {
                         </li>
                     </ul>
                 </div>
-
+                <NavLink pageUrl="/Work/PDOGS" project="Programming Design Online Grading System" />
             </div>
         );
     }
