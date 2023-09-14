@@ -231,7 +231,7 @@ class ColorTuning extends Component {
                 </div>
 
                 <div className='section'>
-                    <h5>Through this project, I realized...</h5>
+                    <h5>REFLECTION</h5>
                     <div className='horizontal-display'>
                         <div className='left-text'>
                             <p className="section-subtitle blue-text">1. Create prototypes that communicate</p>
