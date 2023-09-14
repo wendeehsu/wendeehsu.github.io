@@ -123,6 +123,45 @@ class ColorTuning extends Component {
                     </div>
                 </div>
 
+                <div className='section'>
+                    <div className='div-box background-green'>
+                        <p className='section-subtitle'>
+                            How might we create a tool to generate new tuning settings for new devices in an <b className='blue-text'>efficient, insightful, and flexible </b> way?
+                        </p>
+                    </div>
+                    <br/>
+                    <p>
+                        As the color optimization team will rely on this tool heavily in the future, I invited color tuning engineers with different experience levels to each round of usability testings to understand if their needs are fulfilled by the design.
+                    </p>
+                </div>
+
+                <div className='section horizontal-display'>
+                    <div className='big-number-section'>
+                        <b className='big-title'><b className='blue-text big-number'>7</b> Iterations</b>
+                        <p className='number-description'>
+                            3 versions of lo-fi prototype
+                            <br/>
+                            4 versions of product
+                        </p>
+                    </div>
+                    <div className='big-number-section'>
+                        <b className='big-title'><b className='blue-text big-number'>16</b> User testings</b>
+                        <p className='number-description'>
+                            Each version is tested
+                            <br/>
+                            by 2 or 3 users.
+                        </p>
+                    </div>
+                    <div className='big-number-section'>
+                        <b className='big-title'><b className='blue-text big-number'>12</b> Weeks</b>
+                        <p className='number-description'>
+                            4 weeks on research & design
+                            <br/>
+                            8 weeks on development & testing
+                        </p>
+                    </div>
+                </div>
+
                 <div className='section'>    
                     <h6>Image Source</h6>
                     <ul>

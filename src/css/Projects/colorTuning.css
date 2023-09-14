@@ -26,3 +26,21 @@
     padding: 15px;
     flex: 3;
 }
+
+.big-number-section {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.big-number {
+    font-size: 64px;
+}
+
+.number-description {
+    font-size: 16px;
+}
+
+.big-title {
+    font-size: 28px;
+}
