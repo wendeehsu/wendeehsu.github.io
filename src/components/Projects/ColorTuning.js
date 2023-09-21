@@ -39,12 +39,20 @@ class ColorTuning extends Component {
 
                 <div className="section">
                     <h5>METHOD & TOOL</h5>
-                    <p>
-                        Methods: interview, wireframe, prototype, usability testing<br/>
-                        Prototyping Tools: Figma, Tableau<br/>
-                        Frontend Framework: Angular.js<br/>
-                        Backend: Python
-                    </p>
+                    <ul>
+                        <li>
+                            Methods: interview, wireframe, prototype, usability testing
+                        </li>
+                        <li>
+                            Prototyping Tools: Figma, Tableau
+                        </li>
+                        <li>
+                            Frontend Framework: Angular.js
+                        </li>
+                        <li>
+                            Backend: Python
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="section">

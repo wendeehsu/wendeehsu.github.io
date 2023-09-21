@@ -86,41 +86,43 @@ class PDOGS extends Component {
                 <img
                     className='full-img'
                     src={`${this.imagBasePath}Timeline.png`}
-                    alt="pdogs"
+                    alt="The project timeline. 8 weeks for design. 10 weeks for development. And 5 weeks for quality assurance."
                 />
             </div>
 
             <div className="section">
-                <h5>BACKGROUND</h5>
+                <h5>THE PROBLEMS</h5>
                 <p>
-                    PDOGS (Programming Design Online Grading System) is used in programming courses. Teaching assistants can publish assignments on this platform, while students submit their code and get graded automatically. In the past, the platform’s developers only focused on adding new features and maintaining its functionality. After several generations, the system became very hard to use because it never considered how users interacted with it. Hence, my friend, the project manager, recruited a team of 20 students to reconstruct the system during the summer break.
+                    In the past, the platform’s developers only focused on adding new features and maintaining its functionality. After several generations, the system became very hard to use.
                 </p>
-                <div className="row justify-content-center">
-                    <div className="col">
-                        <img className="restriction-icon" src="/images/Pdogs/Background1.png" />
-                        <div>
-                            <p className="gray-text">
-                                The new system should be launched before the coming semester. Hence, we needed to finish the research, design, and develop in 2 months.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <img className="restriction-icon" src="/images/Pdogs/Background3.png" />
-                        <div>
-                            <p className="gray-text">
-                                Functionality was the only focus in the past. The system became error-prone as pages were overloaded with information and action flows were counter-intuitive.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <img className="restriction-icon" src="/images/Pdogs/Background2.png" />
-                        <div>
-                            <p className="gray-text">
-                                Many course-related operations were not designed in the legacy system as managers would simply make changes on the server. This posed a huge risk to data security and site reliability.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <p className="section-subtitle">1. Complex user roles</p>
+                <p className="dark-pink-text center-text">
+                    "As teaching assistants are granted the highest right in the system, I always need to warn them what sections they should not edit in case they accidentally delete a whole class."
+                    <br/> -- System Admin
+                </p>
+                <p>
+                    The legacy system only has 2 roles, a teaching assistant or a student. However, during user interviews I realized there are <b className="dark-pink-text">8 roles </b>in fact. What’s more, a user can have different roles under different situation.
+                </p>
+                <img
+                    className='half-full-img'
+                    src={`${this.imagBasePath}role-scope.png`}
+                    alt="Besides a teaching assistant and a student, there are 6 more roles in reality, including system admin, guest students, team leader, etc."
+                />
+                
+                <p className="section-subtitle">2. Disjointed user experience</p>
+                <p className="dark-pink-text center-text">
+                    "There are so many steps missing in the system!
+                    <br/> To create an assignment, I need to type its description in the system, later use file transfer protocol to upload testing data, then publish the assignment back in the system."
+                    <br/> -- Teaching Assistant
+                </p>
+                <p>
+                    A user may need to type in the system, upload file via the File Transfer Protocol, and use ssh to connect to the database server for advance settings to complete a task.
+                </p>
+                <img
+                    className='full-img'
+                    src={`${this.imagBasePath}problem-flow.png`}
+                    alt="Teaching assistants will use ssh to create a new class in the database, hope in the system to create an assignment, hope off to upload testing data via file transfer protocol, then finally publish the assignment back in the system."
+                />
             </div>
 
             <div className="section">
