@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
+import "../../css/Projects/pdogs.css";
 import NavLink from '../Navs/NavLink';
 import { GApageView } from "../../ga.js";
 
@@ -23,44 +24,59 @@ class PDOGS extends Component {
             </div>
 
             <div className='section'>
-                With the surge increase of users, the existing Programming Design Online Grading System (PDOGS) can no longer afford the rising traffic due to its loosely organized code structure and user interface. Therefore, we spend 14 weeks researching, designing, and implementing an easy-to-use, frontend backend separated new system, enhancing both its user experience and site efficiency.
+                PDOGS (Programming Design Online Grading System) is a platform for teaching assistants to publish programming assignments and for students to submit their code and receive automatic grading. I led the design team to transform the loosely organized legacy system into an<b className='dark-pink-text'> easy-to-use, intuitive </b>new system that can scale to <b className='dark-pink-text'>serve 1000+ users </b>while reducing potential operational errors and enhancing the user experience.
             </div>
 
             <div className="section">
                 <h5>MY ROLE</h5>
                 <p>
-                    Design Lead, UX Researcher, Frontend Engineer, QA Lead                    
+                    Design Lead, UX Researcher, Frontend Engineer, Quality Assurance Lead                    
                 </p>
             </div>
 
             <div className="section">
                 <h5>MY TEAMMATES</h5>
-                <p>
-                    Project Manager: 
-                    <a href="https://www.linkedin.com/in/yunchi-cheng/" target="_blank" rel="noopener noreferrer"> Yun-Chi Cheng</a><br/>
-                    UI Designer: 
-                    <a href="https://www.linkedin.com/in/wpbag" target='_blank' rel="noopener noreferrer"> Chien-Yin Wu</a>,
-                    <a href="https://www.linkedin.com/in/derekdylu" target='_blank' rel="noopener noreferrer"> Derek Lu</a><br/>
-                    Frontend Engineer: 
-                    <a href="https://www.linkedin.com/in/tmcn" target='_blank' rel="noopener noreferrer"> Yi-Tong Chen</a>,
-                    <a href="https://www.linkedin.com/in/gary-hu-2000" target='_blank' rel="noopener noreferrer"> Gary Hu</a>,
-                    <a href="https://www.linkedin.com/in/li-hsiang-huang-fu-0b1825184" target='_blank' rel="noopener noreferrer"> Li Hsiang Huang Fu</a>
-                    , Ray Lee, Po-Chun Wu, Erica Cheng, Daphne Hou, Amber liu, Wilson Hsu, Duge Lu<br/>
-                    Backend Engineer: 
-                    <a href="https://www.linkedin.com/in/yangcheng1229" target='_blank' rel="noopener noreferrer"> Yang Cheng</a>,
-                    <a href="https://www.linkedin.com/in/chessyhsu" target='_blank' rel="noopener noreferrer"> Chessy Hsu</a>
-                    , Polly Ho, Benson Wang<br/>
-                    DevOps: Fredred Chu, Jtong Chen
-                </p>
+                <ul>
+                    <li>Project Manager: 
+                        <a href="https://www.linkedin.com/in/yunchi-cheng/" target="_blank" rel="noopener noreferrer"> Yun-Chi Cheng</a>
+                    </li>
+                    <li>
+                        UI Designer: 
+                        <a href="https://www.linkedin.com/in/wpbag" target='_blank' rel="noopener noreferrer"> Chien-Yin Wu</a>,
+                        <a href="https://www.linkedin.com/in/derekdylu" target='_blank' rel="noopener noreferrer"> Derek Lu</a>
+                    </li>
+                    <li>
+                        Frontend Engineer: 
+                        <a href="https://www.linkedin.com/in/tmcn" target='_blank' rel="noopener noreferrer"> Yi-Tong Chen</a>,
+                        <a href="https://www.linkedin.com/in/gary-hu-2000" target='_blank' rel="noopener noreferrer"> Gary Hu</a>,
+                        <a href="https://www.linkedin.com/in/li-hsiang-huang-fu-0b1825184" target='_blank' rel="noopener noreferrer"> Li Hsiang Huang Fu</a>
+                        , Ray Lee, Po-Chun Wu, Erica Cheng, Daphne Hou, Amber liu, Wilson Hsu, Duge Lu
+                    </li>
+                    <li>
+                        Backend Engineer: 
+                        <a href="https://www.linkedin.com/in/yangcheng1229" target='_blank' rel="noopener noreferrer"> Yang Cheng</a>,
+                        <a href="https://www.linkedin.com/in/chessyhsu" target='_blank' rel="noopener noreferrer"> Chessy Hsu</a>
+                        , Polly Ho, Benson Wang
+                    </li>
+                    <li>
+                        DevOps: Fredred Chu, Jtong Chen
+                    </li>
+                </ul>
             </div>
 
             <div className="section">
                 <h5>METHOD & TOOL</h5>
-                <p>
-                    Methods: interview, qualitative & quantitative data analytics, wireframe, mockup, prototype, usability testing<br/>
-                    Tools: Figma, Qase<br/>
-                    Frontend Framework: React.js
-                </p>
+                <ul>
+                    <li>
+                        Methods: interview, qualitative & quantitative data analytics, wireframe, mockup, prototype, usability testing
+                    </li>
+                    <li>
+                        Tools: Figma, Qase (Quality Assurance)
+                    </li>
+                    <li>
+                        Frontend Framework: React.js
+                    </li>
+                </ul>
             </div>
 
             <div className="section">
