@@ -174,7 +174,7 @@ class ColorTuning extends Component {
                             After color tuning engineers upload images into the website, the website automatically extracts each color's information and displays it under different conditions. This drastically cuts down engineers' time to analyze color changing trends from <b>3 days to 1 hour</b>.
                         </p>
                         <img
-                            className='demo-picture'
+                            className='full-img'
                             src={`${this.imagBasePath}condition_slider.gif`}
                             alt="when switching conditions, the color extracted will be shown on the graph."
                         />
@@ -186,7 +186,7 @@ class ColorTuning extends Component {
                             An engineer could spend up to a week finding the best value for a new device previously. With previewing the impact of number changes on settings in real time, the website now saves them up to <b>80% of the time</b>.
                         </p>
                         <img
-                            className='demo-picture'
+                            className='full-img'
                             src={`${this.imagBasePath}live_render.gif`}
                             alt="when dragging a point in one graph, the other graph will shown its corresponding effect on the tuning settings."
                         />
@@ -250,7 +250,7 @@ class ColorTuning extends Component {
                     <p className="section-subtitle blue-text">2. Having knowledge of both design and development can make the project more efficient</p>
                     <p>With limited time, I simultaneously performed design and development. When users came up with new ideas, I could switch to my engineer role to check their feasibility. If I encountered issues that I couldn't solve, I later built prototypes to present alternative solutions. This allowed me to efficiently and effectively test and validate the deliverables.</p>
                     <img
-                        className='demo-picture'
+                        className='full-img'
                         src={`${this.imagBasePath}workflow.png`}
                         alt="My workflow is switching between design and development."
                     />

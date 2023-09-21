@@ -9,6 +9,8 @@ class PDOGS extends Component {
         GApageView("PDOGS");
     }
 
+    imagBasePath = "/images/Pdogs/";
+
     render() {
         return(
         <div>
@@ -80,10 +82,12 @@ class PDOGS extends Component {
             </div>
 
             <div className="section">
-                <h5>TIMEFRAME</h5>
-                <p>
-                    14 weeks
-                </p>
+                <h5>TIMELINE</h5>
+                <img
+                    className='full-img'
+                    src={`${this.imagBasePath}Timeline.png`}
+                    alt="pdogs"
+                />
             </div>
 
             <div className="section">

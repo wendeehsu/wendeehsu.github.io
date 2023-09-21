@@ -1,3 +1,9 @@
 .dark-pink-text {
     color: #CA4458;
 }
+
+.full-img {
+    max-width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+}
