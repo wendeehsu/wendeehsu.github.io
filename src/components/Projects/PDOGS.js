@@ -126,8 +126,35 @@ class PDOGS extends Component {
             </div>
 
             <div className="section">
-                <h5>PROCESS OVERVIEW</h5>
-                <img className="full-width-img" src="/images/Pdogs/Process.png" />
+                <h5>DESIGN & DEVELOPMENT PROCESS</h5>
+                <div className='horizontal-display'>                    
+                    <div className='big-number-section'>
+                        <b className='big-title'><b className='dark-pink-text big-number'>6</b> Interviews</b>
+                        <p className='number-description'>
+                            1-1 online interview with
+                            <br/>
+                            different roles in each class
+                        </p>
+                    </div>
+
+                    <div className='big-number-section'>
+                        <b className='big-title'><b className='dark-pink-text big-number'>5</b> Iterations</b>
+                        <p className='number-description'>
+                            1 paper wireframe
+                            <br/>
+                            4 lo-fi prototypes
+                        </p>
+                    </div>
+
+                    <div className='big-number-section'>
+                        <b className='big-title'><b className='dark-pink-text big-number'>22</b> User testings</b>
+                        <p className='number-description'>
+                            Each prototype was tested by
+                            <br/>
+                            at least 5 people
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div className="section">
