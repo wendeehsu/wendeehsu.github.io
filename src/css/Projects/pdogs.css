@@ -13,15 +13,23 @@
 }
 
 .left-side-img {
-    width: 50%;
+    width: 60%;
     min-width: 250px;
     object-fit: contain;
     margin-right: 15px;
     border-radius: 10px;
 }
 
+.img-row > .left-side-img {
+    flex: 5;
+}
+
+.img-row > .right-side-img {
+    flex: 6;
+}
+
 .right-side-img {
-    width: 50%;
+    width: 60%;
     min-width: 250px;
     object-fit: contain;
     margin-left: 15px;

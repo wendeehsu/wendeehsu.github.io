@@ -162,7 +162,7 @@ class PDOGS extends Component {
                         To understand each user type's responsibilities and define proper system roles, I interviewed system admins, students, and teaching assistants of three different classes. After observing how they complete their tasks in the current system, I discussed the necessary system roles and corresponding access rights with the project manager and development team.
                     </p>
                     <img
-                        className='full-img'
+                        className='half-full-img'
                         src={`${this.imagBasePath}role.png`}
                         alt="There are 3 scopes, namely system, class, and team. Under different scope, there are managers, normal users, and guest users."
                     />
@@ -203,13 +203,54 @@ class PDOGS extends Component {
                         <img
                             className='left-side-img'
                             src={`${this.imagBasePath}qa.png`}
-                            alt="The mockup"
+                            alt="For each test case, there are detailed steps to reproduce"
                         />
                         <p className='side-text'>
                             I worked as a front-end developer throughout the development process. I also wrote <b className='dark-pink-text'>127 test cases </b>to ensure that the new system functioned as expected even with edge cases.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className='section'>
+                <h5><b className='dark-pink-text'>Redesigned </b>Programming Design Online Grading System</h5>
+                <img
+                    className='full-img'
+                    src={`${this.imagBasePath}pdogs.gif`}
+                    alt="The P-DOGS launched in 2021 Fall"
+                />
+                <br/>
+
+                <p className="section-subtitle">1. Flexible and Safer Role</p>
+                <p>Users have safer right access under different scope. This reduces 200+ potential human error each year.</p>
+                <div className='horizontal-display img-row'>
+                    <img
+                        className='left-side-img'
+                        src={`${this.imagBasePath}old-role.png`}
+                        alt="A user can only be either a teaching assistant or a student in the old system."
+                    />
+                    <img
+                        className='right-side-img'
+                        src={`${this.imagBasePath}new-role.png`}
+                        alt="There are 3 scopes, namely system, class, and team. In each scope, a user can be a manager, a normal user, or a guest."
+                    />
+                </div>
+                <br/>
+
+                <p className="section-subtitle">2. Integrated user flow</p>
+                <p>
+                    Users can complete a task without leaving the system. For teaching assistants, this cuts down the time to create an assignment from 5 minutes to 30 seconds.
+                </p>    
+                <img
+                    className='full-img'
+                    src={`${this.imagBasePath}old-flow.png`}
+                    alt="In the legacy system, when creating an assignment, teaching assistants need to use file transfer protocol to upload file, which is a disjointed user experience."
+                />
+                <img
+                    className='full-img'
+                    src={`${this.imagBasePath}new-flow.png`}
+                    alt="Now teaching assistants can finish all steps within the system."
+                />
             </div>
 
             <div className='section'>
