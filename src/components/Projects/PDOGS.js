@@ -155,6 +155,61 @@ class PDOGS extends Component {
                         </p>
                     </div>
                 </div>
+
+                <div>
+                    <p className="section-subtitle">1. Understanding users</p>
+                    <p>
+                        To understand each user type's responsibilities and define proper system roles, I interviewed system admins, students, and teaching assistants of three different classes. After observing how they complete their tasks in the current system, I discussed the necessary system roles and corresponding access rights with the project manager and development team.
+                    </p>
+                    <img
+                        className='full-img'
+                        src={`${this.imagBasePath}role.png`}
+                        alt="There are 3 scopes, namely system, class, and team. Under different scope, there are managers, normal users, and guest users."
+                    />
+                </div>
+                <br/>
+
+                <div>
+                    <p className="section-subtitle">2. Prototyping & User testing</p>
+                    <p>
+                        After clarifying the different user roles and analyzing the missing processes in the legacy system, I created multiple prototype versions for user testing to validating which design solution works best.
+                    </p>
+                    <img
+                        className='half-full-img'
+                        src={`${this.imagBasePath}wireframe-flow.png`}
+                        alt="There are 4 versions of prototypes in total. The first two ones are used to verify binding roles under different scope is needed. The last two ones are used to test different ways to include missing flows."
+                    />
+                </div>
+                <br/>
+
+                <div>
+                    <p className="section-subtitle">3. Designing Mockup</p>
+                    <div className='horizontal-display'>
+                        <p className='side-text'>
+                            When the final wireframes is defined, I consolidated the design solutions and discussed the final user interface with the UI designers.
+                        </p>
+                        <img
+                            className='right-side-img'
+                            src={`${this.imagBasePath}mockup.png`}
+                            alt="The mockup"
+                        />
+                    </div>
+                </div>
+                <br/>
+
+                <div>
+                    <p className="section-subtitle">4. Development & Quality Assurance</p>
+                    <div className='horizontal-display'>
+                        <img
+                            className='left-side-img'
+                            src={`${this.imagBasePath}qa.png`}
+                            alt="The mockup"
+                        />
+                        <p className='side-text'>
+                            I worked as a front-end developer throughout the development process. I also wrote <b className='dark-pink-text'>127 test cases </b>to ensure that the new system functioned as expected even with edge cases.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div className="section">
