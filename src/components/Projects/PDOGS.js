@@ -222,7 +222,9 @@ class PDOGS extends Component {
                 <br/>
 
                 <p className="section-subtitle">1. Flexible and Safer Role</p>
-                <p>Users have safer right access under different scope. This reduces 200+ potential human error each year.</p>
+                <p>
+                    Users have well-defined access rights under different scopes. This prevents teaching assistants from modifying class contents they are not in charge of. Additionally, separating the system administrator role increases the website's data security.
+                </p>
                 <div className='horizontal-display img-row'>
                     <img
                         className='left-side-img'
@@ -255,9 +257,26 @@ class PDOGS extends Component {
 
             <div className='section'>
                 <h5>RESULT</h5>
-                <p>
-                    After launch, many users feedbacked that the new system is easier to use. A new user told us that, “It's really straightforward.” “This semester, there are far fewer emails asking me where is xxx in the system, what does xxx mean, etc.” said a teaching assistant. “It's so convenient that I no longer need to ssh to our server!”
-                </p>
+                <div className='horizontal-display'>
+                    <div className='big-number-section'>
+                        <b className='dark-pink-text big-number'>200+</b>
+                        <p className='number-description'>
+                            Potential error prevented
+                        </p>
+                    </div>
+                    <div className='big-number-section'>
+                        <b className='big-title dark-pink-text'><b className='big-number'>90</b>%</b>
+                        <p className='number-description'>
+                            Weekly time saved for teaching assistants
+                        </p>
+                    </div>
+                    <div className='big-number-section'>
+                        <b className='big-title dark-pink-text'><b className='big-number'>80</b>%</b>
+                        <p className='number-description'>
+                            Improvement on site efficiency
+                        </p>
+                    </div>
+                </div>
             </div>
         
             <div className='section'>
