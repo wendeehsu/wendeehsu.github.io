@@ -93,7 +93,7 @@ class PDOGS extends Component {
             <div className="section">
                 <h5>THE PROBLEMS</h5>
                 <p>
-                    In the past, the platform’s developers only focused on adding new features and maintaining its functionality. After several generations, the system became very hard to use.
+                    In the past, the platform's developers only focused on adding new features and maintaining its functionality. After several generations, the system became very hard to use.
                 </p>
                 <p className="section-subtitle">1. Complex user roles</p>
                 <p className="dark-pink-text center-text">
@@ -101,7 +101,7 @@ class PDOGS extends Component {
                     <br/> -- System Admin
                 </p>
                 <p>
-                    The legacy system only has 2 roles, a teaching assistant or a student. However, during user interviews I realized there are <b className="dark-pink-text">8 roles </b>in fact. What’s more, a user can have different roles under different situation.
+                    The legacy system only has 2 roles, a teaching assistant or a student. However, during user interviews I realized there are <b className="dark-pink-text">8 roles </b>in fact. What's more, a user can have different roles under different situation.
                 </p>
                 <img
                     className='half-full-img'
@@ -281,39 +281,30 @@ class PDOGS extends Component {
         
             <div className='section'>
                 <h5>REFLECTION</h5>
-                <div className="row">
-                    <img className="reflection-icon col" src="/images/Pdogs/Reflection1.png" />
-                    <div className="col">
-                        <p className="bold-text">
-                            1. Usability testing should also be done on mockups
-                        </p>
-                        <p>
-                            With limited time, whenever UI designers finished the mockup, we only discussed feasibility with the engineering team without any usability testing. I thought those testings on four versions of wireframes should cover most feedbacks. However, in this project, I was surprised to find out people do not like the color (Mockup version 1 uses black, gray, and blue). “When struggling on coding assignments, the cold color will make me feel even more frustrated.” We ended up spending an extra three weeks to change the CI with the frontend team, which could be saved if we also conduct testings on mockups.
-                        </p>
-                    </div>
+                <p className="section-subtitle">1. Comparing new and legacy systems with low-fidelity prototypes reduces bias in feedback</p>
+                <p>
+                    Experienced users may prefer a system similar to the legacy one, but that doesn't mean the legacy system is better. To get more genuine user feedback, I created two low-fidelity prototypes for user testing: one of the existing system and one of our new designs. This approach enabled users to share their thoughts on both designs as if they were both new.
+                </p>
+                <div className='horizontal-display img-row-equal'>
+                    <img
+                        className='left-side-img'
+                        src={`${this.imagBasePath}lo-fi1.png`}
+                        alt="lo-fi prototype version 1 is similar to legacy system"
+                    />
+                    <img
+                        className='right-side-img'
+                        src={`${this.imagBasePath}lo-fi2.png`}
+                        alt="lo-fi prototype version 2 is a new design"
+                    />
                 </div>
-                <div className="row">
-                    <img className="reflection-icon col" src="/images/Pdogs/Reflection2.png" />
-                    <div className="col">
-                        <p className="bold-text">
-                            2. Co-creating can bring better solutions
-                        </p>
-                        <p>
-                            As PDOGS is a system initially built to serve students in the department of information management, the whole development team was its user before. Hence, when my design team provided a new design, many people will give feedback. In each design team's internal meeting, we will then discuss how to modify the mockup. Nevertheless, as the discussion is not open, those whose ideas are not accepted did not feel well. I learned that maybe a co-creating workshop can be a better approach. If everyone can share ideas and prioritize things together, there will be fewer misunderstandings.
-                        </p>
-                    </div>
-                </div>
-                <div className="row">
-                    <img className="reflection-icon col" src="/images/Pdogs/Reflection3.png" />
-                    <div className="col">
-                        <p className="bold-text">
-                            3. Every stakeholder's needs should be considered
-                        </p>
-                        <p>
-                            In our user study, I only interviewed system managers, teaching assistants, and students since they are the main users. One week before the launch, our project manager emergently arranged a meeting on creating a mobile version for our professor. As the professor is the one and only supporter of this project, although he seldom uses the system, we should still put his demand with great priority. This experience showed me that a complete stakeholder map is essential to all projects.
-                        </p>
-                    </div>
-                </div>
+                <p className="section-subtitle">2. Co-creation workshops can prevent misunderstandings</p>
+                <p>
+                    During our design team meetings, we would discuss how to modify the mockup internally. However, people might feel disrespected when their ideas were not adopted. Therefore, I learned that a co-creation workshop might be a better approach. If everyone could share ideas and prioritize things together, there would be fewer misunderstandings and people would feel more respected.
+                </p>
+                <p className="section-subtitle">3. It's important to consider all stakeholders in design</p>
+                <p>
+                    Designers should consider the needs of all stakeholders, even those who use the system infrequently. In this project, I only interviewed the main users (system managers, teaching assistants, and students), which resulted in an urgent request from the project's sole supporter, the professor, at the very last moment. This experience taught me that a complete stakeholder map is essential for all projects.
+                </p>
             </div>
             <NavLink pageUrl="/Work/RedesignBLI" project="Redesign Website of Bureau of Labor Insurance" />
         </div>
