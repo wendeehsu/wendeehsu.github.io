@@ -6,7 +6,7 @@ import { GApageView } from "../../ga.js";
 
 class PDOGS extends Component {
     componentDidMount() {
-        GApageView("PDOGS");
+        GApageView("Work/PDOGS", "PDOGS");
     }
 
     imagBasePath = "/images/Pdogs/";

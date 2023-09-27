@@ -5,7 +5,7 @@ import { GApageView } from "../../ga.js";
 
 class ARLens extends Component {
     componentDidMount() {
-        GApageView("AR Lens");
+        GApageView("Work/ARLens", "AR Lens");
     }
 
     render() {

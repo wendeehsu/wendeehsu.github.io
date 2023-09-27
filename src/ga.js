@@ -1,11 +1,11 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export const initGA = () => {       
-    ReactGA.initialize('UA-182997316-1');
+    ReactGA.initialize('G-Y6XYC627EV');
 }
 
-export const GApageView = (page) => {   
-    ReactGA.pageview(page);   
+export const GApageView = (path, pagename) => {   
+    ReactGA.send({ hitType: "pageview", page: "/" + path, title: pagename });
 }
 
 export const GAevent = (categoryName, eventName) => {

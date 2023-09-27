@@ -6,7 +6,7 @@ import { GApageView } from "../../ga.js";
 
 class ColorTuning extends Component {
     componentDidMount() {
-        GApageView("Color Tuning");
+        GApageView("Work/ColorTuning", "Color Tuning");
     }
 
     imagBasePath = "/images/ColorTuning/";

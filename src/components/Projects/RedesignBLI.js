@@ -5,7 +5,7 @@ import { GApageView } from "../../ga.js";
 
 class RedesignBLI extends Component {
     componentDidMount() {
-        GApageView("BLI");
+        GApageView("Work/RedesignBLI", "BLI");
     }
 
     render() {

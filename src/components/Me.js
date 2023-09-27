@@ -8,7 +8,7 @@ import { GApageView } from "../ga.js";
 
 export default class Me extends Component {
     componentDidMount() {
-        GApageView("About Me");
+        GApageView("Me", "About Me");
     }
 
     render() {

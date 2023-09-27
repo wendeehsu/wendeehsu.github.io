@@ -5,7 +5,7 @@ import { GApageView } from "../ga.js";
 
 class Work extends Component {
     componentDidMount() {
-        GApageView("Work");
+        GApageView("Work", "Work");
     }
     
     render() {

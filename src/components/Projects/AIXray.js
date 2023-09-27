@@ -5,7 +5,7 @@ import { GApageView } from "../../ga.js";
 
 class AIXray extends Component {
     componentDidMount() {
-        GApageView("AI Xray");
+        GApageView("Work/AIXray", "AI Xray");
     }
 
     render() {

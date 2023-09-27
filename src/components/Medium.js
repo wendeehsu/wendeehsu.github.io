@@ -5,7 +5,7 @@ import { GApageView } from "../ga.js";
 
 class Medium extends Component {
     componentDidMount() {
-        GApageView("Medium");
+        GApageView("Medium", "Medium");
     }
 
     render() {
