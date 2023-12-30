@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ProjectCard from "./ProjectCard";
-import '../css/Work.css';
 import { GApageView } from "../ga.js";
 
 class Work extends Component {
@@ -51,9 +50,9 @@ class Work extends Component {
 
         return (
             <div>
-                <h3 className="title">
+                <h1 className="title">
                     My Work
-                </h3>
+                </h1>
                 <ProjectCard project={googleProject}/>
                 <ProjectCard project={pdogsProject}/>
                 <ProjectCard project={bliProject}/>

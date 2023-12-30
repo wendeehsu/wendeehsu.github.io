@@ -1,4 +1,15 @@
-h1, h2, h3, h4, h5, h6, nav, .nav-item {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.nav-item {
   font-family: 'Josefin Sans', Open Sans, serif !important
 }
 
@@ -11,6 +22,15 @@ code {
     monospace;
 }
 
+:root {
+  --dark-blue: #316BCF;
+  --pink: #F49DA0;
+  --dark-gray: #A0A0A0;
+  --light-gray: #F6F6F6;
+  --white: white;
+  --black: black;
+}
+
 .cover {
   width: 100%;
   display: flex;
@@ -18,7 +38,7 @@ code {
 }
 
 .gray-bg {
-  background-color: #F6F6F6;
+  background-color: var(--light-gray);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -29,24 +49,30 @@ code {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .col, .col-3, .col-4, .col-5, .col-6 {
-      min-width: 15rem;
+
+  .col,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6 {
+    min-width: 15rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 img {
@@ -64,15 +90,16 @@ img {
 }
 
 .nav-item {
+  color: var(--black) !important;
   float: right !important;
 }
 
-.nav-item :hover{
-  color: #F49DA0 !important;
+.nav-item :hover {
+  color: var(--pink) !important;
 }
 
-.nav-item :focus{
-  color: #F49DA0 !important;
+.nav-item :focus {
+  color: var(--pink) !important;
 }
 
 .nav-link {
@@ -87,19 +114,19 @@ img {
 }
 
 .blue-text {
-  color: #316BCF;
+  color: var(--dark-blue);
 }
 
 .pink-text {
-  color: #F49DA0
+  color: var(--pink);
 }
 
 .gray-text {
-  color: #A0A0A0;
+  color: var(--dark-gray);
 }
 
 .white-text {
-  color: white;
+  color: var(--white);
 }
 
 .bold-text {
@@ -120,5 +147,5 @@ img {
 }
 
 .navbar {
-  background-image: linear-gradient( rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
