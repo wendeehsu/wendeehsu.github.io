@@ -3,11 +3,11 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import Work from "./container/Work";
 import Medium from "./container/Medium";
 import Me from "./container/Me";
-import RedesignBLI from "./components/Projects/RedesignBLI";
-import ARLens from "./components/Projects/ARLens";
-import AIXray from "./components/Projects/AIXray";
-import PDOGS from "./components/Projects/PDOGS";
-import ColorTuning from "./components/Projects/ColorTuning";
+import RedesignBLI from "./container/Projects/RedesignBLI";
+import ARLens from "./container/Projects/ARLens";
+import AIXray from "./container/Projects/AIXray";
+import PDOGS from "./container/Projects/PDOGS";
+import ColorTuning from "./container/Projects/ColorTuning";
 
 function Routes() {
     const location = useLocation();

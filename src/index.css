@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,16 +12,11 @@ h5,
 h6,
 nav,
 .nav-item {
-  font-family: 'Josefin Sans', Open Sans, serif !important
+  @apply font-special;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  @apply font-normal;
 }
 
 :root {

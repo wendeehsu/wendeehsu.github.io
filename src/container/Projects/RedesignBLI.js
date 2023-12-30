@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../../css/Projects/shared.css";
-import NavLink from '../Navs/NavLink';
+import NavLink from '../../components/Navs/NavLink';
 import { GApageView } from "../../ga.js";
 
 class RedesignBLI extends Component {
