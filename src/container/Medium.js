@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MediumCard from "./MediumCard";
+import MediumCard from "../components/MediumCard.js";
 import "../css/Medium.css";
 import { GApageView } from "../ga.js";
 

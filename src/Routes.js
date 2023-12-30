@@ -1,8 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import { Switch, Route, useLocation } from "react-router-dom";
-import Work from "./components/Work";
-import Medium from "./components/Medium";
-import Me from "./components/Me";
+import Work from "./container/Work";
+import Medium from "./container/Medium";
+import Me from "./container/Me";
 import RedesignBLI from "./components/Projects/RedesignBLI";
 import ARLens from "./components/Projects/ARLens";
 import AIXray from "./components/Projects/AIXray";

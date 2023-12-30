@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard.js";
 import { GApageView } from "../ga.js";
 
 class Work extends Component {
