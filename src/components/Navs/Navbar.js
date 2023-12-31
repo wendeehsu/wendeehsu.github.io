@@ -22,7 +22,7 @@ function Navbar() {
     ];
 
     return (
-        <nav className="sticky top-0 bg-gradient-to-b from-white from-10% via-white via-50% p-2 sm:flex">
+        <nav className="sticky top-0 p-2 sm:flex bg-gradient-to-b from-white via-white/70 to-transparent">
             <div className='flex mx-2'>
                 <Link to="/">
                     Wendee Hsu
