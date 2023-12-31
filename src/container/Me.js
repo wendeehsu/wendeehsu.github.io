@@ -1,45 +1,62 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactTooltip from 'react-tooltip';
-import "../css/Me.css";
+// import "../css/Me.css";
 import { GApageView } from "../ga.js";
 
-export default class Me extends Component {
-    componentDidMount() {
+function Me() {
+    useEffect(() => {
         GApageView("Me", "About Me");
-    }
+    }, []);
 
-    render() {
-        return (
-            <div>
-                <h3 className="title">
-                    About Me
-                </h3>
-                <div className="row justify-content-center">
-                    <h6 className="gray-text col-6 center-text">
-                        UX Designer, Software Developer<br/>
-                        Passionate about building sustainable products that make a difference.
-                    </h6>
-                </div>
-                <br/>
-                <div className="row justify-content-center">
-                    <a data-tip="LinkedIn" href="https://www.linkedin.com/in/yuan-chih-hsu/?locale=en_US" target="_blank">
-                        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-                    </a>
-                    <a data-tip="Github" href="https://github.com/wendeehsu" target="_blank">
-                        <FontAwesomeIcon className="icon" icon={faGithub} />
-                    </a>
-                    <a data-tip="Email" href="mailto:wendeehsu@gmail.com" target="_blank">
-                        <FontAwesomeIcon className="icon" icon={faEnvelope} />
-                    </a>
-                    <a data-tip="Resume" href="https://drive.google.com/file/d/1L7wtVkYeGjVcghjIYSiaGmrrTuP4ce1E/view?usp=sharing" target="_blank">
-                        <FontAwesomeIcon className="icon" icon={faFileInvoice} />
-                    </a>
-                </div>
-                <ReactTooltip effect="solid" place="bottom" />
+    const iconList = [
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/yuan-chih-hsu",
+            icon: faLinkedin
+        }, {
+            name: "Github",
+            link: "https://github.com/wendeehsu",
+            icon: faGithub
+        }, {
+            name: "Email",
+            link: "mailto:wendeehsu@gmail.com",
+            icon: faEnvelope
+        }, {
+            name: "Resume",
+            link: "https://drive.google.com/file/d/1L7wtVkYeGjVcghjIYSiaGmrrTuP4ce1E/view?usp=sharing",
+            icon: faFileInvoice
+        }
+    ];
+
+    return (
+        <div>
+            <h3 className="title">
+                About Me
+            </h3>
+            <p className="gray-text text-center font-special">
+                UX Designer, Software Developer<br />
+                Passionate about building sustainable products that make a difference.
+            </p>
+            <div className="text-center mt-4">
+                {
+                    iconList.map((item, i) => (
+                        <a
+                            key={`icon-${i}`}
+                            data-tip={item.name}
+                            href={item.link}
+                            target="_blank"
+                            className='mx-2'>
+                            <FontAwesomeIcon icon={item.icon} />
+                        </a>
+                    ))
+                }
             </div>
-        )
-    }
+            <ReactTooltip effect="solid" place="bottom" />
+        </div>
+    )
 }
+
+export default Me;

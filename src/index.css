@@ -100,3 +100,7 @@ img {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+a:hover {
+  color: var(--pink);
+}
