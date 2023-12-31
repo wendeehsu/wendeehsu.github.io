@@ -38,12 +38,6 @@ p {
   background-color: var(--light-gray);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
 
@@ -74,34 +68,6 @@ p {
 
 img {
   animation: fadein 1.5s;
-}
-
-.navbar-toggler {
-  border: 0px !important;
-}
-
-.navbar-icon {
-  height: 1rem;
-  vertical-align: inherit;
-  margin-left: 0.5rem;
-}
-
-.nav-item {
-  color: var(--black) !important;
-  float: right !important;
-}
-
-.nav-item :hover {
-  color: var(--pink) !important;
-}
-
-.nav-item :focus {
-  color: var(--pink) !important;
-}
-
-.nav-link {
-  float: right !important;
-  margin-right: 1rem !important;
 }
 
 .title {
@@ -141,8 +107,4 @@ img {
 .vertical-center {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.navbar {
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }

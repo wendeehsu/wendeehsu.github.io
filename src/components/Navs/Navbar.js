@@ -1,29 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
-    return (
-        <nav className="navbar navbar-expand-lg sticky-top navbar-light">
-            <Link className="navbar-brand" to="/">
-                Wendee Hsu
-                <img className="navbar-icon" src="/icon.png" />
-            </Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
+    const [isOpen, setIsOpen] = useState(false);
 
-            <div className="collapse navbar-collapse" id="menu">
-                <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/Work">Work</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/Medium">Medium</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/Me">Me</Link>
-                    </li>
-                </ul>
+    const navList = [
+        {
+            name: 'Work',
+            path: '/Work'
+        },
+        {
+            name: 'Medium',
+            path: '/Medium'
+        },
+        {
+            name: 'Me',
+            path: '/Me'
+        }
+    ];
+
+    return (
+        <nav className="sticky top-0 bg-gradient-to-b from-white from-10% via-white via-50% p-2 sm:flex">
+            <div className='flex mx-2'>
+                <Link to="/">
+                    Wendee Hsu
+                    <img className="h-4 ml-2 inline mb-2" src="/icon.png" />
+                </Link>
+                <button
+                    className="ml-auto sm:hidden"
+                    onClick={() => setIsOpen(!isOpen)}>
+                    <FontAwesomeIcon className='' icon={isOpen ? faTimes : faBars} />
+                </button>
+            </div>
+
+            <div className={`ml-auto ${isOpen ? 'block animate-fadeIn' : 'hidden'} sm:flex`} id="menu">
+                {
+                    navList.map((item, i) => (
+                        <Link key={i} className="mx-4 text-right font-special block" to={item.path}>{item.name}</Link>
+                    ))
+                }
             </div>
         </nav>
     )
