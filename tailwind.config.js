@@ -11,6 +11,9 @@ module.exports = {
       'normal': '100%',
       'lg': '110%',
     },
+    maxWidth: {
+      'content': '70%',
+    },
     extend: {
       fontFamily: {
         special: ['Josefin Sans', 'Open Sans', 'serif'],
