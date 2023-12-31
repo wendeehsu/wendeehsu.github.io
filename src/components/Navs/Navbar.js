@@ -26,7 +26,7 @@ function Navbar() {
             <div className='flex mx-2'>
                 <Link to="/">
                     Wendee Hsu
-                    <img className="h-4 ml-2 inline mb-2" src="/icon.png" />
+                    <img className="logo" src="/icon.png" />
                 </Link>
                 <button
                     className="ml-auto sm:hidden"
