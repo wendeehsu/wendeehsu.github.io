@@ -1,11 +1,23 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
 import "../../css/Projects/colorTuning.css";
-import { NavLink, Banner } from "../../components";
+import { NavLink, Banner, Role } from "../../components";
 import { GApageView } from "../../ga.js";
 
 export default function ColorTuning() {
   const imagBasePath = "/images/ColorTuning/";
+  const roleTasks = [
+    {
+      role: "UX researcher and designer",
+      tasks: [
+        "interview, wireframe, prototype, A/B testing, usability testing",
+      ],
+    },
+    {
+      role: "Fullstack engineer",
+      tasks: ["Frontend: Angular.js", "Backend: Python"],
+    },
+  ];
 
   useEffect(() => {
     GApageView("Work/ColorTuning", "Color Tuning");
@@ -28,43 +40,60 @@ export default function ColorTuning() {
       </div>
 
       <div className="section">
-        <h5>MY ROLE</h5>
-        <p>UX Researcher & Designer, Full stack Engineer</p>
+        <Role roleTasks={roleTasks} textClass="blue-text" />
       </div>
 
       <div className="section">
-        <h5>METHOD & TOOL</h5>
-        <ul>
-          <li>Methods: interview, wireframe, prototype, usability testing</li>
-          <li>Prototyping Tools: Figma, Tableau</li>
-          <li>Frontend Framework: Angular.js</li>
-          <li>Backend: Python</li>
-        </ul>
-      </div>
-
-      <div className="section">
-        <h5>THE CHALLENGE</h5>
+        <h2>Background</h2>
         <p>
-          Color tuning engineers do not have an efficient way to initiate the
-          tuning parameters for a new device.
+          When the photograph closely resembles what people saw, it strengthens
+          the emotional connection to the scene more vividly. Hence, the color
+          optimization team is in charge of removing potential differences
+          between the actual object and the one displayed on a device.
         </p>
-        <p className="blue-text center-text">
+        <img
+          className="md:w-[70%] mx-auto my-4"
+          src={`${imagBasePath}background.png`}
+          alt="color looks different than reality on the device without color optimization"
+        />
+        <p>
+          To fine-tune the color on a device, the team first measures the
+          difference between its colors and those of a reference device, which
+          has already been optimized for accurate color. Based on these
+          comparisons, they adjust settings on the target device to bring its
+          colors closer to the reference standard.
+        </p>
+        <img
+          className="md:w-[70%] mx-auto my-4"
+          src={`${imagBasePath}tuningFlow.png`}
+          alt="Tuning flow"
+        />
+      </div>
+
+      <div className="section">
+        <h2>The Challenge</h2>
+        <p>
+          New devices are launched<b> every 3 months</b>. For each device
+          launched, color tuning engineers needs to follow the process above to
+          initiate the settings for a new device. Nevertheless, they do not have
+          an efficient way right now.
+        </p>
+        <p className="my-4 blue-text text-center">
           "I want to compare the color changes among different devices. <br />
           However, simply looking up the value of each color already costs me{" "}
           <b>1~3 days</b>."
         </p>
         <p>
-          To learn their current process of initiating parameter setting files
-          and figure out how it can be improved, I{" "}
-          <b className="blue-text">interviewed</b> 2 senior tuning engineers and
-          found <b className="blue-text">3 main problems</b>.
+          To learn their current process of initiating tuning settings and
+          figure out how it can be improved, I<b> interviewed</b> 2 senior tuning
+          engineers and found<b> 3 main problems</b>.
         </p>
       </div>
 
       <div className="section">
-        <h5>Why is the current process so inefficient?</h5>
-        <div className="horizontal-display">
-          <div className="left-text">
+        <h2>Why is the Current Process so Inefficient?</h2>
+        <div className="flex flex-wrap">
+          <div className="w-[60%]">
             <p className="section-subtitle blue-text">
               1. Manual Color Value Search
             </p>
@@ -104,7 +133,7 @@ export default function ColorTuning() {
 
       <div className="section">
         <h5>Who are the users?</h5>
-        <div className="horizontal-display">
+        <div className="flex flex-wrap">
           <img
             className="user-image"
             src={`${imagBasePath}captain.png`}
@@ -128,7 +157,7 @@ export default function ColorTuning() {
           </div>
         </div>
         <br />
-        <div className="horizontal-display">
+        <div className="flex flex-wrap">
           <div className="user-right-text">
             <h6 className="bold-text">Sailor</h6>
             <p className="blue-text quote-text">
@@ -157,7 +186,7 @@ export default function ColorTuning() {
 
       <div className="section">
         <div className="div-box background-green">
-          <p className="vertical-center center-text bold-text">
+          <p className="vertical-center text-center bold-text">
             How might we create a tool to generate new tuning settings for new
             devices
             <br /> in an{" "}
@@ -175,7 +204,7 @@ export default function ColorTuning() {
         </p>
       </div>
 
-      <div className="section horizontal-display">
+      <div className="section flex flex-wrap">
         <div className="big-number-section">
           <b className="big-title">
             <b className="blue-text big-number">7</b> Iterations
@@ -245,8 +274,8 @@ export default function ColorTuning() {
           />
         </div>
         <br />
-        <div className="horizontal-display">
-          <div className="left-text">
+        <div className="flex flex-wrap">
+          <div className="w-[60%]">
             <p className="section-subtitle blue-text">
               3. Flexible interaction
             </p>
@@ -266,7 +295,7 @@ export default function ColorTuning() {
 
       <div className="section">
         <h5>RESULT</h5>
-        <div className="horizontal-display">
+        <div className="flex flex-wrap">
           <div className="big-number-section">
             <b className="big-title blue-text">
               <b className="big-number">99</b>%
@@ -290,8 +319,8 @@ export default function ColorTuning() {
 
       <div className="section">
         <h5>REFLECTION</h5>
-        <div className="horizontal-display">
-          <div className="left-text">
+        <div className="flex flex-wrap">
+          <div className="w-[60%]">
             <p className="section-subtitle blue-text">
               1. Create prototypes that communicate
             </p>

@@ -23,7 +23,7 @@
         padding: 0px;
     }
 
-    .horizontal-display, .img-row, .img-row-equal > .right-side-img, .left-side-img {
+    .img-row, .img-row-equal > .right-side-img, .left-side-img {
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;

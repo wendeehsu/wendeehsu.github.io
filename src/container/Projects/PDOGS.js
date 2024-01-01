@@ -197,7 +197,7 @@ export default function PDOGS() {
 
       <div className="section">
         <h5>DESIGN & DEVELOPMENT PROCESS</h5>
-        <div className="horizontal-display">
+        <div className="flex flex-wrap">
           <div className="big-number-section">
             <b className="big-title">
               <b className="dark-pink-text big-number">6</b> Interviews
@@ -267,7 +267,7 @@ export default function PDOGS() {
 
         <div>
           <p className="section-subtitle">3. Designing Mockup</p>
-          <div className="horizontal-display">
+          <div className="flex flex-wrap">
             <p className="side-text">
               When the final wireframes is defined, I consolidated the design
               solutions and discussed the final user interface with the UI
@@ -284,7 +284,7 @@ export default function PDOGS() {
 
         <div>
           <p className="section-subtitle">4. Development & Quality Assurance</p>
-          <div className="horizontal-display">
+          <div className="flex flex-wrap">
             <img
               className="left-side-img"
               src={`${imagBasePath}qa.png`}
@@ -319,7 +319,7 @@ export default function PDOGS() {
           not in charge of. Additionally, separating the system administrator
           role increases the website's data security.
         </p>
-        <div className="horizontal-display img-row">
+        <div className="flex flex-wrap img-row">
           <img
             className="left-side-img"
             src={`${imagBasePath}old-role.png`}
@@ -353,7 +353,7 @@ export default function PDOGS() {
 
       <div className="section">
         <h5>RESULT</h5>
-        <div className="horizontal-display">
+        <div className="flex flex-wrap">
           <div className="big-number-section">
             <b className="dark-pink-text big-number">200+</b>
             <p className="number-description">Potential error prevented</p>
@@ -389,7 +389,7 @@ export default function PDOGS() {
           enabled users to share their thoughts on both designs as if they were
           both new.
         </p>
-        <div className="horizontal-display img-row-equal">
+        <div className="flex flex-wrap img-row-equal">
           <img
             className="left-side-img"
             src={`${imagBasePath}lo-fi1.png`}

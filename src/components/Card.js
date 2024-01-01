@@ -16,7 +16,7 @@ function Card({
             <div className="justify-center mb-8 flex flex-wrap animate-fadeIn">
                 <div className="p-4 w-1/4 min-w-80">
                     <h2>{title}</h2>
-                    <h3 className="gray-text">{subtitle}</h3>
+                    <p className="gray-text font-special">{subtitle}</p>
                     <p className="pink-text font-special">{note}</p>
                 </div>
                 <div
