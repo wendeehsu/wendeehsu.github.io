@@ -32,9 +32,9 @@ function Me() {
 
     return (
         <div>
-            <h3 className="title">
+            <h1 className="title">
                 About Me
-            </h3>
+            </h1>
             <p className="gray-text text-center font-special">
                 UX Designer, Software Developer<br />
                 Passionate about building sustainable products that make a difference.
@@ -47,6 +47,7 @@ function Me() {
                             data-tip={item.name}
                             href={item.link}
                             target="_blank"
+                            rel="noreferrer"
                             className='mx-2'>
                             <FontAwesomeIcon icon={item.icon} />
                         </a>

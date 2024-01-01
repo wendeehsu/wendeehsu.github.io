@@ -19,7 +19,7 @@ function Medium() {
         pageUrl: "https://wendeehsu.medium.com/1364b1193c98"
     }, {
         title: "Google Analytics in React.js",
-        subtitle: "Front-end, Data analytics",
+        subtitle: "Front-end, Data Analytics",
         imgUrl: "https://miro.medium.com/max/1400/1*SQXY-ker6mSvffwOBnBW9w.png",
         pageUrl: "https://wendeehsu.medium.com/c1b78dc1bbda"
     }, {
@@ -31,9 +31,9 @@ function Medium() {
 
     return (
         <div>
-            <h3 className="title">
+            <h1 className="title">
                 My Medium
-            </h3>
+            </h1>
             {
                 posts.map((post,i) => (
                     <Card

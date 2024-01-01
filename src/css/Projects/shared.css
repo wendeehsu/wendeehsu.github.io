@@ -2,10 +2,6 @@ li {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.coverImage {
-    height: 15rem;
-}
-
 .section {
     max-width: 70%;
     margin-left: auto;
@@ -144,10 +140,6 @@ video {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    .coverImage {
-        height: auto;
-        width: 100vw;
-    }
     .flow-img {
         height: 20vh;
     }

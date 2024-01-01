@@ -17,7 +17,7 @@ function Card({
                 <div className="p-4 w-1/4 min-w-80">
                     <h2>{title}</h2>
                     <h3 className="gray-text">{subtitle}</h3>
-                    <h3 className="pink-text">{note}</h3>
+                    <p className="pink-text font-special">{note}</p>
                 </div>
                 <div
                     className="w-80 h-48 rounded bg-center bg-normal bg-no-repeat hover:bg-lg transition-all duration-500"
@@ -29,7 +29,7 @@ function Card({
 
     return (
         <>{isExternal ?
-            <a href={pageUrl} target="_blank">
+            <a href={pageUrl} target="_blank" rel="noreferrer">
                 {cardContent()}
             </a>
             : <Link to={pageUrl}>

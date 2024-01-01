@@ -11,9 +11,9 @@ export default function Banner({
           alt={`mockup of the product about ${title}`}
         />
         <div className="sm:w-1/3 my-auto">
-          <h5 className="pink-text">{company}</h5>
-          <h4>{title}</h4>
-          <h5 className="gray-text">{period}</h5>
+          <h3 className="pink-text">{company}</h3>
+          <h1>{title}</h1>
+          <h3 className="gray-text">{period}</h3>
         </div>
       </div>
     )
