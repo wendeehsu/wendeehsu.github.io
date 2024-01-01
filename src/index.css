@@ -1,45 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav {
-  @apply font-special;
-}
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  nav {
+    @apply font-special;
+  }
 
-p {
-  @apply font-normal;
+  p {
+    @apply font-normal;
+  }
+
+  .logo {
+    @apply h-4 ml-2 mb-2 inline;
+  }
+  
+  img {
+    @apply animate-fadeIn;
+  }
+  
+  .title {
+    text-align: center;
+    @apply my-8;
+  }
+  
+  .blue-text {
+    color: var(--dark-blue);
+  }
+  
+  .pink-text {
+    color: var(--pink);
+  }
+  
+  .gray-text {
+    color: var(--dark-gray);
+  }
+  
+  .white-text {
+    color: var(--white);
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .quote-text {
+    font-style: italic;
+  }
+  
+  .vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  a:hover {
+    color: var(--pink);
+  }
+  
+  .cover {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gray-bg {
+    background-color: var(--light-gray);
+  }
 }
 
 :root {
-  --dark-blue: #316BCF;
-  --pink: #F49DA0;
-  --dark-gray: #A0A0A0;
-  --light-gray: #F6F6F6;
+  --dark-blue: #316bcf;
+  --pink: #f49da0;
+  --dark-gray: #a0a0a0;
+  --light-gray: #f6f6f6;
   --white: white;
   --black: black;
 }
 
-.cover {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gray-bg {
-  background-color: var(--light-gray);
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-
   .col,
   .col-3,
   .col-4,
@@ -50,57 +101,9 @@ p {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-.logo {
-  @apply h-4 ml-2 mb-2 inline
-}
-
-img {
-  @apply animate-fadeIn;
-}
-
-.title {
-  text-align: center;
-  @apply my-8
-}
-
-.blue-text {
-  color: var(--dark-blue);
-}
-
-.pink-text {
-  color: var(--pink);
-}
-
-.gray-text {
-  color: var(--dark-gray);
-}
-
-.white-text {
-  color: var(--white);
-}
-
-.bold-text {
-  font-weight: bold;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.quote-text {
-  font-style: italic;
-}
-
-.vertical-center {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-a:hover {
-  color: var(--pink);
+@media only screen and (min-width: 992px) {
 }

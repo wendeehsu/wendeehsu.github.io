@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactTooltip from 'react-tooltip';
-// import "../css/Me.css";
 import { GApageView } from "../ga.js";
 
 function Me() {

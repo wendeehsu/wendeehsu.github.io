@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Card from "../components/Card.js";
+import { Card } from "../components";
 import { GApageView } from "../ga.js";
 
 function Medium() {
