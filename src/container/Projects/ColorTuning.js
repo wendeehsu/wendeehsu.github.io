@@ -258,9 +258,7 @@ export default function ColorTuning() {
           actual web tool.
         </p>
 
-        <h3>
-          Wireframe 1
-        </h3>
+        <h3>Wireframe 1</h3>
         <div className="md:flex">
           <img
             className="md:pl-0 md:w-[50%]"
@@ -280,9 +278,7 @@ export default function ColorTuning() {
           </div>
         </div>
 
-        <h3>
-          Wireframe 2
-        </h3>
+        <h3>Wireframe 2</h3>
         <div className="md:flex">
           <div className="flex-1">
             <p>
@@ -312,6 +308,50 @@ export default function ColorTuning() {
               alt="adjusting page of wireframe version 2"
             />
           </div>
+        </div>
+
+        <h3>Wireframe 3. Providing Sufficient Information in the Chart</h3>
+        <p>
+          In wireframe v3, the chart only displays the updated tuning value.
+          However, a tuning engineer shared that,
+        </p>
+        <p className="blue-text my-1">
+          "Although the chart shows the region covered by the new setting, what
+          color changes are the calculation based on? What was the original
+          setting value for the reference device? If I can check and realize the
+          change isn't large, I'll stick with the original setting because it's
+          more stable."
+        </p>
+        <div className="md:flex">
+          <img
+            className="flex-1"
+            src={`${imagBasePath}wireframeV3_1.png`}
+            alt="Show new setting values in the chart of wireframe version 3"
+          />
+          <img
+            className="md:w-[50%]"
+            src={`${imagBasePath}wireframeV3_2.png`}
+            alt="The chart of wireframe version 3"
+          />
+        </div>
+
+        <div className="md:flex mt-4">
+          <div className="flex-1">
+            <p>
+              Therefore, I added the origin tuning value as gray dotted lines.
+              The color shifts are presented as line segments, indicating how
+              values change from circle to triangle.{" "}
+            </p>
+            <p className="blue-text my-1">
+              "This chart shows the changing trends of the different color
+              values, and that alone is very insightful."
+            </p>
+          </div>
+          <img
+            className="md:w-[50%]"
+            src={`${imagBasePath}productV1.png`}
+            alt="The chart of wireframe version 3"
+          />
         </div>
       </div>
 
