@@ -85,63 +85,71 @@ export default function ColorTuning() {
         </p>
         <p>
           To learn their current process of initiating tuning settings and
-          figure out how it can be improved, I<b> interviewed</b> 2 senior tuning
-          engineers and found<b> 3 main problems</b>.
+          figure out how it can be improved, I<b> interviewed</b> 2 senior
+          tuning engineers and found<b> 3 main problems</b>.
         </p>
       </div>
 
       <div className="section">
         <h2>Why is the Current Process so Inefficient?</h2>
-        <div className="flex flex-wrap">
-          <div className="w-[60%]">
-            <p className="section-subtitle blue-text">
-              1. Manual Color Value Search
-            </p>
-            <p>
+        <div>
+          <p className="section-subtitle blue-text">
+            1. Manual Color Value Search
+          </p>
+          <div className="flex flex-wrap">
+            <p className="flex-1">
               Color information is embedded in each picture, but engineers do
               not have the tools to extract the values. As a result, they must
               manually look up the numbers, which is very time-consuming.
             </p>
+            <img
+              className="sm:w-[40%]"
+              src={`${imagBasePath}checker.png`}
+              alt="color information is embedded in each picture"
+            />
           </div>
-          <img
-            className="right-img"
-            src={`${imagBasePath}checker.png`}
-            alt="color information is embedded in each picture"
-          />
         </div>
         <div>
           <p className="section-subtitle blue-text">
-            2. Lack of systematic analysis
+            2. Lack of Systematic Analysis
           </p>
-          <p>
-            Engineers currently adjust the tuning parameters of existing devices
-            to fit new ones, but this process is often biased and inaccurate, as
-            it relies heavily on trial and error.
-          </p>
+          <div className="flex flex-wrap">
+            <img
+              className="sm:w-[30%]"
+              src={`${imagBasePath}system-colors.png`}
+              alt="same hue can look different under different brightness"
+            />
+            <p className="flex-1">
+              There are many factors that can affect a color's final appearance.
+              Without a systematic analyzing approach, the engineers rely
+              heavily on trial and error, which is often biased and inaccurate.
+            </p>
+          </div>
         </div>
         <div>
           <p className="section-subtitle blue-text">
             3. Error-prone data manipulation
           </p>
           <p>
-            The color optimization team opens large JSON files in a text editor
-            to update parameters one by one. This is a tedious and error-prone
-            process, as they often make mistakes that require extra time to fix.
+            The color optimization team opens the setting files in a text editor
+            to update values one by one. As the file can be more than 1000
+            lines, this is a tedious and error-prone process. The team often
+            make mistakes that require extra time to fix.
           </p>
         </div>
       </div>
 
       <div className="section">
-        <h5>Who are the users?</h5>
+        <h2>User Archetypes</h2>
         <div className="flex flex-wrap">
           <img
-            className="user-image"
+            className="sm:w-[15%]"
             src={`${imagBasePath}captain.png`}
             alt="captain"
           />
-          <div className="user-right-text">
-            <h6 className="bold-text">Captain</h6>
-            <p className="blue-text quote-text">
+          <div className="flex-1">
+            <h3 className="bold-text">Captain</h3>
+            <p className="blue-text italic">
               "To reach our destination, I need a map, a compass, a telescope,
               and food for 10 days."
             </p>
@@ -158,9 +166,9 @@ export default function ColorTuning() {
         </div>
         <br />
         <div className="flex flex-wrap">
-          <div className="user-right-text">
-            <h6 className="bold-text">Sailor</h6>
-            <p className="blue-text quote-text">
+          <div className="flex-1">
+            <h3 className="bold-text">Sailor</h3>
+            <p className="blue-text italic">
               "Let me try the tools on the ship. This map will be helpful! Oh,
               they have a compass! Great!"
             </p>
@@ -177,7 +185,7 @@ export default function ColorTuning() {
             </ul>
           </div>
           <img
-            className="user-image"
+            className="sm:w-[15%]"
             src={`${imagBasePath}sailor.png`}
             alt="sailor"
           />
@@ -237,7 +245,7 @@ export default function ColorTuning() {
 
       <div className="section">
         <h5>The final color optimization tuning tool</h5>
-        <p className="gray-text quote-text">
+        <p className="gray-text italic">
           *As I signed the NDA, all screenshots are only used to demonstrate the
           functionality. The user interface and data are not the same as the
           actual web tool.

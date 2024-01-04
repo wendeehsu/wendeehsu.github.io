@@ -7,7 +7,7 @@ export default function Role({ roleTasks, textClass }) {
       {roleTasks.map((roleTask, i) => (
         <>
           <p key={`role-${i}`} className={`${textClass} font-bold`}>{roleTask.role}</p>
-          <ul className="list-disc list-inside">
+          <ul>
             {roleTask.tasks.map((task, j) => (
               <li key={`task-${i}-${j}`}>{task}</li>
             ))}

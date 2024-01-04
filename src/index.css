@@ -49,6 +49,10 @@
   img {
     @apply animate-fadeIn;
   }
+
+  ul {
+    @apply list-disc list-inside;
+  }
   
   .title {
     text-align: center;
@@ -104,6 +108,14 @@
   --light-gray: #f6f6f6;
   --white: white;
   --black: black;
+}
+
+@layer components {
+  img {
+    object-fit: contain;
+    padding: 15px;
+    min-width: 250px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
