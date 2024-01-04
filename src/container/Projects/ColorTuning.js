@@ -19,19 +19,26 @@ export default function ColorTuning() {
     },
   ];
 
-  const results = [{
-    figure: 7,
-    unit: "Iterations",
-    detail: ["3 versions of lo-fi prototype","4 versions of product"]
-  }, {
-    figure: 16,
-    unit: "User Testings",
-    detail: ["Each version is tested by 2 or 3 users."]
-  }, {
-    figure: 12,
-    unit: "Weeks",
-    detail: ["4 weeks on research & design","8 weeks on development & testing"]
-  }];
+  const results = [
+    {
+      figure: 7,
+      unit: "Iterations",
+      detail: ["3 versions of lo-fi prototype", "4 versions of product"],
+    },
+    {
+      figure: 16,
+      unit: "User Testings",
+      detail: ["Each version is tested by 2 or 3 users."],
+    },
+    {
+      figure: 12,
+      unit: "Weeks",
+      detail: [
+        "4 weeks on research & design",
+        "8 weeks on development & testing",
+      ],
+    },
+  ];
 
   useEffect(() => {
     GApageView("Work/ColorTuning", "Color Tuning");
@@ -117,7 +124,7 @@ export default function ColorTuning() {
               manually look up the numbers, which is very time-consuming.
             </p>
             <img
-              className="sm:w-[40%]"
+              className="sm:w-[30%]"
               src={`${imagBasePath}checker.png`}
               alt="color information is embedded in each picture"
             />
@@ -157,7 +164,7 @@ export default function ColorTuning() {
         <h2>User Archetypes</h2>
         <div className="flex flex-wrap">
           <img
-            className="sm:w-[15%]"
+            className="py-0 sm:w-[15%]"
             src={`${imagBasePath}captain.png`}
             alt="captain"
           />
@@ -199,7 +206,7 @@ export default function ColorTuning() {
             </ul>
           </div>
           <img
-            className="sm:w-[15%]"
+            className="py-0 sm:w-[15%]"
             src={`${imagBasePath}sailor.png`}
             alt="sailor"
           />
@@ -222,17 +229,17 @@ export default function ColorTuning() {
 
       <div className="section">
         <div className="flex flex-wrap mb-4">
-          {
-            results.map((result,i) => 
-              <Number
-                key={`result-${i}`}
-                figure={result.figure}
-                unit={result.unit}
-                detail={result.detail} />)
-          }
+          {results.map((result, i) => (
+            <Number
+              key={`result-${i}`}
+              figure={result.figure}
+              unit={result.unit}
+              detail={result.detail}
+            />
+          ))}
         </div>
       </div>
-      
+
       <div className="section">
         <h2>Design Iterations</h2>
         <p>
@@ -240,15 +247,76 @@ export default function ColorTuning() {
           experience levels to each round of usability testings to understand if
           their needs are fulfilled by the design.
         </p>
-      </div>
-
-      <div className="section">
-        <h5>The final color optimization tuning tool</h5>
-        <p className="gray-text italic">
+        <img
+          className="my-4 px-0"
+          src={`${imagBasePath}core-concept.png`}
+          alt="User uploads images and setting files. Next, the tool displays color value changes extracted by computer vision. Lastly, user adjusts the reference device's settings to fit the target device."
+        />
+        <p className="gray-text">
           *As I signed the NDA, all screenshots are only used to demonstrate the
           functionality. The user interface and data are not the same as the
           actual web tool.
         </p>
+
+        <h3>
+          Wireframe 1
+        </h3>
+        <div className="md:flex">
+          <img
+            className="md:pl-0 md:w-[50%]"
+            src={`${imagBasePath}wireframeV1.png`}
+            alt="wireframe version 1"
+          />
+          <div className="flex-1 sm:ml-2">
+            <p className="blue-text mt-4 mb-1">
+              "This design only allows us to upload one image pair, but we
+              actually compare colors in multiple pairs of images."
+            </p>
+            <p>
+              &#x2192; Engineers need to compare colors under
+              <b> different conditions (derived from each image pair) </b>and
+              adjust the setting file accordingly.
+            </p>
+          </div>
+        </div>
+
+        <h3>
+          Wireframe 2
+        </h3>
+        <div className="md:flex">
+          <div className="flex-1">
+            <p>
+              The line chart is the color values’ change calculated by the tool.
+            </p>
+            <p className="blue-text my-1">
+              "The line charts help me understand if the changes are smooth.
+              However, before knowing what region the new setting covers and
+              whether it needs further adjustment, I won’t consider smoothness
+              at this stage."
+            </p>
+            <p>
+              &#x2192; Testees confirmed that the upload page now meet their
+              needs better, but the chart can be improved since the new setting
+              values for the target device is more important than smoothness
+              among each color value.
+            </p>
+          </div>
+          <div className="md:w-[50%]">
+            <img
+              className="sm:pt-0"
+              src={`${imagBasePath}wireframeV2_1.png`}
+              alt="upload page of wireframe version 2"
+            />
+            <img
+              src={`${imagBasePath}wireframeV2_2.png`}
+              alt="adjusting page of wireframe version 2"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="section">
+        <h5>The final color optimization tuning tool</h5>
         <div>
           <p className="section-subtitle blue-text">
             1. Auto data extraction with systematic analysis
