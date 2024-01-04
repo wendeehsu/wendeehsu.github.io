@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
 import "../../css/Projects/colorTuning.css";
-import { NavLink, Banner, Role } from "../../components";
+import { NavLink, Banner, Role, Number } from "../../components";
 import { GApageView } from "../../ga.js";
 
 export default function ColorTuning() {
@@ -18,6 +18,20 @@ export default function ColorTuning() {
       tasks: ["Frontend: Angular.js", "Backend: Python"],
     },
   ];
+
+  const results = [{
+    figure: 7,
+    unit: "Iterations",
+    detail: ["3 versions of lo-fi prototype","4 versions of product"]
+  }, {
+    figure: 16,
+    unit: "User Testings",
+    detail: ["Each version is tested by 2 or 3 users."]
+  }, {
+    figure: 12,
+    unit: "Weeks",
+    detail: ["4 weeks on research & design","8 weeks on development & testing"]
+  }];
 
   useEffect(() => {
     GApageView("Work/ColorTuning", "Color Tuning");
@@ -193,8 +207,8 @@ export default function ColorTuning() {
       </div>
 
       <div className="section">
-        <div className="div-box background-green">
-          <p className="vertical-center text-center bold-text">
+        <div className="p-4 rounded-lg bg-sky-50">
+          <p className="text-center bold-text">
             How might we create a tool to generate new tuning settings for new
             devices
             <br /> in an{" "}
@@ -204,43 +218,28 @@ export default function ColorTuning() {
             way?
           </p>
         </div>
-        <br />
+      </div>
+
+      <div className="section">
+        <div className="flex flex-wrap mb-4">
+          {
+            results.map((result,i) => 
+              <Number
+                key={`result-${i}`}
+                figure={result.figure}
+                unit={result.unit}
+                detail={result.detail} />)
+          }
+        </div>
+      </div>
+      
+      <div className="section">
+        <h2>Design Iterations</h2>
         <p>
           In this project, I invited color tuning engineers with different
           experience levels to each round of usability testings to understand if
           their needs are fulfilled by the design.
         </p>
-      </div>
-
-      <div className="section flex flex-wrap">
-        <div className="big-number-section">
-          <b className="big-title">
-            <b className="blue-text big-number">7</b> Iterations
-          </b>
-          <p className="number-description">
-            3 versions of lo-fi prototype
-            <br />4 versions of product
-          </p>
-        </div>
-        <div className="big-number-section">
-          <b className="big-title">
-            <b className="blue-text big-number">16</b> User testings
-          </b>
-          <p className="number-description">
-            Each version is tested
-            <br />
-            by 2 or 3 users.
-          </p>
-        </div>
-        <div className="big-number-section">
-          <b className="big-title">
-            <b className="blue-text big-number">12</b> Weeks
-          </b>
-          <p className="number-description">
-            4 weeks on research & design
-            <br />8 weeks on development & testing
-          </p>
-        </div>
       </div>
 
       <div className="section">
