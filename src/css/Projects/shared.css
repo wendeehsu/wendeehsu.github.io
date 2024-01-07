@@ -96,13 +96,6 @@ li {
     margin-top: auto;
 }
 
-.restriction-icon {
-    width: 8vw;
-    height: auto;
-    margin: 1.5rem auto;
-    display: block;
-}
-
 video {
     margin: 1.5rem auto;
     width: 80%;
@@ -129,22 +122,12 @@ video {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    .flow-img {
-        height: 20vh;
-    }
-    .center-img-space{
-        width: 70vw;
-    }
     .center-img-space-3{
         width: 70vw;
         margin: 2rem;
     }
     .reflection-icon {
         display: none;
-    }
-
-    .restriction-icon {
-        width: 20vw;
     }
 
     video {
@@ -155,15 +138,9 @@ video {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .flow-img {
-        height: 25vh;
-    }
     .center-img-space-3{
         width: 60vw;
         margin: 2rem;
-    }
-    .center-img-space{
-        width: 70vw;
     }
     .reflection-icon {
         max-width: 20%;
@@ -172,13 +149,6 @@ video {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .flow-img {
-        height: 50vh;
-    }
-    .center-img-space{
-        width: 55vw;
-        margin: 2rem;
-    }
     .center-img-space-3{
         width: 40vw;
         margin: 2rem;
