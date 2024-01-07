@@ -43,7 +43,7 @@
   }
 
   .logo {
-    @apply h-4 ml-2 mb-2 inline;
+    @apply h-4 ml-2 p-0 min-w-0 mb-2 inline;
   }
   
   img {
@@ -113,8 +113,12 @@
 @layer components {
   img {
     object-fit: contain;
-    padding: 15px;
     min-width: 250px;
+    @apply py-[15px] px-0 sm:px-[15px]
+  }
+
+  .full-img {
+    @apply rounded-lg p-0 mx-0 my-[15px] sm:m-[15px]
   }
 }
 

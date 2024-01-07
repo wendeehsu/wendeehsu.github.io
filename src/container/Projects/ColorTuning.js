@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
-import "../../css/Projects/colorTuning.css";
 import { NavLink, Banner, Role, Number } from "../../components";
 import { GApageView } from "../../ga.js";
 
@@ -19,7 +18,7 @@ export default function ColorTuning() {
     },
   ];
 
-  const results = [
+  const numbers = [
     {
       figure: 7,
       unit: "Iterations",
@@ -37,6 +36,21 @@ export default function ColorTuning() {
         "4 weeks on research & design",
         "8 weeks on development & testing",
       ],
+    },
+  ];
+
+  const results = [
+    {
+      figure: "99%",
+      detail: ["Reduction in value searching time"],
+    },
+    {
+      figure: "32",
+      detail: ["Hours saved on optimizing settings for a device"],
+    },
+    {
+      figure: "500+",
+      detail: ["Potential errors are prevented"],
     },
   ];
 
@@ -164,7 +178,7 @@ export default function ColorTuning() {
         <h2>User Archetypes</h2>
         <div className="flex flex-wrap">
           <img
-            className="py-0 sm:w-[15%]"
+            className="py-2 sm:w-[15%] sm:py-0"
             src={`${imagBasePath}captain.png`}
             alt="captain"
           />
@@ -206,7 +220,7 @@ export default function ColorTuning() {
             </ul>
           </div>
           <img
-            className="py-0 sm:w-[15%]"
+            className="py-2 sm:py-0 sm:w-[15%]"
             src={`${imagBasePath}sailor.png`}
             alt="sailor"
           />
@@ -229,12 +243,12 @@ export default function ColorTuning() {
 
       <div className="section">
         <div className="flex flex-wrap mb-4">
-          {results.map((result, i) => (
+          {numbers.map((num, i) => (
             <Number
-              key={`result-${i}`}
-              figure={result.figure}
-              unit={result.unit}
-              detail={result.detail}
+              key={`num-${i}`}
+              figure={num.figure}
+              unit={num.unit}
+              detail={num.detail}
             />
           ))}
         </div>
@@ -277,6 +291,7 @@ export default function ColorTuning() {
             </p>
           </div>
         </div>
+        <br />
 
         <h3>Wireframe 2</h3>
         <div className="md:flex">
@@ -309,6 +324,7 @@ export default function ColorTuning() {
             />
           </div>
         </div>
+        <br />
 
         <h3>Wireframe 3. Providing Sufficient Information in the Chart</h3>
         <p>
@@ -353,10 +369,45 @@ export default function ColorTuning() {
             alt="The chart of wireframe version 3"
           />
         </div>
+        <br />
+        
+        <h3>Product 1-3. Improve Condition Comparison by changing layout</h3>
+        <div className="md:flex">
+          <img
+            className="md:w-[50%] md:pt-0"
+            src={`${imagBasePath}productV1_1.png`}
+            alt="early product is using a long layout"
+          />
+          <div className="flex-1 md:ml-2">
+            <p>
+              The color optimization team needs to decide tuning settings for
+              more than 10 conditions. In Product v2, I displayed all conditions
+              as a single long page. However, 2 out of 3 testers shared that
+              this layout can be improved.{" "}
+            </p>
+            <p className="blue-text my-1">
+              "We also need to make sure the final tuning setting does not
+              change abruptly among each condition. Now (product v2) I will need
+              to scroll up and down repeatedly to check it."
+            </p>
+          </div>
+        </div>
+        <div className="md:flex">
+          <p className="flex-1 md:mr-2">
+            I thus use a slider to control which condition is displayed. In this
+            way, it's easier to observe how color values and tuning settings
+            shift.
+          </p>
+          <img
+            className="md:w-[50%]"
+            src={`${imagBasePath}productV3_1.png`}
+            alt="updated product is using a sliding layout"
+          />
+        </div>
       </div>
 
       <div className="section">
-        <h5>The final color optimization tuning tool</h5>
+        <h2>The Final Color Optimization Tuning Tool</h2>
         <div>
           <p className="section-subtitle blue-text">
             1. Auto data extraction with systematic analysis
@@ -365,7 +416,7 @@ export default function ColorTuning() {
             After color tuning engineers upload images into the website, the
             website automatically extracts each color's information and displays
             it under different conditions. This drastically cuts down engineers'
-            time to analyze color changing trends from <b>3 days to 1 hour</b>.
+            time to analyze color changing trends <b>3 days to 1 hour</b>.
           </p>
           <img
             className="full-img"
@@ -389,19 +440,15 @@ export default function ColorTuning() {
           />
         </div>
         <br />
-        <div className="flex flex-wrap">
-          <div className="w-[60%]">
-            <p className="section-subtitle blue-text">
-              3. Flexible interaction
-            </p>
-            <p>
-              To service users with different information consumption behaviors,
-              I added zoom-in functionality so people can focus on a specific
-              part in each chart.{" "}
-            </p>
-          </div>
+        <p className="section-subtitle blue-text">3. Flexible interaction</p>
+        <div className="md:flex flex-wrap">
+          <p className="flex-1">
+            To service users with different information consumption behaviors, I
+            added zoom-in functionality so people can focus on a specific part
+            in each chart.
+          </p>
           <img
-            className="zoom-img"
+            className="md:w-[50%]"
             src={`${imagBasePath}zoom.gif`}
             alt="Users can zoom in to a region of interest by dragging a bounding box on the graph."
           />
@@ -409,47 +456,34 @@ export default function ColorTuning() {
       </div>
 
       <div className="section">
-        <h5>RESULT</h5>
-        <div className="flex flex-wrap">
-          <div className="big-number-section">
-            <b className="big-title blue-text">
-              <b className="big-number">99</b>%
-            </b>
-            <p className="number-description">
-              Reduction in value searching time
-            </p>
-          </div>
-          <div className="big-number-section">
-            <b className="blue-text big-number">32</b>
-            <p className="number-description">
-              Hours saved on optimizing initial parameters for a new device
-            </p>
-          </div>
-          <div className="big-number-section">
-            <b className="blue-text big-number">500+</b>
-            <p className="number-description">Potential errors are prevented</p>
-          </div>
+        <h2>Result</h2>
+        <div className="flex flex-wrap mb-4">
+          {results.map((result, i) => (
+            <Number
+              key={`result-${i}`}
+              figure={result.figure}
+              detail={result.detail}
+            />
+          ))}
         </div>
       </div>
 
       <div className="section">
-        <h5>REFLECTION</h5>
-        <div className="flex flex-wrap">
-          <div className="w-[60%]">
-            <p className="section-subtitle blue-text">
-              1. Create prototypes that communicate
-            </p>
-            <p>
-              This is the first time I tried{" "}
-              <b>Tableau to mimic my web data visualization plans</b> as a
-              prototype. The fast and interactive graphs stimulated users to
-              provide constructive feedback. This made me realize that the core
-              of prototyping is to <b>foster understanding and communication</b>
-              , regardless of the tool or approach used.
-            </p>
-          </div>
+        <h2>Reflection</h2>
+        <p className="section-subtitle blue-text">
+          1. Create prototypes that communicate
+        </p>
+        <div className="md:flex flex-wrap">
+          <p className="flex-1">
+            This is the first time I tried{" "}
+            <b>Tableau to mimic my web data visualization plans</b> as a
+            prototype. The fast and interactive graphs stimulated users to
+            provide constructive feedback. This made me realize that the core of
+            prototyping is to <b>foster understanding and communication</b>,
+            regardless of the tool or approach used.
+          </p>
           <img
-            className="zoom-img"
+            className="md:w-[50%]"
             src={`${imagBasePath}tableau.png`}
             alt="Use tableau for mimic data visualization outcome"
           />
@@ -489,7 +523,7 @@ export default function ColorTuning() {
       </div>
 
       <div className="section">
-        <h6>IMAGE SOURCE</h6>
+        <h2>Image Source</h2>
         <ul>
           <li>
             <a
