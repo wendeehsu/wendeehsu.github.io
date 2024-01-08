@@ -1,7 +1,3 @@
-li {
-    font-family: Arial, Helvetica, sans-serif
-}
-
 .section {
     max-width: 70%;
     margin-left: auto;
@@ -10,34 +6,8 @@ li {
     margin-bottom: 2.5rem;
 }
 
-.full-width-section {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.full-width-section > p, .full-width-section > h5 {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
 .full-width-inner-section {
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.full-width-title {
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 2rem;
-}
-
-.label-img {
-    width: 60px;
+    @apply px-[15%] py-[20px]
 }
 
 .section-subtitle {
@@ -48,7 +18,8 @@ li {
 
 .section > :is(h1,h2,h3,h4,h5,h6) {
     font-weight: bold;
-    line-height: 2.5em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .section p {
@@ -56,20 +27,6 @@ li {
 }
 
 /* TODO: check use case */
-.full-width-img {
-    width: 100%;
-    height: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: auto;
-}
-
-.center-context {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .secondary-title {
     font-weight: bold;
     line-height: 2.5em !important;
@@ -79,10 +36,6 @@ li {
     background-color: #EBF6F2;
     border-radius: 10px;
     padding: 0.7em 1em;
-}
-
-.background-green {
-    background-color: #EBF6F2;
 }
 
 .background-pink {
