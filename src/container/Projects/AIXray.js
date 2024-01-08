@@ -1,12 +1,49 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
-import { NavLink, Banner } from "../../components";
+import { NavLink, Banner, Role, Reflection } from "../../components";
 import { GApageView } from "../../ga.js";
 
 export default function AIXray() {
   useEffect(() => {
     GApageView("Work/AIXray", "AI Xray");
   }, []);
+
+  const imageBaseUrl = "/images/Xray/";
+
+  const roleTasks = [
+    {
+      role: "Machine Learning Engineer",
+      tasks: ["Image Classification Model Training"],
+    },
+    {
+      role: "Backend Engineer",
+      tasks: ["Flask API, Google Cloud Storage"],
+    },
+  ];
+
+  const reflections = [
+    {
+      imgUrl: imageBaseUrl + "Reflection1.png",
+      title:
+        "1. Behind each excellent result, there is always a lot of tiring tasks to do",
+      detail:
+        "Same as many outsiders, in the past, I was fascinated by the incredible achievements done by artificial intelligence. However, after being a machine learning engineer, I realized that 80 percent of my time was spent on collecting and labeling data. This step is tedious and exhausted, but it is the first and most important step in machine learning. Otherwise, we will face a rubbish-in-rubbish-out situation when there is not enough training data. I believe this spirit applies to every field. It is those who can bear the hard-works that paves their way to excellency.",
+    },
+    {
+      imgUrl: imageBaseUrl + "Reflection2.png",
+      title:
+        "2. Technology is powerful only when it is applied in the right place",
+      detail:
+        "At the beginning of this project, we spent many weeks exploring how AI can be applied in the dental industry. However, after conducting several interviews with dentists, we figured out none of the applications meet their needs. Fortunately, the idea of using AI to sort through images is also found during the conversation with dentists. As a result, I think we may start with “What is the problem?” instead of “What solutions can we provide?” in future works. It will not only save us time but also maximize the impact technology can bring.",
+    },
+    {
+      imgUrl: imageBaseUrl + "Reflection3.png",
+      title:
+        "3. AI is a black box, making it hard to figure out how to improve its performance",
+      detail:
+        "After training our artificial neural network, we will look at the result, discussing how its performance can be improved. In a traditional human-constructed algorithm, this part is simple because we only need to trace the code line by line. When it comes to AI, we do not know how it derives the result since we can only control the input. The rest remains a black box. As a result, performance improvement turns out to be more like a wild guess. For example, we may randomly change some parameters or studying other research to get more ideas. The fact that results obtained by AI are not explainable is the hardest part of machine learning.",
+    },
+  ];
 
   return (
     <div>
@@ -27,50 +64,45 @@ export default function AIXray() {
       </div>
 
       <div className="section">
-        <h5>MY ROLE</h5>
-        <p>Machine Learning Engineer, Backend Engineer</p>
+        <Role roleTasks={roleTasks} textClass="blue-text" />
       </div>
 
       <div className="section">
-        <h5>MY TEAMMATES</h5>
-        <p>
-          <a href="https://www.facebook.com/zern.r" target="_blank">
-            Zern Rau
-          </a>{" "}
-          - Frontend Engineer, Image Labeler
-          <br />
-          <a
-            href="https://www.facebook.com/profile.php?id=100001377161319"
-            target="_blank"
-          >
-            Egg Lee
-          </a>{" "}
-          - Image Labeler
-          <br />
-        </p>
+        <h2>My Teammates</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/zern.r"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Zern Rau
+            </a>{" "}
+            - Frontend Engineer, Image Labeler
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100001377161319"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Egg Lee
+            </a>{" "}
+            - Image Labeler
+          </li>
+        </ul>
       </div>
 
       <div className="section">
-        <h5>TECHNIQUE</h5>
-        <p>
-          Programming language: Python
-          <br />
-          Convolutional Neural Network
-          <br />
-          Flask backend api
-        </p>
+        <h2>Process Overview</h2>
+        <img src={`${imageBaseUrl}Process.png`} alt="process" />
       </div>
 
       <div className="section">
-        <h5>PROCESS OVERVIEW</h5>
-        <img className="full-width-img" src="/images/Xray/Process.png" />
-      </div>
-
-      <div className="section">
-        <h5>DEVELOP PROCESS</h5>
+        <h2>Develop Process</h2>
 
         {/* ---- 1. Define Problem ---- */}
-        <p className="secondary-title">1. Define Problem</p>
+        <h3>1. Define Problem</h3>
         <p className="section-subtitle blue-text">Observation</p>
         <p>
           We went to clinics to observe how dentists interact with patients.
@@ -80,10 +112,11 @@ export default function AIXray() {
           images, and later select those that can help the patient understand
           the teeth’s condition better.
         </p>
-        <div className="row justify-content-center">
+        <div className="justify-center">
           <img
-            className="center-img-space-3"
-            src="/images/Xray/ProblemProcess.png"
+            className="md:w-[60%] mx-auto my-4"
+            src={`${imageBaseUrl}ProblemProcess.png`}
+            alt="open, sort, explain"
           />
         </div>
         <p>
@@ -98,8 +131,8 @@ export default function AIXray() {
 
       <div className="section">
         <p className="section-subtitle blue-text">Our Focus</p>
-        <div className="div-box" style={{ margin: "1.5rem 0rem" }}>
-          <p className="vertical-center">
+        <div className="p-4 mb-4 rounded-lg bg-sky-50">
+          <p>
             We want to optimize the image sorting step to enhance the quality
             for dentists to explain patients’ teeth condition, helping them
             focus more on the interaction with patients.
@@ -116,20 +149,18 @@ export default function AIXray() {
 
       {/* ---- 2. Develop the Image Classification Algorithm ---- */}
       <div className="section">
-        <p className="secondary-title">
-          2. Develop the Image Classification Algorithm
-        </p>
+        <h3>2. Develop the Image Classification Algorithm</h3>
         <p className="section-subtitle blue-text">Define the classes</p>
         <p>
           Since we want the machine to learn how to classify images on its own,
           we have to teach it first. We start with defining mutually exclusive
           classes, in which we want an image to be categorized.
         </p>
-        <div className="row justify-content-center">
+        <div className="justify-center">
           <img
-            className="col-5"
-            style={{ margin: "1.5rem 0rem" }}
-            src="/images/Xray/XrayTemplate.png"
+            className="md:w-[50%] mx-auto my-4"
+            src={`${imageBaseUrl}XrayTemplate.png`}
+            alt="template"
           />
         </div>
         <p className="gray-text text-center">
@@ -152,10 +183,11 @@ export default function AIXray() {
 
       <div className="section">
         <p className="section-subtitle blue-text">Machine Learning</p>
-        <div className="row justify-content-center">
+        <div className="justify-center">
           <img
-            className="center-img-space-3"
-            src="/images/Xray/MLProcess.png"
+            className="md:w-[60%] mx-auto my-4"
+            src={`${imageBaseUrl}MLProcess.png`}
+            alt="machine learning process"
           />
         </div>
         <p>
@@ -173,9 +205,9 @@ export default function AIXray() {
 
       {/* ---- 3. Develope the Backend Application Programming Interface (API) ---- */}
       <div className="section">
-        <p className="secondary-title">
+        <h3>
           3. Developing the Backend Application Programming Interface (API)
-        </p>
+        </h3>
         <p>
           After we finished training our machine learning algorithm, we could
           include the algorithm into our web application using Flask, a micro
@@ -183,117 +215,52 @@ export default function AIXray() {
           our platform will then take that image as the input of our trained
           network and show the resulting prediction to the user.
         </p>
-        <div className="row justify-content-center">
-          <video src="/images/Xray/Mock.mp4" autoPlay="true" loop="true" />
+        <div className="justify-center">
+          <video
+            src={`${imageBaseUrl}Mock.mp4`}
+            autoPlay="true"
+            loop="true"
+            alt="demo"
+          />
         </div>
       </div>
 
       {/* ---- Problems encountered during Development  ---- */}
       <div className="section">
-        <p className="secondary-title">
-          Problems encountered during Development
-        </p>
-        <img className="full-width-img" src="/images/Xray/DevelopTable.png" />
+        <h3>Problems encountered during Development</h3>
+        <img src={`${imageBaseUrl}DevelopTable.png`} alt="problems" />
       </div>
 
-      <div className="full-width-section">
-        <h5>
-          <b>FINAL PRODUCT</b>
-        </h5>
-        <p className="section-subtitle blue-text">Scenario</p>
+      <div className="section">
+        <h2>
+          <b>Final Product</b>
+        </h2>
         <p>
           Dentists can open a folder and upload the patient’s x-ray images and
           have the images sorted.
         </p>
-        <div className="full-width-inner-section gray-bg">
-          <img className="full-width-img" src="/images/Xray/Product.png" />
-        </div>
+        <img src={`${imageBaseUrl}Product.png`} alt="product" />
       </div>
 
       <div className="section">
-        <h5>RESULT</h5>
+        <h2>Result</h2>
         <p>
           It only takes <b>0.2 seconds</b> with <b>94% accuracy</b> for our
           service to classify an image, while dentists need to spend 1 second
-          per image before.{" "}
+          per image before.
         </p>
       </div>
 
       <div className="section">
-        <h5>REFLECTION</h5>
-        <div className="row">
-          <img
-            className="reflection-icon col"
-            src="/images/Xray/Reflection1.png"
+        <h2>Reflection</h2>
+        {reflections.map((reflection, i) => (
+          <Reflection
+            key={`reflection-${i}`}
+            imgUrl={reflection.imgUrl}
+            title={reflection.title}
+            detail={reflection.detail}
           />
-          <div className="col">
-            <p className="bold-text">
-              1. Behind each excellent result, there is always a lot of tiring
-              tasks to do{" "}
-            </p>
-            <p>
-              Same as many outsiders, in the past, I was fascinated by the
-              incredible achievements done by artificial intelligence. However,
-              after being a machine learning engineer, I realized that 80
-              percent of my time was spent on collecting and labeling data. This
-              step is tedious and exhausted, but it is the first and most
-              important step in machine learning. Otherwise, we will face a
-              rubbish-in-rubbish-out situation when there is not enough training
-              data. I believe this spirit applies to every field. It is those
-              who can bear the hard-works that paves their way to excellency.
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <img
-            className="reflection-icon col"
-            src="/images/Xray/Reflection2.png"
-          />
-          <div className="col">
-            <p className="bold-text">
-              2. Technology is powerful only when it is applied in the right
-              place
-            </p>
-            <p>
-              At the beginning of this project, we spent many weeks exploring
-              how AI can be applied in the dental industry. However, after
-              conducting several interviews with dentists, we figured out none
-              of the applications meet their needs. Fortunately, the idea of
-              using AI to sort through images is also found during the
-              conversation with dentists. As a result, I think we may start with{" "}
-              <b>
-                “What is the problem?” instead of “What solutions can we
-                provide?”
-              </b>{" "}
-              in future works. It will not only save us time but also maximize
-              the impact technology can bring.
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <img
-            className="reflection-icon col"
-            src="/images/Xray/Reflection3.png"
-          />
-          <div className="col">
-            <p className="bold-text">
-              3. AI is a black box, making it hard to figure out how to improve
-              its performance{" "}
-            </p>
-            <p>
-              After training our artificial neural network, we will look at the
-              result, discussing how its performance can be improved. In a
-              traditional human-constructed algorithm, this part is simple
-              because we only need to trace the code line by line. When it comes
-              to AI, we do not know how it derives the result since we can only
-              control the input. The rest remains a black box. As a result,
-              performance improvement turns out to be more like a wild guess.
-              For example, we may randomly change some parameters or studying
-              other research to get more ideas. The fact that results obtained
-              by AI are not explainable is the hardest part of machine learning.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
       <NavLink
         pageUrl="/Work/PDOGS"
