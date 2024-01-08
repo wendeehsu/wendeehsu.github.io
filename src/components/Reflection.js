@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Reflection({ imgUrl, title, detail }) {
+export default function Reflection({ imgUrl, title, detail, textColor = "blue-text" }) {
   return (
     <div className="md:flex flex-wrap mb-8">
       <img
@@ -8,7 +8,7 @@ export default function Reflection({ imgUrl, title, detail }) {
         src={imgUrl}
         alt="reflection" />
       <div className="flex-1">
-        <h3 className="blue-text"><b>{title}</b></h3>
+        <h3 className={textColor}><b>{title}</b></h3>
         <p>{detail}</p>
       </div>
     </div>
