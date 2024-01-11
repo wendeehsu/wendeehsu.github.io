@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-special;
+  }
+
+  h1 {
+    @apply text-[1.5rem]
+  }
+
+  h2 {
+    @apply text-[1.25rem]
+  }
+
+  h3 {
+    @apply text-[1.125rem]
+  }
+
+  h4 {
+    @apply text-[1.125rem]
+  }
+
+  h5 {
+    @apply text-[1.125rem]
+  }
+
+  h6 {
+    @apply text-[1rem]
+  }
+
+  p {
+    @apply font-normal;
+  }
+
+  .logo {
+    @apply h-4 ml-2 p-0 min-w-0 mb-2 inline;
+  }
+  
+  img {
+    @apply animate-fadeIn;
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+  
+  .title {
+    text-align: center;
+    @apply my-8;
+  }
+  
+  .blue-text {
+    color: var(--dark-blue);
+  }
+  
+  .pink-text {
+    color: var(--pink);
+  }
+  
+  .gray-text {
+    color: var(--dark-gray);
+  }
+  
+  .white-text {
+    color: var(--white);
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .quote-text {
+    font-style: italic;
+  }
+  
+  .vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  a:hover {
+    color: var(--pink);
+  }
+
+  .gray-bg {
+    background-color: var(--light-gray);
+  }
+}
+
+:root {
+  --dark-blue: #316bcf;
+  --pink: #f49da0;
+  --dark-gray: #a0a0a0;
+  --light-gray: #f6f6f6;
+  --white: white;
+  --black: black;
+}
+
+@layer components {
+  img {
+    object-fit: contain;
+    min-width: 250px;
+    @apply py-[15px] px-0 sm:px-[15px]
+  }
+
+  .full-img {
+    @apply rounded-lg p-0 mx-0 my-[15px] sm:m-[15px]
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .col,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6 {
+    min-width: 15rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}

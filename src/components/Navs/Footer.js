@@ -1,18 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Footer extends Component {
-    render() {
-        const footerStyle = {
-            height: "3rem",
-            marginTop: "4rem"
-        };
-        return (
-            <div className="center-text gray-text" style={footerStyle}>
-                © 2023 Wendee Hsu | All rights reserved.
-                <img className="navbar-icon" src="/icon.png" />
-            </div>
-        )
-    }
+function Footer() {
+    return (
+        <div className="text-center gray-text h-12 mt-8 font-special">
+            © 2023 Wendee Hsu | All rights reserved.
+            <img className="logo" src="/icon.png" alt="logo" />
+        </div>
+    )
 }
 
 export default Footer;
