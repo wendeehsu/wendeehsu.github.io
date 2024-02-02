@@ -19,13 +19,15 @@ function Work() {
         note: "2021 National Taiwan University",
         imgUrl: "/images/project4-cover.png",
         pageUrl: "/Work/PDOGS"
-    }, {
-        title: "Redesign Website of Bureau of Labor Insurance",
-        subtitle: "UX Researcher, UI Designer",
-        note: "2020 PDIS",
-        imgUrl: "/images/project1-cover.png",
-        pageUrl: "/Work/RedesignBLI"
-    }, {
+    }, 
+    // {
+    //     title: "Redesign Website of Bureau of Labor Insurance",
+    //     subtitle: "UX Researcher, UI Designer",
+    //     note: "2020 PDIS",
+    //     imgUrl: "/images/project1-cover.png",
+    //     pageUrl: "/Work/RedesignBLI"
+    // },
+    {
         title: "AR Contact Lens Wearing App",
         subtitle: "Frontend Engineer",
         note: "2019 Formosa Optical",

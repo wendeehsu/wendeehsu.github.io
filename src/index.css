@@ -66,6 +66,10 @@
   .pink-text {
     color: var(--pink);
   }
+
+  .dark-pink-text {
+    color: var(--dark-pink);
+  }
   
   .gray-text {
     color: var(--dark-gray);
@@ -104,6 +108,7 @@
 :root {
   --dark-blue: #316bcf;
   --pink: #f49da0;
+  --dark-pink: #CA4458;
   --dark-gray: #a0a0a0;
   --light-gray: #f6f6f6;
   --white: white;

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
 import "../../css/Projects/pdogs.css";
-import { NavLink, Banner } from "../../components";
+import { NavLink, Banner, Role } from "../../components";
 import { GApageView } from "../../ga.js";
 
 export default function PDOGS() {
@@ -10,6 +10,34 @@ export default function PDOGS() {
   }, []);
 
   const imagBasePath = "/images/Pdogs/";
+
+  const roleTasks = [
+    {
+      role: "UX Researcher and Designer",
+      tasks: [
+        "Interview users, qualitative & quantitative data analytics",
+        "Wireframe & prototype design, A/B testing, usability testing",
+      ],
+    },
+    {
+      role: "Design Lead",
+      tasks: [
+        "Weekly design reviews with UI designers",
+        "Discuss design ideas with the engineering team",
+      ],
+    },
+    {
+      role: "Frontend Engineer",
+      tasks: ["React.js framework, Redux state management, Material UI"],
+    },
+    {
+      role: "Quality Assurance Lead",
+      tasks: [
+        "Wrote 127 test cases (edge cases included)",
+        "Directed 3 major QA testings before each launch",
+      ],
+    },
+  ];
 
   return (
     <div>
@@ -21,25 +49,22 @@ export default function PDOGS() {
       />
 
       <div className="section">
-        PDOGS (Programming Design Online Grading System) is a platform for
-        teaching assistants to publish programming assignments and for students
-        to submit their code and receive automatic grading. I led the design
-        team to transform the loosely organized legacy system into an
-        <b className="dark-pink-text"> easy-to-use, intuitive </b>new system
-        that can scale to <b className="dark-pink-text">serve 1000+ users </b>
-        while reducing potential operational errors and enhancing the user
-        experience.
+        I led a team of engineers and designers to create a new online grading
+        system in 3 months. The new design has a more flexible role structure
+        and a better integrated user experience, enabling it to{" "}
+        <b className="dark-pink-text">
+          serve 10 times more users (1000+ users)
+        </b>
+        , and <b className="dark-pink-text">cut down 90% of time</b> on routine
+        tasks compared to the legacy ones.
       </div>
 
       <div className="section">
-        <h5>MY ROLE</h5>
-        <p>
-          Design Lead, UX Researcher, Frontend Engineer, Quality Assurance Lead
-        </p>
+        <Role roleTasks={roleTasks} textClass="dark-pink-text" />
       </div>
 
       <div className="section">
-        <h5>MY TEAMMATES</h5>
+        <h2>My Teammates</h2>
         <ul>
           <li>
             Project Manager:
@@ -129,19 +154,7 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h5>METHOD & TOOL</h5>
-        <ul>
-          <li>
-            Methods: interview, qualitative & quantitative data analytics,
-            wireframe, mockup, prototype, usability testing
-          </li>
-          <li>Tools: Figma, Qase (Quality Assurance)</li>
-          <li>Frontend Framework: React.js</li>
-        </ul>
-      </div>
-
-      <div className="section">
-        <h5>TIMELINE</h5>
+        <h2>Timeline</h2>
         <img
           className="full-img"
           src={`${imagBasePath}Timeline.png`}
@@ -150,29 +163,64 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h5>THE PROBLEMS</h5>
+        <h2>Background</h2>
         <p>
-          In the past, the platform's developers only focused on adding new
+          PDOGS (Programming Design Online Grading System) is a platform for
+          teaching assistants to publish programming assignments. Students will
+          later submit their code in the platform and receive automatic grading.
+        </p>
+        <img
+          className="md:w-[70%] mx-auto my-4"
+          src={`${imagBasePath}background.png`}
+          alt="TA will upload assignments while students submit their code and get auto-graded."
+        />
+        <p>
+          It was originally built to serve the programming design course that
+          has no more than 50 students each semester. However, with the
+          increasing number of enrolled students, the problems root from its
+          scrappy design become more significant and raise greater security
+          concerns.
+        </p>
+      </div>
+
+      <div className="section">
+        <h2>The Problems</h2>
+        <p>
+          In the past, the platform’s developers only focused on adding new
           features and maintaining its functionality. After several generations,
           the system became very hard to use.
         </p>
         <p className="section-subtitle">1. Complex user roles</p>
-        <p className="dark-pink-text center-text">
-          "As teaching assistants are granted the highest right in the system, I
-          always need to warn them what sections they should not edit in case
-          they accidentally delete a whole class."
-          <br /> -- System Admin
-        </p>
         <p>
-          The legacy system only has 2 roles, a teaching assistant or a student.
-          However, during user interviews I realized there are{" "}
-          <b className="dark-pink-text">8 roles </b>in fact. What's more, a user
-          can have different roles under different situation.
+          The legacy system only has 2 roles, namely a teaching assistant or a
+          student. The teaching assistant role has the highest access rights
+          because the system was initially built by several teaching assistants.
+          However, the system now has its own dedicated system admin, enabling
+          teaching assistants to better focus on lecture materials. What’s more,
+          I realized there are now 6 additional roles after user interviews.
         </p>
         <img
-          className="half-full-img"
+          className="md:w-[70%] mx-auto my-4"
           src={`${imagBasePath}role-scope.png`}
           alt="Besides a teaching assistant and a student, there are 6 more roles in reality, including system admin, guest students, team leader, etc."
+        />
+        <p className="dark-pink-text center-text">
+          "As teaching assistants has the highest system permissions, I
+          always need to warn them what sections they should not edit in case
+          they accidentally delete a whole class." -- System Admin
+        </p>
+        <br />
+        <p>
+          Also, the legacy system fails to handle situations where a user can
+          have different roles. For example, a person can be a teaching
+          assistant in class A and a student in class B. However, the role
+          assignment is global in the legacy system. If a user is a TA in any
+          class, his role will be TA in all classes.
+        </p>
+        <img
+          className="md:w-[60%] mx-auto my-4"
+          src={`${imagBasePath}cjm-role-old.png`}
+          alt="Students with TA roles will be TA globally"
         />
 
         <p className="section-subtitle">2. Disjointed user experience</p>
@@ -196,7 +244,7 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h5>DESIGN & DEVELOPMENT PROCESS</h5>
+        <h2>DESIGN & DEVELOPMENT PROCESS</h2>
         <div className="flex flex-wrap">
           <div className="big-number-section">
             <b className="big-title">
@@ -301,10 +349,10 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h5>
+        <h2>
           <b className="dark-pink-text">Redesigned </b>Programming Design Online
           Grading System
-        </h5>
+        </h2>
         <img
           className="full-img"
           src={`${imagBasePath}pdogs.gif`}
@@ -352,7 +400,7 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h5>RESULT</h5>
+        <h2>RESULT</h2>
         <div className="flex flex-wrap">
           <div className="big-number-section">
             <b className="dark-pink-text big-number">200+</b>
@@ -376,7 +424,7 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h5>REFLECTION</h5>
+        <h2>REFLECTION</h2>
         <p className="section-subtitle">
           1. Comparing new and legacy systems with low-fidelity prototypes
           reduces bias in feedback
