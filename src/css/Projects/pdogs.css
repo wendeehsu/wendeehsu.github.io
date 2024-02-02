@@ -56,14 +56,4 @@
         margin: 5px;
         width: calc(50% - 10px);
     }
-    
-    /* .img-row-equal > .left-side-img {
-        width: calc(50% - 5px);
-        margin-right: 5px;
-    }
-    
-    .img-row-equal > .right-side-img {
-        width: calc(50% - 5px);
-        margin-left: 5px;
-    } */
 }

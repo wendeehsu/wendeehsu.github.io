@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
 import "../../css/Projects/pdogs.css";
-import { NavLink, Banner, Role } from "../../components";
+import { NavLink, Banner, Role, Number } from "../../components";
 import { GApageView } from "../../ga.js";
 
 export default function PDOGS() {
@@ -35,6 +35,27 @@ export default function PDOGS() {
       tasks: [
         "Wrote 127 test cases (edge cases included)",
         "Directed 3 major QA testings before each launch",
+      ],
+    },
+  ];
+
+  const numbers = [
+    {
+      figure: 6,
+      unit: "Interviews",
+      detail: ["TAs and students from 3 different courses"],
+    },
+    {
+      figure: 4,
+      unit: "Iterations",
+      detail: ["4 versions of lo-fi prototype"],
+    },
+    {
+      figure: 22,
+      unit: "User testings",
+      detail: [
+        "v1-3 are each tested by 3-4 users.",
+        "v4 is tested by 12 users.",
       ],
     },
   ];
@@ -229,7 +250,7 @@ export default function PDOGS() {
           files via the File Transfer Protocol, and switch back to the system to
           publish a task.
         </p>
-        
+
         <img
           className="md:w-[80%] mx-auto my-4"
           src={`${imagBasePath}cjm-flow-old.png`}
@@ -237,115 +258,132 @@ export default function PDOGS() {
         />
 
         <p className="dark-pink-text center-text">
-          "There are so many steps missing in the system! To create an assignment, I need to switch between different tools. It’s so easy to forget what I’ve done!" -- Teaching Assistant
+          "There are so many steps missing in the system! To create an
+          assignment, I need to switch between different tools. It’s so easy to
+          forget what I’ve done!" -- Teaching Assistant
         </p>
-        
-        
       </div>
 
       <div className="section">
-        <h2>DESIGN & DEVELOPMENT PROCESS</h2>
-        <div className="flex flex-wrap">
-          <div className="big-number-section">
-            <b className="big-title">
-              <b className="dark-pink-text big-number">6</b> Interviews
-            </b>
-            <p className="number-description">
-              1-1 online interview with
-              <br />
-              different roles in each class
-            </p>
-          </div>
+        <h2>Design Process</h2>
 
-          <div className="big-number-section">
-            <b className="big-title">
-              <b className="dark-pink-text big-number">5</b> Iterations
-            </b>
-            <p className="number-description">
-              1 paper wireframe
-              <br />4 lo-fi prototypes
-            </p>
-          </div>
-
-          <div className="big-number-section">
-            <b className="big-title">
-              <b className="dark-pink-text big-number">22</b> User testings
-            </b>
-            <p className="number-description">
-              Each prototype was tested by
-              <br />
-              at least 5 people
-            </p>
-          </div>
+        <div className="flex flex-wrap mb-4">
+          {numbers.map((num, i) => (
+            <Number
+              key={`num-${i}`}
+              figure={num.figure}
+              unit={num.unit}
+              detail={num.detail}
+              color="dark-pink"
+            />
+          ))}
         </div>
+      </div>
 
+      <div className="section">
+        <h2>Understanding and defining the users</h2>
+        <p>
+          To understand each user type's responsibilities and define proper
+          system roles, I interviewed system admins, students, and teaching
+          assistants of three different classes. After observing how they
+          complete their tasks in the current system, I discussed the necessary
+          system roles and corresponding access rights with the project manager
+          and development team.
+        </p>
+        <img
+          className="md:w-[80%] mx-auto my-4"
+          src={`${imagBasePath}job-to-be-done.png`}
+          alt="Job to be done."
+        />
+        <img
+          className="mx-auto h-16"
+          src={`${imagBasePath}arrow-down.svg`}
+          alt="translate to"
+        />
+        <img
+          className="md:w-[90%] mx-auto my-4"
+          src={`${imagBasePath}role.png`}
+          alt="Role access as functional requirement"
+        />
+        <p>
+          As the system has a complicated role structure, I reference similar
+          products like Google Classroom and NTU Cool. I also studied platforms
+          focusing on coding challenges (e.g. Leetcode) to understand how the UI
+          is designed.
+        </p>
+        <img
+          className="md:w-[60%] mx-auto my-4"
+          src={`${imagBasePath}competitive_analysis.png`}
+          alt="competitive analysis"
+        />
+      </div>
+
+      <div className="section">
+        <h2>Design Iterations</h2>
         <div>
-          <p className="section-subtitle">1. Understanding users</p>
+          <p className="section-subtitle">
+            Phase 1. Verify new role structure is needed
+          </p>
           <p>
-            To understand each user type's responsibilities and define proper
-            system roles, I interviewed system admins, students, and teaching
-            assistants of three different classes. After observing how they
-            complete their tasks in the current system, I discussed the
-            necessary system roles and corresponding access rights with the
-            project manager and development team.
+            When I proposed the new role structure, the engineering team
+            strongly disapproved of it as it would increase development effort
+            under the tight time frame. Therefore, I created 2 prototypes, one
+            keeps the legacy system’s role settings and the other applies the
+            new role structure.
           </p>
           <img
-            className="half-full-img"
-            src={`${imagBasePath}role.png`}
-            alt="There are 3 scopes, namely system, class, and team. Under different scope, there are managers, normal users, and guest users."
+            className="md:w-[80%] mx-auto my-4"
+            src={`${imagBasePath}lo-fi1.png`}
+            alt="wireframe 1 screenshot"
           />
-        </div>
-        <br />
-
-        <div>
-          <p className="section-subtitle">2. Prototyping & User testing</p>
-          <p>
-            After clarifying the different user roles and analyzing the missing
-            processes in the legacy system, I created multiple prototype
-            versions for user testing to validating which design solution works
-            best.
-          </p>
           <img
-            className="half-full-img"
-            src={`${imagBasePath}wireframe-flow.png`}
-            alt="There are 4 versions of prototypes in total. The first two ones are used to verify binding roles under different scope is needed. The last two ones are used to test different ways to include missing flows."
+            className="md:w-[80%] mx-auto my-4"
+            src={`${imagBasePath}lo-fi2.png`}
+            alt="wireframe 2 screenshot"
           />
-        </div>
-        <br />
 
-        <div>
-          <p className="section-subtitle">3. Designing Mockup</p>
-          <div className="flex flex-wrap">
-            <p className="side-text">
-              When the final wireframes is defined, I consolidated the design
-              solutions and discussed the final user interface with the UI
-              designers.
-            </p>
+          <div className="md:flex flex-wrap">
             <img
-              className="right-side-img"
-              src={`${imagBasePath}mockup.png`}
-              alt="The mockup"
+              className="md:w-[50%] md:mr-4"
+              src={`${imagBasePath}version-flow.png`}
+              alt="version flow"
             />
+            <div className="flex-1">
+              <p className="dark-pink-text">
+                "I'm confused by the Add button (in v1). If I have 2 TA classes,
+                where will I be redirected to after I click 'Add Homework'?" --
+                Tester B
+              </p>
+              <p>
+                By inviting some engineers to participate in user testings and
+                showing each version’s success rate, I convinced the team on
+                implementing the new role structure.
+              </p>
+            </div>
           </div>
         </div>
-        <br />
 
-        <div>
-          <p className="section-subtitle">4. Development & Quality Assurance</p>
-          <div className="flex flex-wrap">
-            <img
-              className="left-side-img"
-              src={`${imagBasePath}qa.png`}
-              alt="For each test case, there are detailed steps to reproduce"
-            />
-            <p className="side-text">
-              I worked as a front-end developer throughout the development
-              process. I also wrote{" "}
-              <b className="dark-pink-text">127 test cases </b>to ensure that
-              the new system functioned as expected even with edge cases.
-            </p>
-          </div>
+        <br />
+        <p className="section-subtitle">Phase 2. Integrate missing steps</p>
+        <div className="md:flex flex-wrap">
+          <img
+            className="md:w-[50%] md:mr-4"
+            src={`${imagBasePath}lo-fi3.png`}
+            alt="wireframe 3 screenshot"
+          />
+          <p className="flex-1">
+            I experimented on different ways to upload testing files within the
+            system. As teaching assistants shared that they need extra setting
+            on time and memory usage for each test case, I updated the design
+            with a "Upload data tool" that can set default values and customize
+            later in the table.
+          </p>
         </div>
+        <img
+          className="md:w-[90%] mx-auto my-4"
+          src={`${imagBasePath}lo-fi4.png`}
+          alt="wireframe 4 screenshot"
+        />
       </div>
 
       <div className="section">
