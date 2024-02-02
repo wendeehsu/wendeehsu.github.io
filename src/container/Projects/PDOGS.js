@@ -60,6 +60,21 @@ export default function PDOGS() {
     },
   ];
 
+  const results = [
+    {
+      figure: "60%",
+      detail: ["Potential error prevented"],
+    },
+    {
+      figure: "90%",
+      detail: ["Weekly time saved for teaching assistants"],
+    },
+    {
+      figure: "80%",
+      detail: ["Improvement on site efficiency"],
+    },
+  ];
+
   return (
     <div>
       <Banner
@@ -391,14 +406,10 @@ export default function PDOGS() {
           <b className="dark-pink-text">Redesigned </b>Programming Design Online
           Grading System
         </h2>
-        <img
-          className="full-img"
-          src={`${imagBasePath}pdogs.gif`}
-          alt="The P-DOGS launched in 2021 Fall"
-        />
-        <br />
 
-        <p className="section-subtitle">1. Flexible and Safer Role</p>
+        <p className="section-subtitle">
+          60% usability improvement with the flexible and safer role structure
+        </p>
         <p>
           Users have well-defined access rights under different scopes. This
           prevents teaching assistants from modifying class contents they are
@@ -419,7 +430,9 @@ export default function PDOGS() {
         </div>
         <br />
 
-        <p className="section-subtitle">2. Integrated user flow</p>
+        <p className="section-subtitle">
+          Cut down 90% time on routine tasks by integrated user flows
+        </p>
         <p>
           Users can complete a task without leaving the system. For teaching
           assistants, this cuts down the time to create an assignment from 5
@@ -438,31 +451,31 @@ export default function PDOGS() {
       </div>
 
       <div className="section">
-        <h2>RESULT</h2>
-        <div className="flex flex-wrap">
-          <div className="big-number-section">
-            <b className="dark-pink-text big-number">200+</b>
-            <p className="number-description">Potential error prevented</p>
-          </div>
-          <div className="big-number-section">
-            <b className="big-title dark-pink-text">
-              <b className="big-number">90</b>%
-            </b>
-            <p className="number-description">
-              Weekly time saved for teaching assistants
-            </p>
-          </div>
-          <div className="big-number-section">
-            <b className="big-title dark-pink-text">
-              <b className="big-number">80</b>%
-            </b>
-            <p className="number-description">Improvement on site efficiency</p>
-          </div>
+        <h2>Result</h2>
+        <div className="flex flex-wrap mb-4">
+          {results.map((result, i) => (
+            <Number
+              key={`result-${i}`}
+              figure={result.figure}
+              detail={result.detail}
+              color="dark-pink"
+            />
+          ))}
         </div>
+        <img
+          className="full-img"
+          src={`${imagBasePath}pdogs.gif`}
+          alt="The P-DOGS launched in 2021 Fall"
+        />
+        <p className="dark-pink-text center-text my-4">
+          "The new system is so much more maintainable. <br />
+          No more warnings for teaching assistants on what to avoid!"" -- System
+          admin
+        </p>
       </div>
 
       <div className="section">
-        <h2>REFLECTION</h2>
+        <h2>Reflection</h2>
         <p className="section-subtitle">
           1. Comparing new and legacy systems with low-fidelity prototypes
           reduces bias in feedback
