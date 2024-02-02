@@ -205,9 +205,9 @@ export default function PDOGS() {
           alt="Besides a teaching assistant and a student, there are 6 more roles in reality, including system admin, guest students, team leader, etc."
         />
         <p className="dark-pink-text center-text">
-          "As teaching assistants has the highest system permissions, I
-          always need to warn them what sections they should not edit in case
-          they accidentally delete a whole class." -- System Admin
+          "As teaching assistants has the highest system permissions, I always
+          need to warn them what sections they should not edit in case they
+          accidentally delete a whole class." -- System Admin
         </p>
         <br />
         <p>
@@ -224,23 +224,23 @@ export default function PDOGS() {
         />
 
         <p className="section-subtitle">2. Disjointed user experience</p>
-        <p className="dark-pink-text center-text">
-          "There are so many steps missing in the system!
-          <br /> To create an assignment, I need to type its description in the
-          system, later use file transfer protocol to upload testing data, then
-          publish the assignment back in the system."
-          <br /> -- Teaching Assistant
-        </p>
         <p>
-          A user may need to type in the system, upload file via the File
-          Transfer Protocol, and use ssh to connect to the database server for
-          advance settings to complete a task.
+          In the legacy system, a user may need to type in the system, upload
+          files via the File Transfer Protocol, and switch back to the system to
+          publish a task.
         </p>
+        
         <img
-          className="full-img"
-          src={`${imagBasePath}problem-flow.png`}
-          alt="Teaching assistants will use ssh to create a new class in the database, hope in the system to create an assignment, hope off to upload testing data via file transfer protocol, then finally publish the assignment back in the system."
+          className="md:w-[80%] mx-auto my-4"
+          src={`${imagBasePath}cjm-flow-old.png`}
+          alt="TA needs both FTP and the system to finish a task."
         />
+
+        <p className="dark-pink-text center-text">
+          "There are so many steps missing in the system! To create an assignment, I need to switch between different tools. It’s so easy to forget what I’ve done!" -- Teaching Assistant
+        </p>
+        
+        
       </div>
 
       <div className="section">
