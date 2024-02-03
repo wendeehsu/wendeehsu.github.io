@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
-import "../../css/Projects/pdogs.css";
 import { NavLink, Banner, Role, Number, Label } from "../../components";
 import { GApageView } from "../../ga.js";
 
