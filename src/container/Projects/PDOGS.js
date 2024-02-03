@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../../css/Projects/shared.css";
 import "../../css/Projects/pdogs.css";
-import { NavLink, Banner, Role, Number } from "../../components";
+import { NavLink, Banner, Role, Number, Label } from "../../components";
 import { GApageView } from "../../ga.js";
 
 export default function PDOGS() {
@@ -357,9 +357,9 @@ export default function PDOGS() {
             alt="wireframe 2 screenshot"
           />
 
-          <div className="md:flex flex-wrap">
+          <div className="lg:flex flex-wrap">
             <img
-              className="md:w-[50%] md:mr-4"
+              className="lg:w-[50%] mx-auto"
               src={`${imagBasePath}version-flow.png`}
               alt="version flow"
             />
@@ -410,43 +410,108 @@ export default function PDOGS() {
         <p className="section-subtitle">
           60% usability improvement with the flexible and safer role structure
         </p>
-        <p>
-          Users have well-defined access rights under different scopes. This
-          prevents teaching assistants from modifying class contents they are
-          not in charge of. Additionally, separating the system administrator
-          role increases the website's data security.
-        </p>
-        <div className="flex flex-wrap img-row">
+        <div className="lg:flex flex-wrap">
+          <div className="lg:w-[40%] bg-gray-100 p-4 rounded-lg">
+            <Label text="Before" textColor="text-white" bgColor="bg-gray-400" />
+            <img
+              className=""
+              src={`${imagBasePath}old-role-structure.png`}
+              alt="old role structure"
+            />
+            <ul>
+              <li>
+                When a user is granted the teaching assistant role, he has the
+                TA rights in all classes. He can see the assignment answers in
+                class B where he in fact is a student.
+              </li>
+              <li>
+                Teaching assistants can remove an entire course as they have the
+                same right as a system admin.
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1 p-4">
+            <Label text="After" textColor="" bgColor="bg-gray-100" />
+            <img
+              className="mt-2"
+              src={`${imagBasePath}new-role-structure.png`}
+              alt="new role structure"
+            />
+            <ul>
+              <li>
+                <b>More flexible: </b>A user can be both a teaching assistant in
+                class A and a student in class B. This prevents potential
+                dishonest behaviors.
+              </li>
+              <li>
+                <b>Enhance security: </b> We added system admin in the system
+                level, increasing the platform’s data security.
+              </li>
+            </ul>
+          </div>
           <img
-            className="left-side-img"
-            src={`${imagBasePath}old-role.png`}
-            alt="A user can only be either a teaching assistant or a student in the old system."
-          />
-          <img
-            className="right-side-img"
-            src={`${imagBasePath}new-role.png`}
-            alt="There are 3 scopes, namely system, class, and team. In each scope, a user can be a manager, a normal user, or a guest."
+            className="lg:w-[60%] mx-auto my-4"
+            src={`${imagBasePath}cjm-role-new.png`}
+            alt="with the new role structure, user's role is assigned under each scope"
           />
         </div>
-        <br />
 
         <p className="section-subtitle">
           Cut down 90% time on routine tasks by integrated user flows
         </p>
-        <p>
-          Users can complete a task without leaving the system. For teaching
-          assistants, this cuts down the time to create an assignment from 5
-          minutes to 30 seconds.
-        </p>
+        <div className="bg-gray-100 p-4 rounded-lg">
+          <Label text="Before" textColor="text-white" bgColor="bg-gray-400" />
+          <img
+            className=""
+            src={`${imagBasePath}ta-flow-old.png`}
+            alt="old flow for TA to upload assignment"
+          />
+          <ul>
+            <li>
+              The need to switch between PDOGS and FTP client disrupts the TAs'
+              workflow. It increases the time required to create an assignment.
+              Some TA may even forget to upload testing files.
+            </li>
+            <li>
+              FTP servers have weaker access controls compared to PDOGS. This
+              could increase the risk of unauthorized users gaining access to
+              all data stored in the server.
+            </li>
+          </ul>
+        </div>
+        <div className="p-4">
+          <Label text="After" textColor="" bgColor="bg-gray-100" />
+          <img
+            className=""
+            src={`${imagBasePath}ta-flow-new.png`}
+            alt="New flow for TA to upload assignment"
+          />
+          <ul>
+            <li>
+              <b>Increased efficiency: </b>The new workflow cuts down the time
+              to create an assignment from 5 minutes to 30 seconds.
+            </li>
+            <li>
+              <b>Stricter access control: </b>As the only way to access testing
+              files is through PDOGS now, chances of data leak is reduced.
+            </li>
+            <li>
+              <b>Better maintainability: </b>Teaching users to use two separate
+              systems, PDOGS and FTP, is complex and expensive. The integrated
+              workflow enhanced TA’s onboarding efficiency and decreased
+              maintenance overhead.
+            </li>
+          </ul>
+          <p className="dark-pink-text center-text my-4">
+            "The new system is so much more maintainable. <br />
+            No more warnings for teaching assistants on what to avoid!"" --
+            System admin
+          </p>
+        </div>
         <img
-          className="full-img"
-          src={`${imagBasePath}old-flow.png`}
-          alt="In the legacy system, when creating an assignment, teaching assistants need to use file transfer protocol to upload file, which is a disjointed user experience."
-        />
-        <img
-          className="full-img"
-          src={`${imagBasePath}new-flow.png`}
-          alt="Now teaching assistants can finish all steps within the system."
+          className="lg:w-[80%] mx-auto mb-4"
+          src={`${imagBasePath}cjm-flow-new.png`}
+          alt="TA can use the system to finish a task."
         />
       </div>
 
@@ -467,11 +532,6 @@ export default function PDOGS() {
           src={`${imagBasePath}pdogs.gif`}
           alt="The P-DOGS launched in 2021 Fall"
         />
-        <p className="dark-pink-text center-text my-4">
-          "The new system is so much more maintainable. <br />
-          No more warnings for teaching assistants on what to avoid!"" -- System
-          admin
-        </p>
       </div>
 
       <div className="section">
@@ -488,18 +548,6 @@ export default function PDOGS() {
           enabled users to share their thoughts on both designs as if they were
           both new.
         </p>
-        <div className="flex flex-wrap img-row-equal">
-          <img
-            className="left-side-img"
-            src={`${imagBasePath}lo-fi1.png`}
-            alt="lo-fi prototype version 1 is similar to legacy system"
-          />
-          <img
-            className="right-side-img"
-            src={`${imagBasePath}lo-fi2.png`}
-            alt="lo-fi prototype version 2 is a new design"
-          />
-        </div>
         <p className="section-subtitle">
           2. Co-creation workshops can prevent misunderstandings
         </p>
@@ -514,14 +562,22 @@ export default function PDOGS() {
         <p className="section-subtitle">
           3. It's important to consider all stakeholders in design
         </p>
-        <p>
-          Designers should consider the needs of all stakeholders, even those
-          who use the system infrequently. In this project, I only interviewed
-          the main users (system managers, teaching assistants, and students),
-          which resulted in an urgent request from the project's sole supporter,
-          the professor, at the very last moment. This experience taught me that
-          a complete stakeholder map is essential for all projects.
-        </p>
+        <div className="lg:flex flex-wrap">
+          <p className="flex-1">
+            Designers should consider the needs of all stakeholders, even those
+            who use the system infrequently. In this project, I only interviewed
+            the main users (system managers, teaching assistants, and students),
+            which resulted in an urgent request from the project's sole
+            supporter, the professor, at the very last moment. This experience
+            taught me that a complete stakeholder map is essential for all
+            projects.
+          </p>
+          <img
+            className="lg:w-[40%]"
+            src={`${imagBasePath}mobile.png`}
+            alt="screenshot of mobile version"
+          />
+        </div>
       </div>
       <NavLink
         pageUrl="/Work/RedesignBLI"
