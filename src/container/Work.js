@@ -30,13 +30,13 @@ function Work() {
     {
         title: "AR Contact Lens Wearing App",
         subtitle: "Frontend Engineer",
-        note: "2019 Formosa Optical",
+        note: "2020 Formosa Optical",
         imgUrl: "/images/project2-cover.png",
         pageUrl: "/Work/ARLens"
     }, {
         title: "AI Image Classification",
         subtitle: "Machine Learning, Backend Engineer",
-        note: "2019 Dentall",
+        note: "2020 Dentall",
         imgUrl: "/images/project3-cover.png",
         pageUrl: "/Work/AIXray"
     }];
