@@ -25,7 +25,7 @@ function Me() {
             icon: faEnvelope
         }, {
             name: "Resume",
-            link: "https://drive.google.com/file/d/1L7wtVkYeGjVcghjIYSiaGmrrTuP4ce1E/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1uZavHTciCalVYo9OuldSbFd5Rluci8hi/view?usp=sharing",
             icon: faFileInvoice
         }
     ];
